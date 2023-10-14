@@ -1,5 +1,7 @@
 import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
 
+// TEAM SLIDER IMAGES
+import teamslideimg1 from "../../../public/images/webp/team-member-slider1.webp";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {
@@ -25,26 +27,51 @@ export const monthSliderdata = [
 // TEAM MEMBERS SLIDER DATA
 export const TeamMemberSliderdata = [
   {
+    img: teamslideimg1,
     heading: "Lertsak p.",
     profession: "Business",
     profileBtn: "View profile",
   },
   {
-    svgicon: <MonthsSliderIcon />,
-    heading: "2 Months",
-    subHeading: "Fast - 2 mins not 2 months",
-    para: "No consultants, no months of field Validation. Less room for error. Simply log in, mark your location on the map, and get accurate measurements.",
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
   },
   {
-    svgicon: <MonthsSliderIcon />,
-    heading: "2 Months",
-    subHeading: "Fast - 2 mins not 2 months",
-    para: "No consultants, no months of field Validation. Less room for error. Simply log in, mark your location on the map, and get accurate measurements.",
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
   },
   {
-    svgicon: <MonthsSliderIcon />,
-    heading: "2 Months",
-    subHeading: "Fast - 2 mins not 2 months",
-    para: "No consultants, no months of field Validation. Less room for error. Simply log in, mark your location on the map, and get accurate measurements.",
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
+  },
+  {
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
+  },
+  {
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
+  },
+  {
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
+  },
+  {
+    img: teamslideimg1,
+    heading: "Lertsak p.",
+    profession: "Business",
+    profileBtn: "View profile",
   },
 ];
