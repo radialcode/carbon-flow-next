@@ -14,7 +14,7 @@ const HomeHero = () => {
                 the bank
               </h1>
             </div>
-            <div className=" xl:w-[50%] absolute xl:right-[-5%] bottom-0">
+            <div className=" xl:w-[50%] absolute 2xl:right-[-8%] bottom-0">
               <div className=" w-[780px]">
                 <div class="clip">
                   <Image
