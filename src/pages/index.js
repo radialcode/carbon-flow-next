@@ -8,6 +8,7 @@ import DoubleCounting from "@/components/homepage/DoubleCounting";
 import Empowering from "@/components/homepage/Empowering";
 import AsSeenOn from "@/components/homepage/AsSeenOn";
 import TeamMember from "@/components/homepage/TeamMember";
+import HomeHero from "@/components/homepage/HomeHero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <HomeHero />
       <MonthsSlider />
       <DataGildMine />
       <DoubleCounting />

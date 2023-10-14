@@ -64,3 +64,108 @@
   background: #45b802 !important;
   border-radius: 10px !important;
 }
+
+/* ==== HERO-CSS ===== */
+.hero_img_path2 {
+  clip-path: polygon(
+    100% 94%,
+    100% 100%,
+    0 100%,
+    0 94%,
+    100% 94%,
+    57% 94%,
+    57% 21%,
+    70% 24%,
+    70% 39%,
+    93% 34%,
+    93% 11%,
+    51% 0,
+    7% 12%,
+    7% 33%,
+    42% 43%,
+    43% 94%
+  );
+  width: 350px;
+  height: 700px;
+}
+
+.hero_img_path1 {
+  clip-path: polygon(
+    50% 0,
+    0% 18%,
+    0% 52%,
+    42% 68%,
+    42% 90%,
+    14% 90%,
+    2% 100%,
+    58% 100%,
+    58% 74%,
+    58% 35%,
+    73% 40%,
+    73% 62%,
+    100% 53%,
+    100% 18%
+  );
+  width: 315px;
+  height: 516px;
+}
+
+.hero_img_path3 {
+  clip-path: polygon(
+    53% 0,
+    99% 18%,
+    98% 53%,
+    72% 62%,
+    72% 39%,
+    57% 33%,
+    57% 90%,
+    89% 90%,
+    100% 100%,
+    40% 100%,
+    40% 67%,
+    0 53%,
+    0 19%
+  );
+  width: 315px;
+  height: 516px;
+}
+
+.forrest_hero_bg_img {
+  background-image: url("/images/webp/forrest_hero_img.webp");
+  background-position: center;
+  background-position-y: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 315px;
+  height: 516px;
+}
+
+.forrest_hero_bg_center_img {
+  background-image: url("/images/webp/forrest_hero_img.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 361px;
+  height: 808px;
+}
+
+@media (max-width: 1280px) {
+  .hero_img_path2 {
+    width: 250px;
+    height: 500px;
+  }
+
+  .hero_img_path1 {
+    width: 215px;
+    height: 316px;
+  }
+
+  .hero_img_path3 {
+    width: 215px;
+    height: 316px;
+  }
+}
+
+.clip {
+  clip-path: url("#cutout2");
+}
