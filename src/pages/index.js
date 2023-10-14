@@ -11,21 +11,42 @@ import TeamMember from "@/components/homepage/TeamMember";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Faq from "@/components/homepage/Faq";
+import BackToTop from "@/components/common/BackToTop";
+import Loader from "@/components/common/Loader";
+import Seo from "@/components/common/Seo";
 
 const inter = Inter({ subsets: ["latin"] });
+
+// PAGE SEO START
+const pageSEO = {
+  // SEO TITLE
+  title: "Carbon flow",
+  // SEO DESCRIPTION
+  description:
+    "The most effective way to measure Forrest & farm’s carbon credits without breaking the bank.",
+  // SEO WEBSITE URL
+  websiteURL: "https://carbon-flow.vercel.app/",
+  // SEO IMAGE
+  image: "/public/Screenshot 2023-10-14 180455.png",
+};
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <MonthsSlider />
-      <DataGildMine />
-      <DoubleCounting />
-      <AsSeenOn />
-      <Empowering />
-      <TeamMember />
-      <Faq />
-      <Footer />
+      <Seo pageSEO={pageSEO} />
+      <Loader />
+      <div className=" overflow-x-hidden">
+        <Navbar />
+        <MonthsSlider />
+        <DataGildMine />
+        <DoubleCounting />
+        <AsSeenOn />
+        <Empowering />
+        <TeamMember />
+        <Faq />
+        <Footer />
+        <BackToTop />
+      </div>
     </>
   );
 }

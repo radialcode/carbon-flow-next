@@ -1,7 +1,4 @@
 import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
-
-// TEAM SLIDER IMAGES
-import teamslideimg1 from "../../../public/images/webp/team-member-slider1.webp";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {
@@ -27,51 +24,51 @@ export const monthSliderdata = [
 // TEAM MEMBERS SLIDER DATA
 export const TeamMemberSliderdata = [
   {
-    img: teamslideimg1,
+    img: "/images/png/team1.png",
     heading: "Lertsak p.",
     profession: "Business",
     profileBtn: "View profile",
   },
   {
-    img: teamslideimg1,
+    img: "/images/png/team2.png",
+    heading: "Luca Cotta",
+    profession: "Intro IDO",
+    profileBtn: "View profile",
+  },
+  {
+    img: "/images/png/team3.png",
+    heading: "Rachadee C.",
+    profession: "Blockchain",
+    profileBtn: "View profile",
+  },
+  {
+    img: "/images/png/team4.png",
+    heading: "Teerasak W.",
+    profession: "Innovation",
+    profileBtn: "View profile",
+  },
+  {
+    img: "/images/png/team1.png",
     heading: "Lertsak p.",
     profession: "Business",
     profileBtn: "View profile",
   },
   {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
+    img: "/images/png/team2.png",
+    heading: "Luca Cotta",
+    profession: "Intro IDO",
     profileBtn: "View profile",
   },
   {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
+    img: "/images/png/team3.png",
+    heading: "Rachadee C.",
+    profession: "Blockchain",
     profileBtn: "View profile",
   },
   {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
-    profileBtn: "View profile",
-  },
-  {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
-    profileBtn: "View profile",
-  },
-  {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
-    profileBtn: "View profile",
-  },
-  {
-    img: teamslideimg1,
-    heading: "Lertsak p.",
-    profession: "Business",
+    img: "/images/png/team4.png",
+    heading: "Teerasak W.",
+    profession: "Innovation",
     profileBtn: "View profile",
   },
 ];
