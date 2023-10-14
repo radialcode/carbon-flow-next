@@ -15,7 +15,7 @@ const HomeHero = () => {
               </h1>
             </div>
             <div className=" xl:w-[50%] absolute xl:right-[-5%] bottom-0">
-              <div className=" w-[500px]">
+              <div className=" w-[780px]">
                 <div class="clip">
                   <Image
                     className=" h-[600px]"
