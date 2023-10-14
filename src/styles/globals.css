@@ -75,3 +75,6 @@
   display: flex;
   width: 100%;
 }
+.clip_path_team_slider {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
