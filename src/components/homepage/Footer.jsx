@@ -13,7 +13,7 @@ const Footer = () => {
   const year = today.getFullYear();
   return (
     <>
-      <section className="bg-[url('/images/webp/Foooter-bg-img.webp')] bg-no-repeat bg-cover bg-center relative">
+      <section className="bg-[url('/images/webp/Foooter-bg-img.webp')] bg-no-repeat bg-cover bg-fixed bg-center relative mt-[-2px]">
         <Image
           className=" absolute right-0 bottom-0 z-0 w-[297px] md:w-[303px] lg:w-[403px]"
           width={503}
@@ -21,7 +21,7 @@ const Footer = () => {
           src="/images/png/footer-leaf-position-img.png"
           alt="leaf image"
         />
-        <div className="flex flex-wrap justify-center translate-y-[-50%] mt-[200px]">
+        <div className="flex flex-wrap justify-center translate-y-[-50%]">
           <div className="w-full md:w-7/12 bg-[url('/images/png/netural-journey-bg-img.png')] bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
