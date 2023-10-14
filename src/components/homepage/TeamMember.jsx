@@ -58,9 +58,16 @@ const TeamMember = () => {
   };
   return (
     <>
-      <section className="pt-[106px] md:pt-[120px] pb-[101px]">
+      <section className="pt-[106px] md:pt-[120px] pb-[101px] relative">
+        <Image
+          className=" w-[153px] absolute right-[26px] bottom-0 hidden md:block z-0"
+          width={153}
+          height={149}
+          src="/images/png/month-leaf-position-img.png"
+          alt="leaf image"
+        />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <h2 className=" ff_AktivGrotesk_bold font-normal text-[36px] text-[#061E10] leading-[43.27px] mb-0 text-center">
+          <h2 className=" ff_AktivGrotesk_bold font-normal text-[32px] sm:text-[36px] text-[#061E10] leading-[38.46px] sm:leading-[43.27px] mb-0 text-center">
             Team Members
           </h2>
           <p className=" ff_poppins font-normal text-base text-[#516258] mb-0 mt-[15px] max-w-[594px] mx-auto text-center">
@@ -71,13 +78,13 @@ const TeamMember = () => {
           <div className="relative">
             <div
               onClick={() => first.current.slickPrev()}
-              className="top-[50%] translate-y-[-50%] left-[-6%] absolute group cursor-pointer"
+              className="top-[50%] translate-y-[-50%] left-[-6%] absolute group cursor-pointer hidden xl:block"
             >
               <TeamSliderArrowIcon />
             </div>
             <div
               onClick={() => first.current.slickNext()}
-              className="top-[50%] translate-y-[-50%] right-[-6%] absolute rotate-[180deg] group cursor-pointer"
+              className="top-[50%] translate-y-[-50%] right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"
             >
               <TeamSliderArrowIcon />
             </div>
@@ -117,6 +124,20 @@ const TeamMember = () => {
                 );
               })}
             </Slider>
+            <div className="flex justify-center gap-[8px] mt-[27px] xl:hidden">
+              <div
+                onClick={() => first.current.slickPrev()}
+                className="group cursor-pointer"
+              >
+                <TeamSliderArrowIcon />
+              </div>
+              <div
+                onClick={() => first.current.slickNext()}
+                className="rotate-[180deg] group cursor-pointer"
+              >
+                <TeamSliderArrowIcon />
+              </div>
+            </div>
           </div>
         </div>
       </section>
