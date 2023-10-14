@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: AktivGrotesk;
+  src: url("/fonts/AktivGrotesk-Bold.otf");
+}
+
+.ff_AktivGrotesk_bold {
+  font-family: AktivGrotesk !important;
+}
+
+.ff_poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.border_grideant {
+  border-right: 3px solid;
+  border-image: linear-gradient(
+      180deg,
+      rgba(68, 185, 2, 0) 0%,
+      rgba(68, 185, 2, 0.2) 50.67%,
+      rgba(68, 185, 2, 0) 100%
+    )
+    1;
+  height: 100%;
+}
+.gildmini_image {
+  clip-path: polygon(50% 0, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
+}
