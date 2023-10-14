@@ -8,6 +8,8 @@ import DoubleCounting from "@/components/homepage/DoubleCounting";
 import Empowering from "@/components/homepage/Empowering";
 import AsSeenOn from "@/components/homepage/AsSeenOn";
 import TeamMember from "@/components/homepage/TeamMember";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
