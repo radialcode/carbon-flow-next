@@ -31,3 +31,36 @@
 .gildmini_image {
   clip-path: polygon(50% 0, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
 }
+
+/* SLICK DOTS CLASSES HERE */
+
+.slick-dots li button::before {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 3px;
+  cursor: pointer;
+  border: 2px solid #929292 !important;
+  outline: 0;
+  background-color: white !important;
+  border-radius: 10px !important;
+  color: transparent !important;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 0;
+  line-height: 0;
+  opacity: 1 !important;
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 3px;
+  cursor: pointer;
+  color: #45b802 !important;
+  border: 2px solid transparent !important;
+  outline: 0;
+  background: #45b802 !important;
+  border-radius: 10px !important;
+}

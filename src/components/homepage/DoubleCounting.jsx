@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const DoubleCounting = () => {
   return (
     <>
-      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px]">
+      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px] overflow-x-hidden">
         <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110">
           <Image
             className="object-cover group-hover:scale-125 duration-200 object-top"
@@ -41,6 +41,6 @@ const DoubleCounting = () => {
       </div>
     </>
   );
-}
+};
 
-export default DoubleCounting
+export default DoubleCounting;
