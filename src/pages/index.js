@@ -33,9 +33,9 @@ const pageSEO = {
 export default function Home() {
   return (
     <>
-      <Seo pageSEO={pageSEO} />
-      <Loader />
       <div className=" overflow-x-hidden">
+        <Seo pageSEO={pageSEO} />
+        <Loader />
         <Navbar />
         <MonthsSlider />
         <DataGildMine />

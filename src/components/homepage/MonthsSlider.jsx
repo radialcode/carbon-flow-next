@@ -45,7 +45,10 @@ const MonthsSlider = () => {
   };
   return (
     <>
-      <section className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] lg:pb-0 relative">
+      <section
+        id="pitchingdeck"
+        className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] lg:pb-0 relative"
+      >
         <Image
           className="w-[96px] md:w-[144px] top-[22px] md:top-[44px] left-0 absolute z-0"
           width={144}

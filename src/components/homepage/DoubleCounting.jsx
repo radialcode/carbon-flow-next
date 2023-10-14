@@ -4,7 +4,10 @@ import React from "react";
 const DoubleCounting = () => {
   return (
     <>
-      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse gap-[20px] py-[50px] relative">
+      <div
+        id="workwithus"
+        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse gap-[20px] py-[50px] relative"
+      >
         <div className="md:w-[50%] lg:pe-[50px]">
           <div className="clipPath max-w-[558px]">
             <Image

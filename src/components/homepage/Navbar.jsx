@@ -35,44 +35,44 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <Link
+            <a
               className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href=""
+              href="#globalwarming"
             >
               Global Warming is Real?
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href=""
+              href="#pitchingdeck"
             >
               Pitching Deck
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href=""
+              href="#investor"
             >
               Investor
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href=""
+              href="#team"
             >
               Team
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href=""
+              href="#workwithus"
             >
               Work with us
-            </Link>
+            </a>
           </li>
           <li className="ps-5">
             <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">

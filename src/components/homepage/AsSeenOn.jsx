@@ -9,7 +9,10 @@ import {
 const AsSeenOn = () => {
   return (
     <>
-      <section className="pt-[86px] md:pt-[135px] pb-[84px] md:pb-[127px] relative overflow-x-hidden">
+      <section
+        id="investor"
+        className="pt-[86px] md:pt-[135px] pb-[84px] md:pb-[127px] relative overflow-x-hidden"
+      >
         <Image
           className=" absolute left-[28px] top-[22px] sm:top-[44px] z-0 w-[96px] sm:w-[144px] hidden md:block"
           width={144}

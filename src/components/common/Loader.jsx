@@ -32,8 +32,7 @@ function Loader(props) {
     <>
       {loader ? (
         <section
-          style={{ zIndex: "999", position: "relative" }}
-          className="w-full h-screen bg-black"
+          className="w-full h-screen bg-black relative z-[999]"
         >
           <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 flex justify-center">
             <div className="relative h-20 w-6/12 rounded-full border-transparent">

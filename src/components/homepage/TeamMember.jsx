@@ -58,7 +58,10 @@ const TeamMember = () => {
   };
   return (
     <>
-      <section className="pt-[106px] md:pt-[120px] pb-[101px] relative">
+      <section
+        id="team"
+        className="pt-[106px] md:pt-[120px] pb-[101px] relative"
+      >
         <Image
           className=" w-[153px] absolute right-[26px] bottom-0 hidden md:block z-0"
           width={153}
