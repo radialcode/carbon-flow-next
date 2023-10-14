@@ -29,7 +29,7 @@ const DataGildMine = () => {
         </div>
         <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110">
           <Image
-            className="object-cover group-hover:scale-125 duration-200 object-top"
+            className="object-cover group-hover:scale-125 duration-200 object-top scale-[103%]"
             src="/images/png/gildImage.png"
             alt="gild mine"
             width={602}

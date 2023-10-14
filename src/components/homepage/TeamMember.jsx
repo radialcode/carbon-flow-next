@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TeamSliderArrowIcon } from "../common/Icon";
 
 const TeamMember = () => {
+  const first = React.useRef();
   var settings = {
     dots: false,
     infinite: true,
@@ -68,14 +69,21 @@ const TeamMember = () => {
           </p>
 
           <div className="relative">
-            <div className="top-[50%] translate-y-[-50%] left-[-6%] absolute group cursor-pointer">
+            <div
+              onClick={() => first.current.slickPrev()}
+              className="top-[50%] translate-y-[-50%] left-[-6%] absolute group cursor-pointer"
+            >
               <TeamSliderArrowIcon />
             </div>
-            <div className="top-[50%] translate-y-[-50%] right-[-6%] absolute rotate-[180deg] group cursor-pointer">
+            <div
+              onClick={() => first.current.slickNext()}
+              className="top-[50%] translate-y-[-50%] right-[-6%] absolute rotate-[180deg] group cursor-pointer"
+            >
               <TeamSliderArrowIcon />
             </div>
             <Slider
               {...settings}
+              ref={first}
               className="flex flex-wrap mt-[40px] mx-[-10px] relative"
             >
               {TeamMemberSliderdata.map((data, index) => {
@@ -83,9 +91,9 @@ const TeamMember = () => {
                   <div className="w-3/12 h-full flex px-[10px]" key={index}>
                     <div className="border-2 border-[#E6E9E7] hover:border-[#D2F958] rounded-[10px] h-full w-full">
                       <div className="py-[22px]">
-                        <div className="clip_path_team_slider flex justify-center overflow-hidden">
+                        <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto">
                           <Image
-                            className="w-full scale-110 px-[66px]"
+                            className="w-full scale-110"
                             width={96}
                             height={110}
                             src={data.img}
