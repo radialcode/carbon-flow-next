@@ -4,36 +4,15 @@ import React from "react";
 const DoubleCounting = () => {
   return (
     <>
-      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[55px] py-[50px] overflow-x-hidden">
-        <div className="overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110 relative flex justify-center flex-wrap">
-          <div className="gildmini_image w-1/2 xl:h-[270px] lg:h-[240px] sm:h-[206px] xsm:h-[220px] h-[190px] overflow-hidden xl:mb-[-55px] lg:mb-[-50px] xsm:mb-[-45px] mb-[-40px] mx-5">
-            {" "}
+      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse gap-[20px] py-[50px] relative">
+        <div className="md:w-[50%] lg:pe-[50px]">
+          <div className="clipPath max-w-[558px]">
             <Image
-              className="object-cover group-hover:scale-125 duration-200 object-center h-full "
-              src="/images/png/datacounting-image.png"
-              alt="gild mine"
-              width={602}
-              height={602}
-            />
-          </div>
-          <div className="gildmini_image w-1/2 xl:h-[270px] lg:h-[240px] sm:h-[206px] xsm:h-[220px] h-[190px] overflow-hidden mr-[-5px] lg:mr-[-14px]">
-            {" "}
-            <Image
-              className="object-cover group-hover:scale-125 duration-200 object-center h-full"
-              src="/images/png/datacounting-image.png"
-              alt="gild mine"
-              width={602}
-              height={602}
-            />
-          </div>
-          <div className="gildmini_image w-1/2 xl:h-[270px] lg:h-[240px] sm:h-[206px] xsm:h-[220px] h-[190px] overflow-hidden ml-[-14px]">
-            {" "}
-            <Image
-              className="object-cover group-hover:scale-125 duration-200 object-center h-full "
-              src="/images/png/datacounting-image.png"
-              alt="gild mine"
-              width={602}
-              height={602}
+              className="clipPath w-full lg:max-w-[550px] object-cover h-full"
+              src="/images/png/datacounting-image2.png"
+              width={500}
+              height={500}
+              alt="blockchain"
             />
           </div>
         </div>
