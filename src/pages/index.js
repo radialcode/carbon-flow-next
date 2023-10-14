@@ -10,6 +10,7 @@ import AsSeenOn from "@/components/homepage/AsSeenOn";
 import TeamMember from "@/components/homepage/TeamMember";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Faq from "@/components/homepage/Faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,8 @@ export default function Home() {
       <DoubleCounting />
       <AsSeenOn />
       <Empowering />
-      <TeamMember />
+      {/* <TeamMember /> */}
+      <Faq />
       <Footer />
     </>
   );
