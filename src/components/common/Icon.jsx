@@ -494,7 +494,7 @@ export const FooterGmailIcon = () => {
 export const AsSeenOnFoxIcon = () => {
   return (
     <svg
-      className=" w-[60px] h-[28px] md:h-auto md:w-[100px] lg:w-auto"
+      className=" w-[60px] h-[28px] sm:h-auto sm:w-[100px] lg:w-auto"
       width="157"
       height="74"
       viewBox="0 0 157 74"
@@ -513,7 +513,7 @@ export const AsSeenOnFoxIcon = () => {
 export const AsSeenOnUsaTodayIcon = () => {
   return (
     <svg
-      className=" w-[60px] h-[28px] md:h-auto md:w-[100px] lg:w-auto"
+      className=" w-[60px] h-[28px] sm:h-auto sm:w-[100px] lg:w-auto"
       width="157"
       height="74"
       viewBox="0 0 157 74"
@@ -558,7 +558,7 @@ export const AsSeenOnUsaTodayIcon = () => {
 export const AsSeenOnMarketWatchIcon = () => {
   return (
     <svg
-      className=" w-[60px] h-[28px] md:h-auto md:w-[100px] lg:w-auto"
+      className=" w-[60px] h-[28px] sm:h-auto sm:w-[100px] lg:w-auto"
       width="157"
       height="74"
       viewBox="0 0 157 74"

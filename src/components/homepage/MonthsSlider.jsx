@@ -32,7 +32,7 @@ const MonthsSlider = () => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -45,7 +45,7 @@ const MonthsSlider = () => {
   };
   return (
     <>
-      <section className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] lg:pb-0 overflow-x-hidden relative">
+      <section className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] lg:pb-0 relative">
         <Image
           className="w-[96px] md:w-[144px] top-[22px] md:top-[44px] left-0 absolute z-0"
           width={144}
@@ -54,11 +54,11 @@ const MonthsSlider = () => {
           alt="leaf image"
         />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <Slider {...settings} className="flex flex-wrap mx-[-12px]">
+          <Slider {...settings} className="flex flex-wrap mx-[-24px]">
             {monthSliderdata.map((data, index) => {
               return (
                 <div
-                  className="w-4/12 border_grideant py-[33px] md:py-0 md:pt-[20px] md:pb-[78px] h-full"
+                  className="w-4/12 border_grideant py-[33px] md:py-0 md:pt-[20px] md:pb-[78px] h-full px-[12px]"
                   key={index}
                 >
                   <div className="px-[17px] md:px-[28px]">

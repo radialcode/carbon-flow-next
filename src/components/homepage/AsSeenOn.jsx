@@ -24,13 +24,13 @@ const AsSeenOn = () => {
           <div className="flex flex-wrap justify-center mt-[35px]">
             <div className="w-10/12">
               <div className="flex justify-center gap-[13px] md:gap-[36px]">
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnFoxIcon />
                 </div>
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnUsaTodayIcon />
                 </div>
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnMarketWatchIcon />
                 </div>
               </div>

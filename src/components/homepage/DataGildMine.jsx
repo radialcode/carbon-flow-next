@@ -6,13 +6,13 @@ const DataGildMine = () => {
     <>
       <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px] overflow-x-hidden">
         <div className="md:w-1/2 max-w-[463px] md:px-0 px-[14px]">
-          <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[115%]">
+          <h2 className="font-normal lg:text-[36px] text-[32px] text-black ff_AktivGrotesk_bold leading-[115%]">
             Data Gildmine:{" "}
             <span className="text-[#45B802]">10 Years Histoeical</span> &
             Monthly On Both <span className="text-[#45B802]">Carbon</span> &{" "}
             <span className="text-[#45B802]">Evapotranspiration</span> Data
           </h2>
-          <p className="ff_poppins font-normal text-[16px] text-[#061E10] opacity-70 pt-[15px]">
+          <p className="ff_poppins font-normal text-[16px] text-[#061E10] opacity-70 pt-[15px] max-w-[470px]">
             In sights for future planning: leverage biomass estimation, climate
             change modeling, land use monitoring, trend analysis, data
             benchmarking, policy guidance, and research opportunities. optimize
@@ -29,7 +29,7 @@ const DataGildMine = () => {
         </div>
         <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110">
           <Image
-            className="object-cover group-hover:scale-125 duration-200 object-top scale-[103%]"
+            className="object-cover group-hover:scale-125 duration-200 object-top scale-[115%]"
             src="/images/png/gildImage.png"
             alt="gild mine"
             width={602}

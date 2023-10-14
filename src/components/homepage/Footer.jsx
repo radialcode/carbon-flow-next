@@ -122,7 +122,7 @@ const Footer = () => {
               <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0">
                 Copyright©{year} | All Rights Reserved
               </p>
-              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start">
+              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
                 Terms & Conditions | Privacy & Security
               </p>
             </div>
