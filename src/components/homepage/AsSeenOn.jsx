@@ -36,7 +36,7 @@ const AsSeenOn = () => {
               </div>
             </div>
           </div>
-          <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px]">
+          <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px] capitalize">
             And over 200 news Sites
           </p>
         </div>

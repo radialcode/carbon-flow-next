@@ -17,7 +17,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.border_grideant {
+/* .border_grideant {
   border-right: 3px solid;
   border-image: linear-gradient(
       180deg,
@@ -27,7 +27,7 @@
     )
     1;
   height: 100%;
-}
+} */
 .gildmini_image {
   clip-path: polygon(50% 0, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
 }
@@ -74,4 +74,29 @@
 .slick-slide > div {
   display: flex;
   width: 100%;
+}
+
+.slick-current div .border_grideant {
+  border-right: 3px solid;
+  border-image: linear-gradient(
+      180deg,
+      rgba(68, 185, 2, 0) 0%,
+      rgba(68, 185, 2, 0.2) 50.67%,
+      rgba(68, 185, 2, 0) 100%
+    )
+    1;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  .slick-current + .slick-active div .border_grideant {
+    border-right: 3px solid;
+    border-image: linear-gradient(
+        180deg,
+        rgba(68, 185, 2, 0) 0%,
+        rgba(68, 185, 2, 0.2) 50.67%,
+        rgba(68, 185, 2, 0) 100%
+      )
+      1;
+    height: 100%;
+  }
 }

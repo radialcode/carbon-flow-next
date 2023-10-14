@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/homepage/Navbar";
+import Footer from "@/components/homepage/Footer";
 import DataGildMine from "@/components/homepage/DataGildMine";
 import MonthsSlider from "@/components/homepage/MonthsSlider";
 import DoubleCounting from "@/components/homepage/DoubleCounting";

@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { CrossIcon, MenuIcon } from "./common/Icon";
+import { CrossIcon, MenuIcon } from "../common/Icon";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-  //   if (showNav) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
+
+  // if (showNav) {
+  //   document.body.style.overflow = "hidden";
+  // } else {
+  //   document.body.style.overflow = "auto";
+  // }
   return (
     <div className="bg-[#0D2517] relative z-[100]">
       <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto  flex justify-between items-center md:py-[14px] py-[23px] px-3 xl:px-0">

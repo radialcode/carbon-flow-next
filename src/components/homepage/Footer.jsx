@@ -6,7 +6,7 @@ import {
   FooterGmailIcon,
   FooterInstaIcon,
   FooterTikTokIcon,
-} from "./common/Icon";
+} from "../common/Icon";
 
 const Footer = () => {
   const today = new Date();
