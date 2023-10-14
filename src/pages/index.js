@@ -23,7 +23,7 @@ export default function Home() {
       <DoubleCounting />
       <AsSeenOn />
       <Empowering />
-      {/* <TeamMember /> */}
+      <TeamMember />
       <Faq />
       <Footer />
     </>
