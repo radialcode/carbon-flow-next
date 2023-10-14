@@ -9,7 +9,10 @@ import {
 const AsSeenOn = () => {
   return (
     <>
-      <section className="pt-[86px] md:pt-[135px] pb-[84px] md:pb-[127px] relative overflow-x-hidden">
+      <section
+        id="investor"
+        className="pt-[86px] md:pt-[135px] pb-[84px] md:pb-[127px] relative overflow-x-hidden"
+      >
         <Image
           className=" absolute left-[28px] top-[22px] sm:top-[44px] z-0 w-[96px] sm:w-[144px] hidden md:block"
           width={144}
@@ -24,19 +27,19 @@ const AsSeenOn = () => {
           <div className="flex flex-wrap justify-center mt-[35px]">
             <div className="w-10/12">
               <div className="flex justify-center gap-[13px] md:gap-[36px]">
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnFoxIcon />
                 </div>
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnUsaTodayIcon />
                 </div>
-                <div className=" px-[23px] lg:px-[60px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
+                <div className=" px-[23px] sm:px-[38px] lg:px-[60px] sm:py-[20px] py-[14px] md:py-[17px] lg:py-[37px] bg-white shadow-xl hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]">
                   <AsSeenOnMarketWatchIcon />
                 </div>
               </div>
             </div>
           </div>
-          <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px]">
+          <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px] capitalize">
             And over 200 news Sites
           </p>
         </div>

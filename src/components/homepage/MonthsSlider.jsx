@@ -1,8 +1,7 @@
 import React from "react";
 import { monthSliderdata } from "../common/Helper";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from "next/image";
 const MonthsSlider = () => {
   var settings = {
     dots: true,
@@ -33,7 +32,7 @@ const MonthsSlider = () => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -46,21 +45,31 @@ const MonthsSlider = () => {
   };
   return (
     <>
-      <section className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] overflow-x-hidden">
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
-          <Slider {...settings} className="flex flex-wrap mx-[-12px]">
+      <section
+        id="pitchingdeck"
+        className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] lg:pb-0 relative"
+      >
+        <Image
+          className="w-[96px] md:w-[144px] top-[22px] md:top-[44px] left-0 absolute z-0"
+          width={144}
+          height={140}
+          src="/images/png/month-leaf-position-img.png"
+          alt="leaf image"
+        />
+        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+          <Slider {...settings} className="flex flex-wrap mx-[-24px]">
             {monthSliderdata.map((data, index) => {
               return (
                 <div
-                  className="w-4/12 px-[12px] border_grideant py-[33px] md:py-0 md:pt-[20px] md:pb-[78px] h-full"
+                  className="w-4/12 border_grideant py-[33px] md:py-0 md:pt-[20px] md:pb-[78px] h-full px-[12px]"
                   key={index}
                 >
                   <div className="px-[17px] md:px-[28px]">
                     <span>{data.svgicon}</span>
-                    <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 mt-[24px] leading-[43.7px]">
+                    <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 mt-[24px] leading-[43.7px] capitalize">
                       {data.heading}
                     </h2>
-                    <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px]">
+                    <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px] capitalize">
                       {data.subHeading}
                     </h3>
                     <p className=" ff_poppins font-normal text-base text-[#516258] mb-0 mt-[6px]">

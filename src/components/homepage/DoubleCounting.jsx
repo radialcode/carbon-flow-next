@@ -4,18 +4,23 @@ import React from "react";
 const DoubleCounting = () => {
   return (
     <>
-      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px] overflow-x-hidden">
-        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110">
-          <Image
-            className="object-cover group-hover:scale-125 duration-200 object-top"
-            src="/images/png/gildImage.png"
-            alt="gild mine"
-            width={602}
-            height={602}
-          />
+      <div
+        id="workwithus"
+        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse gap-[20px] py-[50px] relative"
+      >
+        <div className="md:w-[50%] lg:pe-[50px]">
+          <div className="clipPath max-w-[558px]">
+            <Image
+              className="clipPath w-full lg:max-w-[550px] object-cover h-full"
+              src="/images/png/datacounting-image2.png"
+              width={500}
+              height={500}
+              alt="blockchain"
+            />
+          </div>
         </div>
-        <div className="md:w-1/2 max-w-[496px] md:px-0 px-[14px]">
-          <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[115%]">
+        <div className="md:w-1/2 max-w-[496px] md:px-0 px-[14px] xl:me-[50px]">
+          <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[115%] capitalize">
             No double
             <span className="text-[#45B802]"> counting, issue carbon</span>{" "}
             credit on blockchain
