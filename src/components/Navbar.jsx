@@ -29,7 +29,7 @@ const Navbar = () => {
         >
           <li>
             <Link
-              className="ff_poppins font-normal text-[16px] text-white opacity-80"
+              className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href=""
             >
               Global Warming is Real?
@@ -37,7 +37,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="ff_poppins font-normal text-[16px] text-white opacity-80"
+              className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href=""
             >
               Pitching Deck
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="ff_poppins font-normal text-[16px] text-white opacity-80"
+              className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href=""
             >
               Investor
@@ -53,7 +53,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="ff_poppins font-normal text-[16px] text-white opacity-80"
+              className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href=""
             >
               Team
@@ -61,14 +61,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="ff_poppins font-normal text-[16px] text-white opacity-80"
+              className="ff_poppins font-normal text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href=""
             >
               Work with us
             </Link>
           </li>
           <li className="ps-5">
-            <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full">
+            <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
               Contact Us
             </button>
           </li>

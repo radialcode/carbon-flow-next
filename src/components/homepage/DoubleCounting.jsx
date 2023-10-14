@@ -5,14 +5,38 @@ const DoubleCounting = () => {
   return (
     <>
       <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px] overflow-x-hidden">
-        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110">
-          <Image
-            className="object-cover group-hover:scale-125 duration-200 object-top"
-            src="/images/png/gildImage.png"
-            alt="gild mine"
-            width={602}
-            height={602}
-          />
+        <div className="overflow-hidden max-w-[602px] md:w-1/2 sm:w-[80%] group md:scale-100 scale-110 relative flex justify-center flex-wrap">
+          <div className="gildmini_image w-1/2 h-[298px] overflow-hidden mb-[-62px] mx-5">
+            {" "}
+            <Image
+              className="object-cover group-hover:scale-125 duration-200 object-center h-full "
+              src="/images/png/datacounting-image.png"
+              alt="gild mine"
+              width={602}
+              height={602}
+            />
+          </div>
+          <div className="gildmini_image w-1/2 h-[298px] overflow-hidden mr-[-14px]">
+            {" "}
+            <Image
+              className="object-cover group-hover:scale-125 duration-200 object-center h-full"
+              src="/images/png/datacounting-image.png"
+              alt="gild mine"
+              width={602}
+              height={602}
+            />
+          </div>
+          <div className="gildmini_image w-1/2 h-[298px] overflow-hidden ml-[-14px]">
+            {" "}
+            <Image
+              className="object-cover group-hover:scale-125 duration-200 object-center h-full "
+              src="/images/png/datacounting-image.png"
+              alt="gild mine"
+              width={602}
+              height={602}
+            />
+          </div>
+          l
         </div>
         <div className="md:w-1/2 max-w-[496px] md:px-0 px-[14px]">
           <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[115%]">
