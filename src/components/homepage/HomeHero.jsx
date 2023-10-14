@@ -20,10 +20,10 @@ const HomeHero = () => {
               </p>
             </div>
 
-            <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath   lg:absolute right-1/2 mt-[10px] xs:mt-0 sm:mt-10  bottom-[-60px] lg:right-[-60px]">
+            <div className="w-full xs:w-[75%] lg:w-1/2 ">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[10px] xs:mt-0 sm:mt-10  bottom-[-60px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-90px]">
                 <Image
-                  className="hero_clipPath w-full lg:max-w-[550px] object-cover h-[350px] xs:h-[600px] sm:h-[550px]"
+                  className="hero_clipPath w-full lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[800px] xl:h-[700px] 2xl:h-[800px] object-cover h-[350px] xs:h-[600px] sm:h-[550px]"
                   src="/images/webp/forrest_hero_img.webp"
                   width={808}
                   height={846}
