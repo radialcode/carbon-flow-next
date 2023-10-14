@@ -23,11 +23,11 @@ const pageSEO = {
   title: "Carbon flow",
   // SEO DESCRIPTION
   description:
-    "Zoplenti is your trusted Amazon retail partner, focused on growing the sales and the prestige of premium brands on Amazon.com.",
+    "The most effective way to measure Forrest & farm’s carbon credits without breaking the bank.",
   // SEO WEBSITE URL
-  websiteURL: "https://zoplenti-next.vercel.app",
+  websiteURL: "https://carbon-flow.vercel.app/",
   // SEO IMAGE
-  image: "/home_meta_img.webp",
+  image: "/public/Screenshot 2023-10-14 180455.png",
 };
 
 export default function Home() {
