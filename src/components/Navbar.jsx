@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react'
-import { CrossIcon, MenuIcon } from './common/Icon';
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { CrossIcon, MenuIcon } from "./common/Icon";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
   //   }
   return (
     <div className="bg-[#0D2517] relative z-[100]">
-      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  flex justify-between items-center md:py-[14px] py-[23px] px-3 xl:px-0">
+      <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto  flex justify-between items-center md:py-[14px] py-[23px] px-3 xl:px-0">
         <Link className="relative z-50" href="/">
           <Image
             className="max-w-[202px]"
@@ -84,6 +84,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

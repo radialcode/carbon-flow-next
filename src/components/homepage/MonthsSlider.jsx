@@ -47,7 +47,7 @@ const MonthsSlider = () => {
   return (
     <>
       <section className="pt-[69px] md:pt-[100px] pb-[123px] sm:pb-[55px] overflow-x-hidden">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 xl:px-0">
+        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
           <Slider {...settings} className="flex flex-wrap mx-[-12px]">
             {monthSliderdata.map((data, index) => {
               return (

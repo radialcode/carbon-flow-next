@@ -5,7 +5,7 @@ const Empowering = () => {
   return (
     <>
       <section className=" bg-[url('/images/png/empowering-bg-img.png')]">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative pt-[31px] md:py-[52px] lg:py-[102px]">
+        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative pt-[31px] md:py-[52px] lg:py-[102px]">
           <Image
             className=" w-[412px] lg:w-[512px] absolute right-0 bottom-0 hidden md:block"
             width={512}

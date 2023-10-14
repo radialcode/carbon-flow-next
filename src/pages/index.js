@@ -7,6 +7,7 @@ import MonthsSlider from "@/components/homepage/MonthsSlider";
 import DoubleCounting from "@/components/homepage/DoubleCounting";
 import Empowering from "@/components/homepage/Empowering";
 import AsSeenOn from "@/components/homepage/AsSeenOn";
+import TeamMember from "@/components/homepage/TeamMember";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function Home() {
       <DoubleCounting />
       <AsSeenOn />
       <Empowering />
+      <TeamMember />
       <Footer />
     </>
   );
