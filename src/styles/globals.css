@@ -64,3 +64,14 @@
   background: #45b802 !important;
   border-radius: 10px !important;
 }
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+.slick-slide > div {
+  display: flex;
+  width: 100%;
+}
