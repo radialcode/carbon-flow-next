@@ -34,8 +34,9 @@ const pageSEO = {
 export default function Home() {
   return (
     <>
+     <Seo pageSEO={pageSEO} />
+  
       <div className=" overflow-x-hidden">
-        <Seo pageSEO={pageSEO} />
         <Loader />
         <Navbar />
         <HomeHero />
@@ -48,6 +49,7 @@ export default function Home() {
         <Faq />
         <Footer />
         <BackToTop />
+      
       </div>
     </>
   );
