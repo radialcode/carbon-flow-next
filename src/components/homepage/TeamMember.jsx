@@ -81,13 +81,13 @@ const TeamMember = () => {
           <div className="relative">
             <div
               onClick={() => first.current.slickPrev()}
-              className="top-[50%] translate-y-[-50%] left-[-6%] absolute group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -left-[5%] 2xl:left-[-6%] absolute group cursor-pointer hidden xl:block"
             >
               <TeamSliderArrowIcon />
             </div>
             <div
               onClick={() => first.current.slickNext()}
-              className="top-[50%] translate-y-[-50%] right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"
             >
               <TeamSliderArrowIcon />
             </div>
@@ -99,7 +99,7 @@ const TeamMember = () => {
               {TeamMemberSliderdata.map((data, index) => {
                 return (
                   <div className="w-3/12 h-full flex px-[10px]" key={index}>
-                    <div className="border border-[#E6E9E7] hover:outline-[#D2F958] hover:outline-[3px] hover:outline-offset-[-3px] hover:outline rounded-[10px] h-full w-full">
+                    <div className="border border-[#E7E9E8] hover:outline-[#D2F958] hover:outline-[3px] hover:outline-offset-[-3px] hover:outline rounded-[10px] h-full w-full">
                       <div className="py-[22px]">
                         <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto h-[110px]">
                           <Image

@@ -21,7 +21,7 @@ const Faq = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
@@ -41,7 +41,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -63,7 +63,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -86,7 +86,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -107,7 +107,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -116,8 +116,7 @@ const Faq = () => {
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
-                    Can CarbonFlow scale to meet our needs as our company grows
-                    and our carbon credit validation needs increase?
+                    What is the pricing structure for CarbonFlow? Is it a subscription service, a one-time fee, or based on usage?
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

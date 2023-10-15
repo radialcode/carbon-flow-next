@@ -6,8 +6,8 @@ const DataGildMine = () => {
     <>
       <div
         id="globalwarming"
-        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse md:gap-0 gap-[40px] py-[50px] overflow-x-hidden">
-        <div className="md:w-1/2  xl:w-[43%] md:px-0 px-[14px] xsm:pt-5 md:pt-0">
+        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse py-[50px] overflow-x-hidden">
+        <div className="md:w-1/2 xl:w-[43%] md:px-0 px-[14px] mt-[47px] md:mt-0">
           <h2 className="font-normal lg:text-[36px] text-[32px] text-black ff_AktivGrotesk_bold leading-[115%]">
             Data Gildmine:{" "}
             <span className="text-[#45B802]">10 Years Histoeical</span> &
@@ -29,7 +29,7 @@ const DataGildMine = () => {
             </p>
           </div>
         </div>
-        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2  xsm:w-[70%] group md:scale-100 scale-110">
+        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110">
           <Image
             className="object-cover object-top"
             src="/images/png/gildImage.png"

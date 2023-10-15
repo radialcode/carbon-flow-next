@@ -71,8 +71,8 @@
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");
   -webkit-mask-size: 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
+  /* -webkit-mask-position: center; */
+  /* mask-position: center; */
   mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
@@ -138,6 +138,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(4.5px);
   backdrop-filter: blur(4.5px);
+  background: rgba(255, 255, 255, 0.09);
 }
 .clipPath {
   -webkit-mask-image: url("/images/svg/Unionclip.svg");
