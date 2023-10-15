@@ -36,7 +36,7 @@ export default function Home() {
     <>
       <div className=" overflow-x-hidden">
         <Seo pageSEO={pageSEO} />
-        <Loader />
+        {/* <Loader /> */}
         <Navbar />
         <HomeHero />
         <MonthsSlider />

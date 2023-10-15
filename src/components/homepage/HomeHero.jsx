@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 const HomeHero = () => {
+  const [imgScale, setImgScale] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    if (inView) {
+      setImgScale(true);
+    }
+  }, [inView]);
   return (
     <>
-      <div className="bg-[#061E10] h-[750px] xs:min-h-screen lg:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-12">
+      <div className="bg-[#061E10] h-[900px] xs:min-h-screen lg:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-12">
         <div className=" container flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center  lg:justify-between ">
             <div className="w-full md:w-[80%] lg:w-[50%]">
@@ -18,12 +32,26 @@ const HomeHero = () => {
                 measure carbon credit with the nost accurate and the best cost
                 effective
               </p>
+              <div className="flex gap-[25px]  pt-[30px] items-center md:hidden">
+                <button className="p-[14px_23px] border border-[#44B902] ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200">
+                  Start Measure!
+                </button>
+                <p className="ff_poppins font-semibold text-[16px] text-white duration-200 hover:text-[#44B902]">
+                  No CC Required
+                </p>
+              </div>
+              <p className="text-[12px] ff_poppins font-bold italic text-white pt-[18px] md:hidden">
+                Best on 5 years research pulished in blr blr blr
+              </p>
             </div>
 
-            <div className="w-full xs:w-[75%] lg:w-1/2 ">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[10px] xs:mt-0 sm:mt-10  bottom-[-60px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-90px]">
+            <div className="w-full xs:w-[75%] lg:w-1/2">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[60px] xs:mt-0 sm:mt-10  bottom-[-60px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-90px]">
                 <Image
-                  className="hero_clipPath w-full lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[800px] xl:h-[700px] 2xl:h-[800px] object-cover h-[350px] xs:h-[600px] sm:h-[550px]"
+                  ref={imageRef}
+                  className={`transition-transform transform ${
+                    imgScale ? "scale-110" : "scale-105"
+                  } transition-all hero_clipPath w-full lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[800px] xl:h-[700px] 2xl:h-[800px] h-[350px] xs:h-[600px] sm:h-[550px] `}
                   src="/images/webp/forrest_hero_img.webp"
                   width={808}
                   height={846}
