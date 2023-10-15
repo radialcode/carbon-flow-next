@@ -21,11 +21,12 @@ const Faq = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
+                  className="my-1"
                 >
                   <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[422px]">
                     {" "}
@@ -40,11 +41,12 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
+                  className="my-1"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -61,11 +63,12 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
+                  className="my-1"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
                     {" "}
@@ -83,11 +86,12 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
+                  className="my-1"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -103,11 +107,12 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color bg-[#FFFFFF17] rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
+                  className="my-1"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}

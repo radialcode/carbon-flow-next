@@ -94,16 +94,16 @@ const TeamMember = () => {
             <Slider
               {...settings}
               ref={first}
-              className="flex flex-wrap mt-[40px] mx-[-10px] relative"
+              className="flex flex-wrap mt-[40px] sm:mx-[-10px] relative sm:max-w-fit  max-w-[270px] xsm:max-w-[400px] mx-auto"
             >
               {TeamMemberSliderdata.map((data, index) => {
                 return (
                   <div className="w-3/12 h-full flex px-[10px]" key={index}>
-                    <div className="border-2 border-[#E6E9E7] hover:border-[#D2F958] rounded-[10px] h-full w-full">
+                    <div className="border border-[#E6E9E7] hover:outline-[#D2F958] hover:outline-[3px] hover:outline-offset-[-3px] hover:outline rounded-[10px] h-full w-full">
                       <div className="py-[22px]">
-                        <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto">
+                        <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto h-[110px]">
                           <Image
-                            className="w-full scale-110"
+                            className="w-full scale-110 object-cover"
                             width={96}
                             height={110}
                             src={data.img}

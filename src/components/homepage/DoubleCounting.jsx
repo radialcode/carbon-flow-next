@@ -6,7 +6,7 @@ const DoubleCounting = () => {
     <>
       <div
         id="workwithus"
-        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse gap-[20px] py-[50px] relative"
+        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col gap-[20px] py-[50px] relative"
       >
         <div className="md:w-[50%] lg:pe-[50px]">
           <div className="clipPath max-w-[558px]">
@@ -19,7 +19,7 @@ const DoubleCounting = () => {
             />
           </div>
         </div>
-        <div className="md:w-1/2 max-w-[496px] md:px-0 px-[14px] xl:me-[50px]">
+        <div className="md:w-1/2 md:max-w-[496px] md:px-0 px-[14px] xl:me-[50px]">
           <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[115%] capitalize">
             No double
             <span className="text-[#45B802]"> counting, issue carbon</span>{" "}

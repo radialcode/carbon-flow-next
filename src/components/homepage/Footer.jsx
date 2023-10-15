@@ -22,7 +22,7 @@ const Footer = () => {
           alt="leaf image"
         />
         <div className="flex flex-wrap justify-center translate-y-[-50%]">
-          <div className="w-full md:w-7/12 bg-[url('/images/png/netural-journey-bg-img.png')] bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
+          <div className="w-full max-w-[882px] bg-[url('/images/png/netural-journey-bg-img.png')] bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
             </h2>
@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 pb-[60px] sm:pb-[71px] z-10 relative mt-[-68px]">
           <div className="flex flex-col items-center justify-center">
             <Image
-              className=" w-[259px] sm:w-[454px]"
+              className=" w-[259px] lg:w-[454px] md:w-[350px]"
               width={454}
               height={75}
               src="/images/webp/footer-logo.webp"
