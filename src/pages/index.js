@@ -38,7 +38,7 @@ export default function Home() {
   
       <div className=" overflow-x-hidden">
         <Loader />
-        <Navbar />
+        {/* <Navbar /> */}
         <HomeHero />
         <MonthsSlider />
         <DataGildMine />
