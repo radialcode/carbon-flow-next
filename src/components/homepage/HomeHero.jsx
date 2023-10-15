@@ -7,10 +7,19 @@ const HomeHero = () => {
     <>
       <div className="bg-[#061E10] sm:h-[928px] xs:h-[830px] h-[900px] xs:min-h-screen lg:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative">
         <Navbar />
+        <a
+          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-0 uppercase tracking-[10px] lg:flex gap-[17px]"
+          href="#pitchingdeck"
+        >
+          <span className="rotate-90">
+            <ScrollDownIcon />
+          </span>
+          Scroll Down{" "}
+        </a>
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto pt-12">
           <div className=" flex flex-col lg:flex-row items-center  lg:justify-between ">
-            <div className="w-full md:w-[80%] lg:w-[50%] relative">
-              <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white ">
+            <div className="w-full md:w-[80%] lg:w-[58%] relative">
+              <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white lg:pb-20">
                 The <span className="text-[#44B902]">most effective way</span>{" "}
                 to measure Forrest & farm’s carbon{" "}
                 <span className="text-[#44B902]">credits without breaking</span>{" "}
@@ -21,15 +30,6 @@ const HomeHero = () => {
                 measure carbon credit with the nost accurate and the best cost
                 effective
               </p>
-              <a
-                className="absolute ff_poppins font-light text-[14px] text-white xl:top-[140%] top-[160%] lg:block hidden -translate-x-1/2 rotate-90 left-[-20px] uppercase tracking-[10px] flex"
-                href="#pitchingdeck"
-              >
-                Scroll Down{" "}
-                <span className="-rotate-90">
-                  <ScrollDownIcon />
-                </span>
-              </a>
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2 ">

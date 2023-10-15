@@ -21,7 +21,7 @@ const Faq = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
@@ -40,7 +40,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -61,13 +61,13 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
                 >
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
+                  <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
                     {" "}
                     How accurate are the carbon credit measurements provided by
                     CarbonFlow. and how do the compare to other methods in the
@@ -83,7 +83,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
@@ -103,7 +103,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color">
+              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px]">
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
