@@ -19,7 +19,7 @@ const HomeHero = () => {
   }, [inView]);
   return (
     <>
-      <div className="bg-[#061E10] h-[900px]  sm:min-h-screen 3xl:min-h-0 lg:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-12">
+      <div className="bg-[#061E10] h-[900px] md:h-[800px]  sm:min-h-screen 3xl:min-h-0 lg:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-12">
         <a
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] xl:flex gap-[17px]"
           href="#pitchingdeck">
@@ -42,7 +42,7 @@ const HomeHero = () => {
                 measure carbon credit with the nost accurate and the best cost
                 effective
               </p>
-              <div className="flex justify-between sm:justify-normal 2xsm:gap-[25px]  pt-[30px] items-center md:hidden">
+              <div className="flex justify-between xsm:justify-normal 2xsm:gap-[25px]  pt-[30px] items-center md:hidden">
                 <button className=" p-[14px_23px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200">
                   Start Measure!
                 </button>
@@ -56,7 +56,7 @@ const HomeHero = () => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[60px] xsm:mt-0  sm:mt-10 md:mt-56  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-90px]">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[60px] xsm:mt-0  sm:mt-16 md:mt-[110px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-90px]">
                 <Image
                   ref={imageRef}
                   className={`transition-transform transform ${
