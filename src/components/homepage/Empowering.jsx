@@ -16,7 +16,7 @@ const Empowering = () => {
           <div className="flex flex-wrap">
             <div className="w-full md:w-6/12">
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
-                <span className=" text-[#44B902]">Empowering</span> Change with
+                <span className=" text-[#44B902]">Empowering</span> Change With
                 CarbonFlow
               </h2>
               <h3 className="ff_AktivGrotesk_bold font-normal text-[18px] md:text-[24px] text-white mb-0 leading-[23.94px] md:leading-[31px] mt-[20px]">

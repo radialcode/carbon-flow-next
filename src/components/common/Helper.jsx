@@ -72,3 +72,8 @@ export const TeamMemberSliderdata = [
     profileBtn: "View profile",
   },
 ];
+
+
+export const FaqData=()=>{
+  
+}

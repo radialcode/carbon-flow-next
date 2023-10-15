@@ -9,6 +9,8 @@ module.exports = {
   ],
   theme: {
     screens: {
+      "2xsm": "375px",
+      // => @media (min-width: 375px) { ... }
       xsm: "480px",
       // custom screen
       xs: "576px",
@@ -48,6 +50,9 @@ module.exports = {
           xl: "70px",
           "2xl": "6rem",
         },
+      },
+      boxShadow: {
+        as_seen_on_box_shadow: " 0px 2px 30px 2px rgba(0, 0, 0, 0.08);",
       },
     },
   },
