@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 
 function Loader(props) {
   const [loader, setLoader] = useState(true); // Start with the loader initially visible
-
   useEffect(() => {
     setTimeout(() => {
       setLoader(false); // Hide the loader after a delay (e.g., 9000 milliseconds)
     }, 2000);
   }, []);
-
   useEffect(() => {
     if (loader) {
       document.body.style.overflow = "hidden";
