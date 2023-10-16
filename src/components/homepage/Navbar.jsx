@@ -8,13 +8,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (showNav) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("!overflow-hidden");
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("!overflow-hidden");
     }
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
   }, [showNav]);
 
   return (
@@ -36,6 +33,9 @@ const Navbar = () => {
         >
           <li>
             <a
+              onClick={() => {
+                setShowNav(false);
+              }}
               className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#globalwarming"
             >
@@ -44,6 +44,9 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              onClick={() => {
+                setShowNav(false);
+              }}
               className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#pitchingdeck"
             >
@@ -52,6 +55,9 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              onClick={() => {
+                setShowNav(false);
+              }}
               className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#investor"
             >
@@ -60,6 +66,9 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              onClick={() => {
+                setShowNav(false);
+              }}
               className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#team"
             >
@@ -68,13 +77,16 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              onClick={() => {
+                setShowNav(false);
+              }}
               className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#workwithus"
             >
               Work with us
             </a>
           </li>
-          <li className="ps-5">
+          <li className="lg:ps-5">
             <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
               Contact Us
             </button>
