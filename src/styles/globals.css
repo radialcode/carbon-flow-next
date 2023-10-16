@@ -8,7 +8,13 @@
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Bold.otf");
 }
-
+@font-face {
+  font-family: AktivGrotesk;
+  src: url("/fonts/AktivGrotesk-Regular.otf");
+}
+* {
+  font-family: AktivGrotesk;
+}
 .ff_AktivGrotesk_bold {
   font-family: AktivGrotesk !important;
 }
@@ -66,12 +72,13 @@
 }
 
 /* ==== HERO-CSS ===== */
-.image{
-transform: scale(1.1);
+.image {
+  transform: scale(1.1);
 }
-.image:hover{
-transform: scale(1);
+.image:hover {
+  transform: scale(1);
 }
+
 .hero_clipPath {
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");
@@ -174,5 +181,13 @@ transform: scale(1);
 @keyframes glidImgScale {
   from {
     transform: scale(1.8);
+  }
+}
+.scrolldown_animation {
+  animation: downarrow 1s ease-in-out infinite alternate;
+}
+@keyframes downarrow {
+  100% {
+    transform: rotate(90deg) translatey(5px);
   }
 }

@@ -15,6 +15,9 @@ import Faq from "@/components/homepage/Faq";
 import BackToTop from "@/components/common/BackToTop";
 import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,10 +31,19 @@ const pageSEO = {
   // SEO WEBSITE URL
   websiteURL: "https://carbon-flow.vercel.app/",
   // SEO IMAGE
-  image: "/public/Screenshot 2023-10-14 180455.png",
+  image: "https://carbon-flow.vercel.app/meta-image.png",
 };
+// AOS.init();
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      delay: 500,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <Seo pageSEO={pageSEO} />

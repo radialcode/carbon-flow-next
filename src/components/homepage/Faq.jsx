@@ -5,6 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { FaqIcon } from "../common/Icon";
+import Image from "next/image";
 
 const Faq = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -15,7 +16,14 @@ const Faq = () => {
 
   return (
     <>
-      <section className=" pt-[93px] pb-[257px] bg-[url('/images/png/faq-bg-img.png')] bg-fixed bg-no-repeat bg-cover bg-center">
+      <section className=" pt-[93px] pb-[257px] bg-[url('/images/png/faq-bg-img.png')] bg-fixed bg-no-repeat bg-cover bg-center relative">
+        <Image
+          className=" absolute bottom-0 left-0 w-full h-[100px] object-cover object-top"
+          width={1453}
+          height={100}
+          src="/images/png/footer_grassimg.png"
+          alt="footer-grass"
+        />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
           <h2 className=" ff_AktivGrotesk_bold font-normal sm:text-[36px] text-[32px] text-white capitalize text-center mb-0">
             What to know{" "}
@@ -41,7 +49,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
                     Yes, our mobile app is available to premier and premier plus
                     subscribers, allowing you to manage your business on the go.
                   </Typography>
@@ -65,7 +73,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -92,7 +100,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -117,7 +125,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -143,7 +151,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" ff_AktivGrotesk_bold font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
