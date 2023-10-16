@@ -191,3 +191,16 @@
     transform: rotate(90deg) translatey(5px);
   }
 }
+
+/* ===== NAVBAR CSS ===== */
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform 0.4s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+}
