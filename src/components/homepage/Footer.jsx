@@ -27,9 +27,12 @@ const Footer = () => {
               Start Your Carbon neutral journey, save the world
             </h2>
             <div className="flex justify-center mt-[30px]">
-              <button className=" ff_poppins font-semibold text-base text-white py-[12.5px] px-[22px] border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-[#4EB708] hover:border-[#4EB708] duration-200">
+              <button className=" ff_poppins font-semibold text-base text-white py-[12.5px] px-[22px] border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-[#4EB708] hover:border-[#4EB708] duration-200 sm:block hidden">
                 Measure Now
               </button>
+              <p className="ff_poppins font-semibold text-[16px] text-white sm:hidden leading-6">
+                No CC Required
+              </p>
             </div>
           </div>
         </div>

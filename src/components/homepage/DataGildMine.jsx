@@ -21,7 +21,7 @@ const DataGildMine = () => {
             decisions for your forest/ farm’s future success
           </p>
           <div className="flex gap-[25px] lg:pt-[35px] pt-[20px] items-center">
-            <button className="px-[23px] lg:py-[14px] py-[10px] border border-[#44B902] ff_poppins font-semibold text-[16px] text-[#061E10] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6">
+            <button className="px-[23px] lg:py-[14px] py-[10px] border border-[#44B902] ff_poppins font-semibold text-[16px] text-[#061E10] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 sm:block hidden ">
               Start Measure!
             </button>
             <p className="ff_poppins font-semibold text-[16px] text-[#061E10] leading-6">
