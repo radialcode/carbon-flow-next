@@ -50,7 +50,7 @@ const HomeHero = ({ heroImage }) => {
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
               <div
-                className={`
+                className={`top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] all duration-300 ease-in-out
                 // lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px] sm:mt-24 md:mt-[80px]
                 //  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]
                  ${heroImage}`}

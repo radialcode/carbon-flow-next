@@ -18,7 +18,7 @@
 }
 
 .ff_AktivGrotesk_bold {
-  font-family: AktivGrotesk ;
+  font-family: AktivGrotesk;
   font-weight: 600;
 }
 
@@ -83,6 +83,9 @@
 }
 
 .hero_clipPath {
+  transform: translate(0, 0) !important;
+  top: auto !important;
+  left: auto !important;
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");
   -webkit-mask-size: 100%;
