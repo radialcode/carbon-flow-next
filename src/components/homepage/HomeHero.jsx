@@ -11,7 +11,7 @@ const HomeHero = () => {
 
   return (
     <>
-      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[850px] lg:h-[600px] xl:min-h-screen xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
+      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[850px] lg:h-[600px] xl:min-h-full xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
         <a
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
           href="#pitchingdeck"
