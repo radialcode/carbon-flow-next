@@ -83,22 +83,15 @@ transform: scale(1);
   mask-repeat: no-repeat;
 }
 
-/* @media (max-width: 1280px) {
-  .hero_img_path2 {
-    width: 250px;
-    height: 500px;
+.hero_img_scale {
+  animation: heroImgScale 2s ease-in-out forwards;
+  animation-delay: 2500ms;
+}
+@keyframes heroImgScale {
+  from {
+    transform: scale(1.4);
   }
-
-  .hero_img_path1 {
-    width: 215px;
-    height: 316px;
-  }
-
-  .hero_img_path3 {
-    width: 215px;
-    height: 316px;
-  }
-} */
+}
 
 .slick-track {
   display: flex !important;
@@ -170,6 +163,16 @@ transform: scale(1);
 .loader div:nth-child(3) {
   animation-delay: 0.6s;
 }
-.css-67l5gl{
+.css-67l5gl {
   background-color: transparent !important;
+}
+
+.data_gild_img_scale {
+  animation: glidImgScale 2.5s ease-in-out forwards;
+  animation-delay: 200ms;
+}
+@keyframes glidImgScale {
+  from {
+    transform: scale(1.8);
+  }
 }
