@@ -17,7 +17,7 @@ const Faq = () => {
     <>
       <section className=" pt-[93px] pb-[257px] bg-[url('/images/png/faq-bg-img.png')] bg-fixed bg-no-repeat bg-cover bg-center">
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
-          <h2 className=" ff_AktivGrotesk_bold font-normal text-[36px] text-white capitalize text-center mb-0">
+          <h2 className=" ff_AktivGrotesk_bold font-normal sm:text-[36px] text-[32px] text-white capitalize text-center mb-0">
             What to know{" "}
             <span className=" text-[#44B902]">more in detail?</span> FAQ
           </h2>
