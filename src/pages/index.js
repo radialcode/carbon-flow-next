@@ -58,6 +58,7 @@ export default function Home() {
         // left: 0,
         position: "fixed",
         zIndex: 9999,
+        // background: "red",
         onComplete: () => {
           // Animation to move the image back to its original position
           gsap.to(image, {
@@ -82,9 +83,9 @@ export default function Home() {
     <>
       <Seo pageSEO={pageSEO} />
       <HomeHero heroImage="hero-image" />
+      <Loader />
 
       {/* <div className=" overflow-x-hidden">
-        <Loader />
         <Navbar />
         <MonthsSlider />
         <DataGildMine />
