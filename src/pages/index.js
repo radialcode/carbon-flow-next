@@ -52,23 +52,26 @@ export default function Home() {
       // Initial animation to make the image full-screen
       gsap.to(image, {
         duration: 1,
-        width: "100vw",
-        height: "100vh",
-        // top: 0,
-        // left: 0,
-        position: "fixed",
+        // width: "500px",
+        // height: "500px",
+        // translate:"-50%",
+        // translateX:"-50",
+        // translateY:"-50",
+        // top: "50",
+        // right: "50%",
         zIndex: 9999,
         // background: "red",
         onComplete: () => {
           // Animation to move the image back to its original position
           gsap.to(image, {
             duration: 1,
-            width: "auto",
-            height: "auto",
+            // width: "auto",
+            // height: "auto",
+            translateX:0,
+            translateY:0,
             bottom: "-60px",
             right: "-88px",
-            position: "absolute",
-            zIndex: 0,
+            // zIndex: 10,
             onComplete: () => {
               // Add a class when the animation is complete
               image.classList.add("hero_clipPath");
