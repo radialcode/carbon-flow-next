@@ -96,7 +96,7 @@ const Navbar = () => {
           onClick={() => {
             setShowNav(!showNav);
           }}
-          className="lg:hidden block relative z-50"
+          className="lg:hidden block relative z-50 cursor-pointer"
         >
           {showNav ? <CrossIcon /> : <MenuIcon />}
         </div>
