@@ -15,6 +15,9 @@ import Faq from "@/components/homepage/Faq";
 import BackToTop from "@/components/common/BackToTop";
 import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +33,16 @@ const pageSEO = {
   // SEO IMAGE
   image: "/public/Screenshot 2023-10-14 180455.png",
 };
+// AOS.init();
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      delay: 500,
+    }); // Refresh AOS when new content is loaded (e.g., when navigating to a new page)
+  }, []);
+
   return (
     <>
       <Seo pageSEO={pageSEO} />

@@ -24,6 +24,8 @@ const Faq = () => {
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
               <Accordion
+                data-aos="fade-up"
+                data-aos-delay="100"
                 expanded={expanded === "panel1"}
                 onChange={handleChange("panel1")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -48,6 +50,8 @@ const Faq = () => {
                 </AccordionDetails>
               </Accordion>
               <Accordion
+                data-aos="fade-up"
+                data-aos-delay="200"
                 expanded={expanded === "panel2"}
                 onChange={handleChange("panel2")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -74,6 +78,8 @@ const Faq = () => {
                 </AccordionDetails>
               </Accordion>
               <Accordion
+                data-aos="fade-up"
+                data-aos-delay="300"
                 expanded={expanded === "panel3"}
                 onChange={handleChange("panel3")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -101,6 +107,8 @@ const Faq = () => {
                 </AccordionDetails>
               </Accordion>
               <Accordion
+                data-aos="fade-up"
+                data-aos-delay="400"
                 expanded={expanded === "panel4"}
                 onChange={handleChange("panel4")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -126,6 +134,8 @@ const Faq = () => {
                 </AccordionDetails>
               </Accordion>
               <Accordion
+                data-aos="fade-up"
+                data-aos-delay="500"
                 expanded={expanded === "panel5"}
                 onChange={handleChange("panel5")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
