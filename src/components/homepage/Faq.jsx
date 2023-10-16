@@ -49,7 +49,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="pb-0 font-normal text-[14px] text-white pb-[16px]">
                     Yes, our mobile app is available to premier and premier plus
                     subscribers, allowing you to manage your business on the go.
                   </Typography>
@@ -73,7 +73,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="pb-0 font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -100,7 +100,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="pb-0 font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -125,7 +125,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="pb-0 font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -151,7 +151,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="pb-0 font-normal text-[14px] text-white pb-[16px]">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves

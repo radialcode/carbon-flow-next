@@ -81,18 +81,20 @@ const TeamMember = () => {
           </p>
 
           <div className="relative">
+            
             <div
               onClick={() => first.current.slickPrev()}
-              className="top-[50%] translate-y-[-50%] -left-[5%] 2xl:left-[-6%] absolute group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -left-[5%] 2xl:left-[-6%] absolute group arrows cursor-pointer hidden xl:block border-none rounded-full"
             >
               <TeamSliderArrowIcon />
             </div>
             <div
               onClick={() => first.current.slickNext()}
-              className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute group arrows cursor-pointer hidden xl:block border-none rounded-full rotate-180"
             >
               <TeamSliderArrowIcon />
             </div>
+            <div class="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"></div>
             <Slider
               {...settings}
               ref={first}
