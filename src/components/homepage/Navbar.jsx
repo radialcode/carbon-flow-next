@@ -8,13 +8,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (showNav) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("!overflow-hidden");
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("!overflow-hidden");
     }
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
   }, [showNav]);
 
   return (
@@ -89,7 +86,7 @@ const Navbar = () => {
               Work with us
             </a>
           </li>
-          <li className="ps-5">
+          <li className="lg:ps-5">
             <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
               Contact Us
             </button>
