@@ -40,6 +40,7 @@ export default function Home() {
     AOS.init({
       duration: 500,
       delay: 500,
+      once: true,
     }); // Refresh AOS when new content is loaded (e.g., when navigating to a new page)
   }, []);
 

@@ -38,14 +38,14 @@ const HomeHero = () => {
                 effective
               </p>
 
-              <button className="p-[12px_23px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200 mt-[30px] xl:mt-[50px] max-w-[180px] leading-normal">
+              <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200 mt-[30px] xl:mt-[50px] leading-normal flex items-center gap-[22px]">
                 Start Measure!{" "}
-                <span className="text-[12px] leading-normal">
+                <span className="text-[10px] opacity-50 group:hover:opacity-80 leading-normal after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-white after:opacity-10  after:-translate-y-1/2">
                   No CC Required
                 </span>
               </button>
 
-              <p className="text-[12px] ff_poppins font-bold italic text-white pt-[18px] md:hidden">
+              <p className="text-[12px] ff_poppins font-bold italic text-white pt-[14px]">
                 Best on 5 years research pulished in blr blr blr
               </p>
             </div>
