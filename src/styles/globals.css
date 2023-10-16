@@ -12,11 +12,13 @@
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Regular.otf");
 }
-* {
-  font-family: AktivGrotesk;
-}
-.ff_AktivGrotesk_bold {
+body {
   font-family: AktivGrotesk !important;
+}
+
+.ff_AktivGrotesk_bold {
+  font-family: AktivGrotesk ;
+  font-weight: 600;
 }
 
 .ff_poppins {
