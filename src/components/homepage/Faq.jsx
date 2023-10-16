@@ -50,7 +50,7 @@ const Faq = () => {
               <Accordion
                 expanded={expanded === "panel2"}
                 onChange={handleChange("panel2")}
-                className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]"
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
@@ -76,7 +76,7 @@ const Faq = () => {
               <Accordion
                 expanded={expanded === "panel3"}
                 onChange={handleChange("panel3")}
-                className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]"
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
@@ -103,7 +103,7 @@ const Faq = () => {
               <Accordion
                 expanded={expanded === "panel4"}
                 onChange={handleChange("panel4")}
-                className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]"
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
@@ -128,7 +128,7 @@ const Faq = () => {
               <Accordion
                 expanded={expanded === "panel5"}
                 onChange={handleChange("panel5")}
-                className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]"
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
