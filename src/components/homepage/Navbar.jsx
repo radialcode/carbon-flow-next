@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` bg-[#0D2517]  z-[100] w-full   top-0  black fixed py-3  flex justify-between right-0 ${
+      className={` bg-[#0D2517]  z-[100] w-full   top-0  black fixed   flex justify-between right-0 ${
         scrollPosition > 200 ? "  slideUp" : " slideDown"
       } ${isVisible ? " slideDown" : " slideUp"} `}>
       <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto  flex justify-between items-center md:py-[14px] py-[23px] px-3 xl:px-0">
