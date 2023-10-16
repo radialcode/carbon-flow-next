@@ -18,6 +18,7 @@ import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import gsap from "gsap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,22 +37,51 @@ const pageSEO = {
 // AOS.init();
 
 export default function Home() {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 500,
+  //     delay: 500,
+  //     once: true,
+  //   });
+  // }, []);
+
   useEffect(() => {
-    AOS.init({
-      duration: 500,
-      delay: 500,
-      once: true,
-    });
+    const image = document.querySelector(".hero-image");
+
+    if (image) {
+      // Initial animation to make the image full-screen
+      gsap.to(image, {
+        duration: 1,
+        width: "100vw",
+        height: "100vh",
+        top: 0,
+        left: 0,
+        position: "fixed",
+        zIndex: 9999,
+        onComplete: () => {
+          // Animation to move the image back to its original position
+          gsap.to(image, {
+            duration: 1,
+            width: "auto",
+            height: "auto",
+            top: "your-original-top-position",
+            left: "your-original-left-position",
+            position: "absolute",
+            zIndex: 0,
+          });
+        },
+      });
+    }
   }, []);
 
   return (
     <>
       <Seo pageSEO={pageSEO} />
+      <HomeHero heroImage="hero-image" />
 
-      <div className=" overflow-x-hidden">
+      {/* <div className=" overflow-x-hidden">
         <Loader />
         <Navbar />
-        <HomeHero />
         <MonthsSlider />
         <DataGildMine />
         <DoubleCounting />
@@ -61,7 +91,8 @@ export default function Home() {
         <Faq />
         <Footer />
         <BackToTop />
-      </div>
+      </div> */}
+      <div></div>
     </>
   );
 }

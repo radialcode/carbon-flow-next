@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
 import { ScrollDownIcon } from "../common/Icon";
-const HomeHero = () => {
+const HomeHero = ({heroImage}) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -24,9 +24,7 @@ const HomeHero = () => {
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center  lg:justify-between ">
             <div className="w-full md:w-[90%] lg:w-[58%] relative">
-              <h1
-                className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white"
-              >
+              <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white">
                 The <span className="text-[#44B902]">most effective way</span>{" "}
                 to measure Forrest & farm’s carbon{" "}
                 <span className="text-[#44B902]">credits without breaking</span>{" "}
@@ -52,7 +50,7 @@ const HomeHero = () => {
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
               <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
-                <Image
+                {/* <Image
                   ref={ref}
                   className={`object-cover ${
                     inView ? "hero_img_scale " : "hero_img_scale"
@@ -61,6 +59,11 @@ const HomeHero = () => {
                   width={808}
                   height={846}
                   alt="blockchain"
+                /> */}
+                <img
+                  className={heroImage}
+                  src="/images/webp/forrest_hero_img.webp"
+                  alt="df"
                 />
               </div>
             </div>
