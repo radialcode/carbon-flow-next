@@ -22,7 +22,7 @@ const AsSeenOn = () => {
           alt="month leaf image"
         />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <h2 className="ff_AktivGrotesk_bold font-normal text-[24px] md:text-[36px] text-[#061E10] mb-0 text-center">
+          <h2 className="ff_AktivGrotesk_bold font-bold text-[24px] md:text-[36px] text-[#061E10] mb-0 text-center">
             As Seen On
           </h2>
           <div className="flex flex-wrap justify-center mt-[35px]">

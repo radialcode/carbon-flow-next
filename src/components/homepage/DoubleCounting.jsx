@@ -29,7 +29,7 @@ const DoubleCounting = () => {
           </div>
         </div>
         <div className="md:w-1/2 md:max-w-[496px] md:px-0 px-[14px] xl:me-[50px]">
-          <h2 className="font-normal lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[117%] capitalize">
+          <h2 className="font-bold lg:text-[36px] text-[28px] text-black ff_AktivGrotesk_bold leading-[117%] capitalize">
             No double
             <span className="text-[#45B802]"> counting, issue carbon</span>{" "}
             credit on blockchain
