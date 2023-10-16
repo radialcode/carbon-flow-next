@@ -6,14 +6,7 @@ const Empowering = () => {
     <>
       <section className=" bg-[url('/images/png/empowering-bg-img.png')]">
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative pt-[31px] md:py-[52px] lg:py-[102px]">
-          <Image
-            className=" w-[412px] lg:w-[512px] absolute right-0 bottom-0 hidden md:block"
-            width={512}
-            height={555}
-            src="/images/webp/empowering-img.webp"
-            alt="empowering image"
-          />
-          <div className="flex flex-wrap">
+          <div className="flex xl:justify-between flex-wrap px-3 xl:px-0">
             <div className="w-full md:w-6/12">
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
@@ -65,16 +58,14 @@ const Empowering = () => {
                 Read More
               </button>
             </div>
-            <div className="w-full md:w-6/12 md:hidden">
-              <div className=" flex justify-center">
-                <Image
-                  className=" w-[312px] md:w-[412px] lg:w-[512px] mt-[38px]"
-                  width={512}
-                  height={555}
-                  src="/images/webp/empowering-img.webp"
-                  alt="empowering image"
-                />
-              </div>
+            <div className="w-full md:w-[42%] lg:w-[40%] xl:w-[30%] md:absolute bottom-0 end-0 pt-10 md:pt-0">
+              <Image
+                className="max-w-[300px] lg:max-w-[350px] mx-auto"
+                width={512}
+                height={555}
+                src="/images/png/empowering_img.png"
+                alt="empowering image"
+              />
             </div>
           </div>
         </div>

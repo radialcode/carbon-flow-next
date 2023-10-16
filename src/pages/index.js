@@ -54,8 +54,8 @@ export default function Home() {
         duration: 1,
         width: "100vw",
         height: "100vh",
-        top: 0,
-        left: 0,
+        // top: 0,
+        // left: 0,
         position: "fixed",
         zIndex: 9999,
         onComplete: () => {
@@ -64,10 +64,14 @@ export default function Home() {
             duration: 1,
             width: "auto",
             height: "auto",
-            top: "your-original-top-position",
-            left: "your-original-left-position",
+            bottom: "-60px",
+            right: "-88px",
             position: "absolute",
             zIndex: 0,
+            onComplete: () => {
+              // Add a class when the animation is complete
+              image.classList.add("hero_clipPath");
+            },
           });
         },
       });

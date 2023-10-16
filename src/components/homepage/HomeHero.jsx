@@ -4,14 +4,14 @@ import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
 import { ScrollDownIcon } from "../common/Icon";
-const HomeHero = ({heroImage}) => {
+const HomeHero = ({ heroImage }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
   return (
     <>
-      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[850px] lg:h-[600px] xl:min-h-full xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
+      <div className="bg-[#061E10] h-[1000px] xs:h-[950px] lg:h-[620px] 2xl:min-h-screen xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-[130px] md:pt-[120px]  3xl:pt-0">
         <a
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
           href="#pitchingdeck"
@@ -49,22 +49,26 @@ const HomeHero = ({heroImage}) => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
-                {/* <Image
+              <div
+                className={`
+                // lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px] sm:mt-24 md:mt-[80px]
+                //  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]
+                 ${heroImage}`}
+              >
+                <Image
                   ref={ref}
-                  className={`object-cover ${
-                    inView ? "hero_img_scale " : "hero_img_scale"
-                  }  hero_clipPath w-full lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[750px] 3xl:max-w-[900px] xl:h-[700px] 2xl:h-[750px] 3xl:h-[900px] h-[350px] xsm:h-[600px] sm:h-[550px] `}
+                  className="object-cover hero_img_scale hero_clipPath w-full lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[750px] 3xl:max-w-[900px] xl:h-[700px] 2xl:h-[750px] 3xl:h-[900px] h-[350px] xsm:h-[600px] sm:h-[550px]"
                   src="/images/webp/forrest_hero_img.webp"
                   width={808}
                   height={846}
                   alt="blockchain"
-                /> */}
+                />
+                {/*                 
                 <img
                   className={heroImage}
                   src="/images/webp/forrest_hero_img.webp"
                   alt="df"
-                />
+                /> */}
               </div>
             </div>
           </div>
