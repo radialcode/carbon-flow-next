@@ -45,47 +45,47 @@ export default function Home() {
   //   });
   // }, []);
 
-  useEffect(() => {
-    const image = document.querySelector(".hero-image");
+  // useEffect(() => {
+  //   const image = document.querySelector(".hero-image");
 
-    if (image) {
-      // Initial animation to make the image full-screen
-      gsap.to(image, {
-        duration: 1,
-        width: "100vw",
-        height: "100vh",
-        // top: 0,
-        // left: 0,
-        position: "fixed",
-        zIndex: 9999,
-        // background: "red",
-        onComplete: () => {
-          // Animation to move the image back to its original position
-          gsap.to(image, {
-            duration: 1,
-            width: "auto",
-            height: "auto",
-            bottom: "-60px",
-            right: "-88px",
-            position: "absolute",
-            zIndex: 0,
-            onComplete: () => {
-              // Add a class when the animation is complete
-              image.classList.add("hero_clipPath");
-            },
-          });
-        },
-      });
-    }
-  }, []);
+  //   if (image) {
+  //     // Initial animation to make the image full-screen
+  //     gsap.to(image, {
+  //       duration: 1,
+  //       width: "100vw",
+  //       height: "100vh",
+  //       // top: 0,
+  //       // left: 0,
+  //       position: "fixed",
+  //       zIndex: 9999,
+  //       // background: "red",
+  //       onComplete: () => {
+  //         // Animation to move the image back to its original position
+  //         gsap.to(image, {
+  //           duration: 1,
+  //           width: "auto",
+  //           height: "auto",
+  //           bottom: "-60px",
+  //           right: "-88px",
+  //           position: "absolute",
+  //           zIndex: 0,
+  //           onComplete: () => {
+  //             // Add a class when the animation is complete
+  //             image.classList.add("hero_clipPath");
+  //           },
+  //         });
+  //       },
+  //     });
+  //   }
+  // }, []);
 
   return (
     <>
       <Seo pageSEO={pageSEO} />
       <HomeHero heroImage="hero-image" />
-      <Loader />
+      <Loader/>
 
-      {/* <div className=" overflow-x-hidden">
+      <div className=" overflow-x-hidden">
         <Navbar />
         <MonthsSlider />
         <DataGildMine />
@@ -96,7 +96,7 @@ export default function Home() {
         <Faq />
         <Footer />
         <BackToTop />
-      </div> */}
+      </div>
       <div></div>
     </>
   );

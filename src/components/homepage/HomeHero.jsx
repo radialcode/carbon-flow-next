@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
 import { ScrollDownIcon } from "../common/Icon";
-const HomeHero = ({ heroImage }) => {
+const HomeHero = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -50,10 +50,9 @@ const HomeHero = ({ heroImage }) => {
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
               <div
-                className={`
-                // lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px] sm:mt-24 md:mt-[80px]
-                //  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]
-                 ${heroImage}`}
+                className="
+                lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px] sm:mt-24 md:mt-[80px]
+                bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]"
               >
                 <Image
                   ref={ref}
