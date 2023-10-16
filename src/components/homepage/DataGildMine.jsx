@@ -34,7 +34,7 @@ const DataGildMine = () => {
             </button>
           </div>
         </div>
-        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110">
+        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110 abcd">
           <Image
             ref={ref}
             className={` ${

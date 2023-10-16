@@ -78,6 +78,7 @@
 .image:hover {
   transform: scale(1);
 }
+
 .hero_clipPath {
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");

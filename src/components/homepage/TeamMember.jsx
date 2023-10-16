@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { TeamMemberSliderdata } from "../common/Helper";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import { TeamSliderArrowIcon } from "../common/Icon";
 
 const TeamMember = () => {
   const first = React.useRef();
+  const [ArrowActive, setArrowActive] = useState(true);
   var settings = {
     dots: false,
     infinite: true,
