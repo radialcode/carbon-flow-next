@@ -6,12 +6,12 @@ import "intersection-observer";
 import { ScrollDownIcon } from "../common/Icon";
 const HomeHero = () => {
   const [ref, inView] = useInView({
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   return (
     <>
-      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[800px] lg:h-[600px] xl:min-h-full xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
+      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[850px] lg:h-[600px] xl:min-h-full xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
         <a
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
           href="#pitchingdeck">
@@ -34,21 +34,21 @@ const HomeHero = () => {
                 measure carbon credit with the nost accurate and the best cost
                 effective
               </p>
-              <div className="flex 2xsm:gap-[25px]  pt-[30px] items-center md:hidden">
-                <button className=" p-[14px_23px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200">
-                  Start Measure!
-                </button>
-                <p className="ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white duration-200 hover:text-[#44B902]">
+
+              <button className="p-[12px_23px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200 mt-[30px] xl:mt-[50px] max-w-[180px] leading-normal">
+                Start Measure!{" "}
+                <span className="text-[12px] leading-normal">
                   No CC Required
-                </p>
-              </div>
+                </span>
+              </button>
+
               <p className="text-[12px] ff_poppins font-bold italic text-white pt-[18px] md:hidden">
                 Best on 5 years research pulished in blr blr blr
               </p>
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[80px]  sm:mt-16 md:mt-[110px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
                 <Image
                   ref={ref}
                   className={`object-cover ${

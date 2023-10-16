@@ -5,7 +5,7 @@ import "intersection-observer";
 
 const DoubleCounting = () => {
   const [ref, inView] = useInView({
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   return (
