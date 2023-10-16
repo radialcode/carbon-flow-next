@@ -48,7 +48,7 @@ const HomeHero = () => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
                 <Image
                   ref={ref}
                   className={`object-cover ${
