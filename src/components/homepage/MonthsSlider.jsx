@@ -2,6 +2,7 @@ import React from "react";
 import { monthSliderdata } from "../common/Helper";
 import Slider from "react-slick";
 import Image from "next/image";
+
 const MonthsSlider = () => {
   var settings = {
     dots: true,
@@ -43,6 +44,7 @@ const MonthsSlider = () => {
       },
     ],
   };
+
   return (
     <>
       <section

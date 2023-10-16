@@ -1,7 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 
 const DataGildMine = () => {
+  const [ref, inView] = useInView({});
+
   return (
     <>
       <div
@@ -31,7 +35,10 @@ const DataGildMine = () => {
         </div>
         <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110">
           <Image
-            className="object-cover object-top"
+            ref={ref}
+            className={` ${
+              inView ? "data_gild_img_scale" : ""
+            } object-cover object-top `}
             src="/images/png/gildImage.png"
             alt="gild mine"
             width={602}
