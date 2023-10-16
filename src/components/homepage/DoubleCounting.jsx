@@ -12,9 +12,9 @@ const DoubleCounting = () => {
     <>
       <div
         id="workwithus"
-        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col gap-[20px] pb-[30px] relative pt-[70px] lg:pt-0"
+        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col gap-[20px] pb-[30px] relative pt-[50px] lg:pt-0"
       >
-        <div className="md:w-[50%] lg:pe-[50px]">
+        <div className="md:w-[50%] lg:py-[50px]">
           <div className="clipPath md:max-w-[558px] max-w-[430px]">
             <Image
               ref={ref}
@@ -44,9 +44,9 @@ const DoubleCounting = () => {
             carbon credit markets
           </p>
           <div className="lg:pt-[35px] pt-[20px]">
-            <button className="px-[23px] py-[10.5px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#061E10] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 ">
+            <button className="px-[23px] py-[10.5px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#061E10] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 flex items-center gap-[22px]">
               Start Measure!
-              <span className="ff_poppins font-semibold text-[12px] text-[#061E10] block leading-[18px] group-hover:text-white">
+              <span className="ff_poppins font-semibold text-[10px] text-[#061E10] block leading-[18px] group-hover:text-white opacity-50 after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-[#061E10] group-hover:opacity-90 group-hover:after:opacity-40  after:opacity-10  after:-translate-y-1/2 ">
                 No CC Required
               </span>
             </button>

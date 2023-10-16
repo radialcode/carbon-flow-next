@@ -31,7 +31,7 @@ const pageSEO = {
   // SEO WEBSITE URL
   websiteURL: "https://carbon-flow.vercel.app/",
   // SEO IMAGE
-  image: "/public/Screenshot 2023-10-14 180455.png",
+  image: "https://carbon-flow.vercel.app/meta-image.png",
 };
 // AOS.init();
 
@@ -41,7 +41,7 @@ export default function Home() {
       duration: 500,
       delay: 500,
       once: true,
-    }); // Refresh AOS when new content is loaded (e.g., when navigating to a new page)
+    });
   }, []);
 
   return (

@@ -16,7 +16,7 @@ const HomeHero = () => {
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
           href="#pitchingdeck"
         >
-          <span className="rotate-90">
+          <span className="rotate-90 scrolldown_animation">
             <ScrollDownIcon />
           </span>
           Scroll Down
