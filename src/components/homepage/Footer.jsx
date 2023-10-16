@@ -26,9 +26,12 @@ const Footer = () => {
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
             </h2>
-            <div className="flex justify-center mt-[30px]">
-              <button className=" ff_poppins font-semibold text-base text-white py-[12.5px] px-[22px] border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-[#4EB708] hover:border-[#4EB708] duration-200">
-                Measure Now
+            <div className="mt-[30px] flex justify-center">
+              <button className="px-[23px] py-[10.5px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 ">
+                Start Measure!
+                <span className="ff_poppins font-semibold text-[12px] text-white block leading-[18px] group-hover:text-[#44B902] duration-200">
+                  No CC Required
+                </span>
               </button>
             </div>
           </div>

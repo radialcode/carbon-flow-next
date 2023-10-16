@@ -7,26 +7,34 @@ import Typography from "@mui/material/Typography";
 import { FaqIcon } from "../common/Icon";
 
 const Faq = () => {
-  const [open, setOpen] = useState(1);
-  const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
   };
+
   return (
     <>
       <section className=" pt-[93px] pb-[257px] bg-[url('/images/png/faq-bg-img.png')] bg-fixed bg-no-repeat bg-cover bg-center">
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
-          <h2 className=" ff_AktivGrotesk_bold font-normal text-[36px] text-white capitalize text-center mb-0">
+          <h2 className=" ff_AktivGrotesk_bold font-normal sm:text-[36px] text-[32px] text-white capitalize text-center mb-0">
             What to know{" "}
             <span className=" text-[#44B902]">more in detail?</span> FAQ
           </h2>
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]">
+              <Accordion
+                data-aos="fade-up"
+                data-aos-delay="100"
+                expanded={expanded === "panel1"}
+                onChange={handleChange("panel1")}
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+              >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
-                  className="my-1"
+                  className="my-1 items-baseline"
                 >
                   <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[422px]">
                     {" "}
@@ -41,12 +49,18 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
+              <Accordion
+                data-aos="fade-up"
+                data-aos-delay="200"
+                expanded={expanded === "panel2"}
+                onChange={handleChange("panel2")}
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+              >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1"
+                  className="my-1 items-baseline"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -63,12 +77,18 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
+              <Accordion
+                data-aos="fade-up"
+                data-aos-delay="300"
+                expanded={expanded === "panel3"}
+                onChange={handleChange("panel3")}
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+              >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1"
+                  className="my-1 items-baseline"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
                     {" "}
@@ -86,12 +106,18 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
+              <Accordion
+                data-aos="fade-up"
+                data-aos-delay="400"
+                expanded={expanded === "panel4"}
+                onChange={handleChange("panel4")}
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+              >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1"
+                  className="my-1 items-baseline"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -107,16 +133,23 @@ const Faq = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion className="border-b mt-[7px] sm:mt-4 faq_bg_color rounded-[5px] min-h-[80px]">
+              <Accordion
+                data-aos="fade-up"
+                data-aos-delay="500"
+                expanded={expanded === "panel5"}
+                onChange={handleChange("panel5")}
+                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+              >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1"
+                  className="my-1 items-baseline"
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
-                    What is the pricing structure for CarbonFlow? Is it a subscription service, a one-time fee, or based on usage?
+                    What is the pricing structure for CarbonFlow? Is it a
+                    subscription service, a one-time fee, or based on usage?
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

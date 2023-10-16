@@ -61,8 +61,7 @@ const TeamMember = () => {
     <>
       <section
         id="team"
-        className="pt-[106px] md:pt-[120px] pb-[101px] relative"
-      >
+        className="pt-[106px] md:pt-[120px] pb-[101px] relative">
         <Image
           className=" w-[153px] absolute right-[26px] bottom-0 hidden md:block z-0"
           width={153}
@@ -95,8 +94,7 @@ const TeamMember = () => {
             <Slider
               {...settings}
               ref={first}
-              className="flex flex-wrap mt-[40px] sm:mx-[-10px] relative sm:max-w-fit  max-w-[270px] xsm:max-w-[400px] mx-auto"
-            >
+              className="flex flex-wrap mt-[40px] sm:mx-[-10px] relative sm:max-w-fit  max-w-[270px] xsm:max-w-[400px] mx-auto">
               {TeamMemberSliderdata.map((data, index) => {
                 return (
                   <div className="w-3/12 h-full flex px-[10px]" key={index}>
@@ -104,7 +102,7 @@ const TeamMember = () => {
                       <div className="py-[22px]">
                         <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto h-[110px]">
                           <Image
-                            className="w-full scale-110 object-cover"
+                            className="w-full  object-cover"
                             width={96}
                             height={110}
                             src={data.img}
@@ -131,14 +129,12 @@ const TeamMember = () => {
             <div className="flex justify-center gap-[8px] mt-[27px] xl:hidden">
               <div
                 onClick={() => first.current.slickPrev()}
-                className="group cursor-pointer"
-              >
+                className="group cursor-pointer">
                 <TeamSliderArrowIcon />
               </div>
               <div
                 onClick={() => first.current.slickNext()}
-                className="rotate-[180deg] group cursor-pointer"
-              >
+                className="rotate-[180deg] group cursor-pointer">
                 <TeamSliderArrowIcon />
               </div>
             </div>
