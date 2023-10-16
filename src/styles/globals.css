@@ -12,8 +12,9 @@
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Regular.otf");
 }
-body {
-  font-family: AktivGrotesk !important;
+.ff_AktivGrotesk{
+  font-family: AktivGrotesk;
+  font-weight: 400;
 }
 
 .ff_AktivGrotesk_bold {
