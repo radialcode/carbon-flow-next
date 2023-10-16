@@ -56,13 +56,14 @@ const MonthsSlider = () => {
           alt="leaf image"
         />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <Slider {...settings} className="flex flex-wrap mx-[-24px]">
+          <Slider {...settings} className="flex flex-wrap mx-[-20px]">
             {monthSliderdata.map((data, index) => {
               return (
                 <div
-                  className="w-4/12 border_grideant py-[33px] md:py-0 md:pt-[20px] md:pb-[78px] h-full px-[12px]"
-                  key={index}>
-                  <div className="px-[21px] xs:px-[24px] xl:pl-[44px] xl:pr-[16px]">
+                  className=" py-[33px] md:py-0 md:pt-[20px] md:pb-[25px] h-full px-[10px]"
+                  key={index}
+                >
+                  <div className="px-[21px] xs:px-[28px] border_grideant">
                     <span>{data.svgicon}</span>
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 mt-[24px] leading-[43.7px] capitalize">
                       {data.heading}

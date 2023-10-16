@@ -31,8 +31,8 @@ function Loader(props) {
   return (
     <>
       {loader ? (
-        <section className="w-full h-screen bg-black relative z-[999]">
-          <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 flex justify-center">
+        <section className="fixed left-0 top-0 w-full h-screen bg-black z-[999] flex justify-center items-center">
+          <div className="relative z-50">
             <div className="relative h-20 w-6/12 rounded-full border-transparent">
               <div class="loader bg-black p-5 rounded-full flex space-x-4">
                 <div class="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
