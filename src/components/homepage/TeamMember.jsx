@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { TeamMemberSliderdata } from "../common/Helper";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import { TeamSliderArrowIcon } from "../common/Icon";
 
 const TeamMember = () => {
   const first = React.useRef();
+  const [ArrowActive, setArrowActive] = useState(true);
   var settings = {
     dots: false,
     infinite: true,
@@ -81,13 +82,13 @@ const TeamMember = () => {
           <div className="relative">
             <div
               onClick={() => first.current.slickPrev()}
-              className="top-[50%] translate-y-[-50%] -left-[5%] 2xl:left-[-6%] absolute group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -left-[5%] 2xl:left-[-6%] absolute rotate-[180deg] group cursor-pointer hidden bg-red-700 rounded-full w-[40px] h-[40px] xl:flex justify-center items-center"
             >
               <TeamSliderArrowIcon />
             </div>
             <div
               onClick={() => first.current.slickNext()}
-              className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"
+              className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute group cursor-pointer hidden bg-red-700 rounded-full w-[40px] h-[40px] xl:flex justify-center items-center"
             >
               <TeamSliderArrowIcon />
             </div>
