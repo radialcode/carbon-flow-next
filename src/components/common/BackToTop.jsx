@@ -24,7 +24,7 @@ const BackToTop = () => {
   return (
     <>
       <div
-        className={`fixed bg-[#3EA603] bottom-[3%] border border-white border-dashed transition-all duration-300 ease-linear end-3 z-50 w-9 md:h-11 h-9 md:w-11 flex items-center justify-center cursor-pointer rounded-full hover:shadow-backtop  ${
+        className={`fixed bg-[#3EA603] bottom-[3%] border border-white border-dashed transition-all duration-300 ease-linear end-3 z-50 w-9 md:h-11 h-9 md:w-11 flex items-center justify-center cursor-pointer rounded-full hover:shadow-backtop scrolldown_animation  ${
           scrollPosition > 200 ? "scale-100 " : " scale-0"
         }`}
         onClick={() => scrollToTop()}

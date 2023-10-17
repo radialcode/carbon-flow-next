@@ -13,26 +13,26 @@ const HomeHero = () => {
     <>
       <div className="bg-[#061E10] h-[1000px] xs:h-[950px] lg:h-[620px] 2xl:min-h-screen xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-[130px] md:pt-[120px]  3xl:pt-0">
         <a
-          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
-          href="#pitchingdeck">
+          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex gap-[17px]"
+          href="#pitchingdeck"
+        >
           <span className="rotate-90 scrolldown_animation">
             <ScrollDownIcon />
           </span>
           Scroll Down
         </a>
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
-          <div className=" flex flex-col lg:flex-row items-center  lg:justify-between ">
-            <div className="w-full md:w-[90%] lg:w-[58%] relative">
+          <div className=" flex flex-col lg:flex-row items-center lg:justify-between ">
+            <div className="w-full relative">
               <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white">
-                The <span className="text-[#44B902]">most effective way</span>{" "}
-                to measure Forrest & farm’s carbon{" "}
-                <span className="text-[#44B902]">credits without breaking</span>{" "}
-                the bank
+                Direct Measure,{" "}
+                <span className="text-[#44B902] block">Direct Matter !</span>
               </h1>
-              <p className="ff_poppins text-base font-normal capitalize leading-[160%] text-white md:hidden pt-[18px]">
-                Using Satellite and predictive AI gives unparalleled way to
-                measure carbon credit with the nost accurate and the best cost
-                effective
+              <p className="ff_poppins text-base font-normal capitalize leading-[160%] text-white pt-[18px] sm:w-[542px] w-full">
+                The Most Effective way to Measure Forrest & Farm's Carbon
+                Credits without breaking the bank by using Satellite and
+                Predictive AI. These give unparalleled way to measure carbon
+                credit.
               </p>
 
               <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200 mt-[30px] xl:mt-[50px] leading-normal flex items-center gap-[22px]">
@@ -43,7 +43,7 @@ const HomeHero = () => {
               </button>
 
               <p className="text-[12px] ff_poppins font-bold italic text-white pt-[14px]">
-                Best on 5 years research pulished in blr blr blr
+                Published in Journal of Geophysical Research: Biogeosciences
               </p>
             </div>
 
@@ -61,9 +61,11 @@ const HomeHero = () => {
                 />
               </div>
             </div>
+            
           </div>
         </div>
       </div>
+  
     </>
   );
 };

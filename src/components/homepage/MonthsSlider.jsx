@@ -69,7 +69,7 @@ const MonthsSlider = () => {
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
                     <span>{data.svgicon}</span>
-                    <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 mt-[24px] leading-[43.7px] capitalize">
+                    <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
                       {data.heading}
                     </h2>
                     <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px] capitalize">

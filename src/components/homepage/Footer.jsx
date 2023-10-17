@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="mt-[30px] flex justify-center">
               <button className="px-[23px] py-[10.5px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 flex items-center gap-[22px]">
                 Start Measure!
-                <span className="ff_poppins font-semibold text-[10px] text-white block leading-[18px] group-hover:text-[#44B902] opacity-70 after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-white group-hover:opacity-90 group-hover:after:opacity-40 group-hover:after:bg-[#44B902] after:duration-200 duration-200  after:opacity-10  after:-translate-y-1/2 ">
+                <span className="ff_poppins font-semibold text-[10px] text-white block leading-[18px] group-hover:text-[#44B902] opacity-70 after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-white group-hover:opacity-90 group-hover:after:opacity-40 group-hover:after:bg-[#44B902] after:duration-200 duration-200  after:opacity-50  after:-translate-y-1/2 ">
                   No CC Required
                 </span>
               </button>
