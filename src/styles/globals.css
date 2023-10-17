@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: AktivGrotesk;
+  font-family: AktivGrotesk bold;
   src: url("/fonts/AktivGrotesk-Bold.otf");
 }
 @font-face {
@@ -17,9 +17,11 @@
   font-weight: 400;
 }
 
-.ff_AktivGrotesk_bold {
+.ff_AktivGrotesk {
   font-family: AktivGrotesk;
-  font-weight: 600;
+}
+.ff_AktivGrotesk_bold {
+  font-family: AktivGrotesk bold;
 }
 
 .ff_poppins {
@@ -83,9 +85,6 @@
 }
 
 .hero_clipPath {
-  transform: translate(0, 0) !important;
-  top: auto !important;
-  left: auto !important;
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");
   -webkit-mask-size: 100%;

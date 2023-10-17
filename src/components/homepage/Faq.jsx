@@ -40,7 +40,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[422px]">
                     {" "}
@@ -64,7 +64,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -90,7 +90,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
                     {" "}
@@ -117,7 +117,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -142,7 +142,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}

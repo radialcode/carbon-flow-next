@@ -18,7 +18,6 @@ import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import gsap from "gsap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,59 +36,22 @@ const pageSEO = {
 // AOS.init();
 
 export default function Home() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 500,
-  //     delay: 500,
-  //     once: true,
-  //   });
-  // }, []);
-
   useEffect(() => {
-    const image = document.querySelector(".hero-image");
-
-    if (image) {
-      // Initial animation to make the image full-screen
-      gsap.to(image, {
-        duration: 1,
-        // width: "500px",
-        // height: "500px",
-        // translate:"-50%",
-        // translateX:"-50",
-        // translateY:"-50",
-        // top: "50",
-        // right: "50%",
-        zIndex: 9999,
-        // background: "red",
-        onComplete: () => {
-          // Animation to move the image back to its original position
-          gsap.to(image, {
-            duration: 1,
-            // width: "auto",
-            // height: "auto",
-            translateX:0,
-            translateY:0,
-            bottom: "-60px",
-            right: "-88px",
-            // zIndex: 10,
-            onComplete: () => {
-              // Add a class when the animation is complete
-              image.classList.add("hero_clipPath");
-            },
-          });
-        },
-      });
-    }
+    AOS.init({
+      duration: 500,
+      delay: 500,
+      once: true,
+    });
   }, []);
 
   return (
     <>
       <Seo pageSEO={pageSEO} />
-      <HomeHero heroImage="hero-image" />
-      <Loader />
 
-      {/* <div className=" overflow-x-hidden">
+      <div className=" overflow-x-hidden">
+        <Loader />
         <Navbar />
+        <HomeHero />
         <MonthsSlider />
         <DataGildMine />
         <DoubleCounting />
@@ -99,8 +61,7 @@ export default function Home() {
         <Faq />
         <Footer />
         <BackToTop />
-      </div> */}
-      <div></div>
+      </div>
     </>
   );
 }
