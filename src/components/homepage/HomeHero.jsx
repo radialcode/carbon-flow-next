@@ -24,9 +24,11 @@ const HomeHero = () => {
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center lg:justify-between ">
             <div className="w-full relative">
-              <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white">
-                Direct Measure,{" "}
-                <span className="text-[#44B902] block">Direct Matter !</span>
+              <h1 className="ff_AktivGrotesk_bold text-[40px] md:text-[55px] xl:text-[70px] font-normal leading-[115%] capitalize text-white">
+                Direct <span className="text-[#44B902]">Measure,</span>
+                <span className=" block">
+                  Direct <span className="text-[#44B902]">Matter !</span>
+                </span>
               </h1>
               <p className="ff_poppins text-base font-normal capitalize leading-[160%] text-white pt-[18px] sm:w-[542px] w-full">
                 The Most Effective way to Measure Forrest & Farm's Carbon
@@ -35,16 +37,19 @@ const HomeHero = () => {
                 credit.
               </p>
 
-              <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200 mt-[30px] xl:mt-[50px] leading-normal flex items-center gap-[22px]">
-                Start Measure!{" "}
-                <span className="text-[10px] opacity-50 group:hover:opacity-80 leading-normal after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-white after:opacity-10  after:-translate-y-1/2">
-                  No CC Required
-                </span>
-              </button>
+              <div className="flex mt-[30px] xl:mt-[50px] sm:items-center gap-4 sm:flex-row flex-col">
+                <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200  leading-normal flex items-center flex-col min-w-[170px] max-w-[170px]">
+                  Start Measure!{" "}
+                  <span className="text-[10px] opacity-50 group:hover:opacity-80 leading-normal">
+                    No CC Required
+                  </span>
+                </button>
 
-              <p className="text-[12px] ff_poppins font-bold italic text-white pt-[14px]">
-                Published in Journal of Geophysical Research: Biogeosciences
-              </p>
+                <p className="text-[12px] ff_poppins font-bold italic text-white sm:max-w-[295px] max-w-[400px]">
+                  Based on 5 years research publish in Journal of Geophysical
+                  Research: Biogeosciences
+                </p>
+              </div>
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
@@ -61,11 +66,9 @@ const HomeHero = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
-  
     </>
   );
 };

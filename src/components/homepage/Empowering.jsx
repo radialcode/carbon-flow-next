@@ -11,7 +11,7 @@ const Empowering = () => {
               data-aos="fade-right"
               data-aos-delay="100"
               data-aos-duration="900"
-              className="w-full lg:w-7/12 lg:py-[62px] pt-[40px]"
+              className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] pt-[40px]"
             >
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
@@ -87,7 +87,7 @@ const Empowering = () => {
               className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center"
             >
               <Image
-                className="w-full gl:max-w-[491px] max-w-[400px] mx-auto"
+                className="w-full lg:max-w-[550px] max-w-[400px] mx-auto"
                 width={512}
                 height={555}
                 src="/images/png/empowering-img.png"
