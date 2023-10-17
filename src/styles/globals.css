@@ -5,18 +5,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: AktivGrotesk;
+  font-family: AktivGrotesk bold;
   src: url("/fonts/AktivGrotesk-Bold.otf");
 }
 @font-face {
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Regular.otf");
 }
-* {
+.ff_AktivGrotesk{
   font-family: AktivGrotesk;
+  font-weight: 400;
 }
+
+/* .ff_AktivGrotesk {
+  font-family: AktivGrotesk;
+} */
 .ff_AktivGrotesk_bold {
-  font-family: AktivGrotesk !important;
+  font-family: AktivGrotesk bold;
 }
 
 .ff_poppins {
@@ -93,10 +98,11 @@
 .hero_img_scale {
   animation: heroImgScale 2s ease-in-out forwards;
   animation-delay: 2500ms;
+  transform: scale(1.4);
 }
 @keyframes heroImgScale {
-  from {
-    transform: scale(1.4);
+  to {
+    transform: scale(1);
   }
 }
 
@@ -177,10 +183,11 @@
 .data_gild_img_scale {
   animation: glidImgScale 2.5s ease-in-out forwards;
   animation-delay: 200ms;
+  transform: scale(1.8);
 }
 @keyframes glidImgScale {
-  from {
-    transform: scale(1.8);
+  to {
+    transform: scale(1);
   }
 }
 .scrolldown_animation {
@@ -203,4 +210,10 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition: transform 0.4s ease-out;
+}
+.css-15v22id-MuiAccordionDetails-root{
+  padding-top: 0;
+}
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  margin-bottom: 10px;
 }

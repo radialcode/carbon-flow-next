@@ -40,7 +40,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[422px]">
                     {" "}
@@ -49,7 +49,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
                     Yes, our mobile app is available to premier and premier plus
                     subscribers, allowing you to manage your business on the go.
                   </Typography>
@@ -64,7 +64,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -73,7 +73,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -90,7 +90,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
                     {" "}
@@ -100,7 +100,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -117,7 +117,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -125,7 +125,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves
@@ -142,7 +142,7 @@ const Faq = () => {
                   expandIcon={<FaqIcon />}
                   aria-controls="panel2a-content"
                   id="panel2a-header"
-                  className="my-1 items-baseline"
+                  className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
                     {" "}
@@ -151,7 +151,7 @@ const Faq = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className=" font-normal text-[14px] text-white pb-[16px]">
+                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
                     We&apos;re not always in the position that we want to be at.
                     We&apos;re constantly growing. We&apos;re constantly making
                     mistakes. We&apos;re constantly trying to express ourselves

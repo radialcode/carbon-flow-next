@@ -11,10 +11,11 @@ const HomeHero = () => {
 
   return (
     <>
-      <div className="bg-[#061E10] h-[1000px] xs:h-[950px] lg:h-[620px] 2xl:min-h-screen xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-[130px] md:pt-[120px]  3xl:pt-0">
+      <div className="bg-[#061E10] h-[944px] xs:h-[860px] md:h-[850px] lg:h-[600px] xl:min-h-full xl:h-[calc(100vh-80px)]  flex flex-col overflow-hidden relative pt-10 md:pt-12 3xl:pt-0">
         <a
           className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[10px] 2xl:flex gap-[17px]"
-          href="#pitchingdeck">
+          href="#pitchingdeck"
+        >
           <span className="rotate-90 scrolldown_animation">
             <ScrollDownIcon />
           </span>
@@ -23,7 +24,9 @@ const HomeHero = () => {
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center  lg:justify-between ">
             <div className="w-full md:w-[90%] lg:w-[58%] relative">
-              <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white">
+              <h1
+                className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white"
+              >
                 The <span className="text-[#44B902]">most effective way</span>{" "}
                 to measure Forrest & farm’s carbon{" "}
                 <span className="text-[#44B902]">credits without breaking</span>{" "}
@@ -48,7 +51,7 @@ const HomeHero = () => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px]  sm:mt-24 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
+              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] xsm:mt-[70px]  sm:mt-20 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
                 <Image
                   ref={ref}
                   className={`object-cover ${
