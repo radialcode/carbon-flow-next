@@ -22,8 +22,8 @@ const HomeHero = () => {
           Scroll Down
         </a>
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
-          <div className=" flex flex-col lg:flex-row items-center lg:justify-between ">
-            <div className="w-full relative">
+          <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+            <div className="relative w-full">
               <h1 className="ff_AktivGrotesk_bold text-[36px] md:text-[38px] xl:text-[48px] font-normal leading-[115%] capitalize text-white">
                 Direct Measure,{" "}
                 <span className="text-[#44B902] block">Direct Matter !</span>
@@ -48,7 +48,7 @@ const HomeHero = () => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px]  sm:mt-24 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
+              <div className="hero_clipPath lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px] sm:mt-24 md:mt-[80px] bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
                 <Image
                   ref={ref}
                   className={`object-cover ${
@@ -61,11 +61,9 @@ const HomeHero = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
-  
     </>
   );
 };

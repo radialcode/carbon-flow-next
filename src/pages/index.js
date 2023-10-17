@@ -17,7 +17,9 @@ import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,12 +45,50 @@ export default function Home() {
       once: true,
     });
   }, []);
+  gsap.registerPlugin(ScrollTrigger);
+  useLayoutEffect(() => {
+    let hero = gsap.timeline();
+    gsap.set(".hero_bg", {
+      autoAlpha: 0,
+      yPercent: 100,
+      rotate: "-180deg",
+    });
+    hero.to(".hero_bg", {
+      yPercent: 0,
+      delay: 1,
+      duration: 1,
+      autoAlpha: 1,
+      rotate: "0deg",
+    });
+    let second = gsap.timeline();
+    second.fromTo(
+      ".hero_text",
+      {
+        yPercent: 100,
+        autoAlpha: 0,
+      },
+      {
+        delay: 2,
+        yPercent: 0,
+        autoAlpha: 1,
+        duration: 2,
+        ease: "back(1)",
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((instance) => {
+        instance.kill();
+      });
+      gsap.killTweensOf(window);
+    };
+  }, []);
 
   return (
     <>
       <Seo pageSEO={pageSEO} />
 
-      <div className=" overflow-x-hidden">
+      <div className="overflow-x-hidden ">
         <Loader />
         <Navbar />
         <HomeHero />
