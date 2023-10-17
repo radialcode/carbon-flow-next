@@ -59,19 +59,19 @@ const Empowering = () => {
                 a minuscule fraction of this is expected to be produced in 2023
                 it’s stark contrast, isn’t it?
               </p>
-              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[10px] max-w-[650px]">
                 The road to reducing carbon emissions is littered with obstacles
                 - the high costs, the time drain, and the inconsistency and
                 inaccuracy of field calculations. These hurdles are not just
                 slowing us down, they're accelerating global warming.
               </p>
-              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[10px] max-w-[650px]">
                 But what if there was a solution? That's where "CarbonFluxx"
                 comes in. We didn't just create a tool, we built a beacon of
                 hope to make measuring Farm and Forest Carbon Credits more
                 accessible for everyone.
               </p>{" "}
-              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[10px] max-w-[650px]">
                 Over the past five years, we've been on a journey. A journey of
                 research, with an 80% confidentiality level, focusing on rubber
                 and rice. We're not just committed to creating effective
@@ -87,7 +87,7 @@ const Empowering = () => {
               className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center"
             >
               <Image
-                className="w-full max-w-[491px] mx-auto"
+                className="w-full gl:max-w-[491px] max-w-[400px] mx-auto"
                 width={512}
                 height={555}
                 src="/images/png/empowering-img.png"
