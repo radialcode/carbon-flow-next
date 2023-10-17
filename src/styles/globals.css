@@ -211,3 +211,9 @@
   transform: translateY(0);
   transition: transform 0.4s ease-out;
 }
+.css-15v22id-MuiAccordionDetails-root{
+  padding-top: 0;
+}
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  margin-bottom: 10px;
+}
