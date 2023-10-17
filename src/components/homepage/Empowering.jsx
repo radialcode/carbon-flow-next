@@ -5,13 +5,14 @@ const Empowering = () => {
   return (
     <>
       <section className=" bg-[url('/images/png/empowering-bg-img.png')]">
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative pt-[31px] md:py-[52px] lg:py-[102px]">
-          <div className="flex xl:justify-between flex-wrap px-3 xl:px-0">
+        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+          <div className="flex xl:justify-between flex-col lg:flex-row px-3 xl:px-0 items-end">
             <div
               data-aos="fade-right"
               data-aos-delay="100"
               data-aos-duration="900"
-              className="w-full md:w-6/12">
+              className="w-full lg:w-7/12 lg:py-[62px] pt-[40px]"
+            >
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
                 CarbonFlow
@@ -52,26 +53,44 @@ const Empowering = () => {
                   alt=" star image"
                 />
               </div>
-              <p className=" ff_poppins font-normal text-base text-[#CFD4D0] mb-0 mt-[15px] max-w-[485px]">
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[620px]">
                 Imagine a world where farm and forest are responsible for a
                 quarter of all carbon emission. now, picture a future where only
                 a minuscule fraction of this is expected to be produced in 2023
                 it’s stark contrast, isn’t it?
               </p>
-              <button className=" ff_poppins font-semibold text-base text-white py-[12.5px] px-[22px] border-2 border-[#44B902] rounded-full bg-transparent hover:bg-white hover:text-[#4EB708] hover:border-[#4EB708] duration-200 mt-[35px]">
-                Read More
-              </button>
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+                The road to reducing carbon emissions is littered with obstacles
+                - the high costs, the time drain, and the inconsistency and
+                inaccuracy of field calculations. These hurdles are not just
+                slowing us down, they're accelerating global warming.
+              </p>
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+                But what if there was a solution? That's where "CarbonFluxx"
+                comes in. We didn't just create a tool, we built a beacon of
+                hope to make measuring Farm and Forest Carbon Credits more
+                accessible for everyone.
+              </p>{" "}
+              <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[15px] max-w-[650px]">
+                Over the past five years, we've been on a journey. A journey of
+                research, with an 80% confidentiality level, focusing on rubber
+                and rice. We're not just committed to creating effective
+                solutions, we're dedicated to building trust and reliability in
+                everything we do. Because at the end of the day, we're all in
+                this together.
+              </p>
             </div>
             <div
               data-aos="zoom-in-up"
               data-aos-delay="100"
               data-aos-duration="1000"
-              className="w-full md:w-[42%] lg:w-[40%] xl:w-[30%] md:absolute bottom-0 end-0 pt-10 md:pt-0">
+              className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center"
+            >
               <Image
-                className="max-w-[300px] lg:max-w-[350px] mx-auto"
+                className="w-full max-w-[491px] mx-auto"
                 width={512}
                 height={555}
-                src="/images/png/empowering_img.png"
+                src="/images/png/empowering-img.png"
                 alt="empowering image"
               />
             </div>
