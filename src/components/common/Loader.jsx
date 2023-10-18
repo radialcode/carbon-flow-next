@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 function Loader(props) {
-  const [loader, setLoader] = useState(true); // Start with the loader initially visible
+  const [loader, setLoader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setLoader(false); // Hide the loader after a delay (e.g., 9000 milliseconds)
+      setLoader(false);
     }, 2000);
   }, []);
   useEffect(() => {

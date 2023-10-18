@@ -39,7 +39,7 @@ const HomeHero = () => {
 
               <div className="flex mt-[30px] xl:mt-[50px] sm:items-center gap-4 sm:flex-row flex-col">
                 <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200  leading-normal flex items-center flex-col min-w-[170px] max-w-[170px]">
-                  Start Measure!{" "}
+                  Start&nbsp;Measure!
                   <span className="text-[10px] opacity-50 group:hover:opacity-80 leading-normal">
                     No CC Required
                   </span>
