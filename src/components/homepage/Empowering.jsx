@@ -4,7 +4,7 @@ import React from "react";
 const Empowering = () => {
   return (
     <>
-      <section className=" bg-[url('/images/png/empowering-bg-img.png')]">
+      <section className=" bg-empoweringBg">
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <div className="flex xl:justify-between flex-col lg:flex-row px-3 xl:px-0 items-end">
             <div
@@ -90,7 +90,7 @@ const Empowering = () => {
                 className="w-full lg:max-w-[550px] max-w-[400px] mx-auto"
                 width={512}
                 height={555}
-                src="/images/png/empowering-img.png"
+                src="/images/webp/empowering-img.webp"
                 alt="empowering image"
               />
             </div>

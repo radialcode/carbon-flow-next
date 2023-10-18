@@ -21,7 +21,7 @@ const DoubleCounting = () => {
               className={`clipPath w-full lg:max-w-[550px] object-cover h-full ${
                 inView ? "data_gild_img_scale " : ""
               } `}
-              src="/images/png/datacounting-image.png"
+              src="/images/webp/datacounting-image.webp"
               width={500}
               height={500}
               alt="blockchain"

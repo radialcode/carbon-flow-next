@@ -34,13 +34,13 @@ const DataGildMine = () => {
             </button>
           </div>
         </div>
-        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110 abcd">
+        <div className="gildmini_image overflow-hidden max-w-[602px] md:w-1/2 xsm:w-[70%] group md:scale-100 scale-110">
           <Image
             ref={ref}
             className={` ${
               inView ? "data_gild_img_scale" : ""
             } object-cover object-top `}
-            src="/images/png/gildImage.png"
+            src="/images/webp/gildImage.webp"
             alt="gild mine"
             width={602}
             height={602}

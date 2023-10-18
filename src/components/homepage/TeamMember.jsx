@@ -94,7 +94,7 @@ const TeamMember = () => {
             >
               <TeamSliderArrowIcon />
             </div>
-            <div class="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"></div>
+            <div className="top-[50%] translate-y-[-50%] -right-[5%] 2xl:right-[-6%] absolute rotate-[180deg] group cursor-pointer hidden xl:block"></div>
             <Slider
               {...settings}
               ref={first}

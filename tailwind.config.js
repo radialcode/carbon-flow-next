@@ -51,6 +51,10 @@ module.exports = {
           "2xl": "6rem",
         },
       },
+      backgroundImage: {
+        empoweringBg: "url('/images/png/empowering-bg-img.png')",
+        startjourneyFooter: "url('/images/png/netural-journey-bg-img.png')",
+      },
       boxShadow: {
         as_seen_on_box_shadow: " 0px 2px 30px 2px rgba(0, 0, 0, 0.08);",
       },

@@ -11,8 +11,8 @@ export const MenuIcon = () => {
       <path
         d="M2 2H28.5M28.5 15H10.5M2 27H28.5"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -121,7 +121,7 @@ export const DimensionSliderIcon = () => {
         rx="34.473"
         transform="matrix(-1 0 0 1 68.9461 0)"
         stroke="#061E10"
-        stroke-width="3.05393"
+        strokeWidth="3.05393"
       />
     </svg>
   );
@@ -175,7 +175,7 @@ export const FooterFacebookIcon = () => {
           fill="#44B902"
         />
       </g>
-      <g clip-path="url(#clip0_241_185)">
+      <g clipPath="url(#clip0_241_185)">
         <rect
           width="34.6909"
           height="34.6909"
@@ -195,9 +195,9 @@ export const FooterFacebookIcon = () => {
           width="40.9546"
           height="39.991"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -241,7 +241,7 @@ export const FooterInstaIcon = () => {
           fill="#44B902"
         />
       </g>
-      <g clip-path="url(#clip0_241_191)">
+      <g clipPath="url(#clip0_241_191)">
         <rect
           width="34.6909"
           height="34.6909"
@@ -261,9 +261,9 @@ export const FooterInstaIcon = () => {
           width="40.9546"
           height="39.991"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -307,7 +307,7 @@ export const FooterTikTokIcon = () => {
           fill="#44B902"
         />
       </g>
-      <g clip-path="url(#clip0_241_197)">
+      <g clipPath="url(#clip0_241_197)">
         <rect
           width="34.6909"
           height="34.6909"
@@ -327,9 +327,9 @@ export const FooterTikTokIcon = () => {
           width="40.9546"
           height="39.991"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -373,7 +373,7 @@ export const FooterGmailIcon = () => {
           fill="#44B902"
         />
       </g>
-      <g clip-path="url(#clip0_241_203)">
+      <g clipPath="url(#clip0_241_203)">
         <rect
           width="34.6909"
           height="34.6909"
@@ -393,9 +393,9 @@ export const FooterGmailIcon = () => {
           width="40.9546"
           height="39.991"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -433,8 +433,8 @@ export const AsSeenOnFoxIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M127.832 36.619L143.337 63.7621L125.478 63.7925L118.919 52.2737L112.362 63.7925L94.5044 63.7621L110.01 36.619L94.5044 9.38217H112.273L118.919 21.02L125.569 9.38217H143.337L127.832 36.619ZM75.3339 9.3999C90.4467 9.3999 102.699 21.5696 102.699 36.581C102.699 51.5924 90.4467 63.7621 75.3339 63.7621C60.2198 63.7621 47.9689 51.5924 47.9689 36.581C47.9689 21.5696 60.2198 9.3999 75.3339 9.3999ZM80.1272 25.4054C80.1272 22.8588 77.9052 20.578 75.4091 20.578C72.9105 20.578 70.8912 22.8588 70.8912 25.4054L70.8861 47.6718C70.8861 50.221 72.9105 52.2851 75.4078 52.2851C77.9052 52.2851 80.1272 50.2855 80.1272 47.7376V25.4054ZM13.7124 63.7621V9.38217H47.7535L48.7568 24.215H30.2836V31.332H45.3492V46.2117H30.2836V63.7621H13.7124Z"
         fill="#061E10"
       />
@@ -530,7 +530,7 @@ export const AsSeenOnMarketWatchIcon = () => {
 
 export const TeamSliderArrowIcon = () => {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path class=" group group-hover:fill-[#44B902] duration-200" d="M10.89 4.72885C16.5423 1.5308 23.4577 1.5308 29.11 4.72885L29.3975 4.89151C35.0225 8.07407 38.5 14.0371 38.5 20.5C38.5 26.9629 35.0225 32.9259 29.3975 36.1085L29.11 36.2712C23.4577 39.4692 16.5423 39.4692 10.89 36.2712L10.6437 36.7063L10.89 36.2711L10.6025 36.1085C4.97747 32.9259 1.5 26.9629 1.5 20.5C1.5 14.0371 4.97747 8.07407 10.6025 4.8915L10.89 4.72885Z" fill="white" stroke="#44B902"></path><path class="group-hover:fill-[white] duration-200" d="M24.7774 10.2354C24.9201 10.3892 25 10.5958 25 10.8109C25 11.0259 24.9201 11.2325 24.7774 11.3864L16.8046 20L24.7774 28.6119C24.9201 28.7658 25 28.9723 25 29.1874C25 29.4025 24.9201 29.6091 24.7774 29.7629C24.708 29.838 24.6251 29.8976 24.5335 29.9383C24.4419 29.979 24.3435 30 24.244 30C24.1446 30 24.0462 29.979 23.9546 29.9383C23.8629 29.8976 23.78 29.838 23.7106 29.7629L15.2323 20.6014C15.0833 20.4405 15 20.2247 15 20C15 19.7753 15.0833 19.5595 15.2323 19.3986L23.7106 10.2371C23.78 10.162 23.8629 10.1024 23.9546 10.0617C24.0462 10.021 24.1446 10 24.244 10C24.3435 10 24.4419 10.021 24.5335 10.0617C24.6251 10.1024 24.708 10.162 24.7774 10.2371V10.2354Z" fill="#44B902"></path></svg>
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path className=" group group-hover:fill-[#44B902] duration-200" d="M10.89 4.72885C16.5423 1.5308 23.4577 1.5308 29.11 4.72885L29.3975 4.89151C35.0225 8.07407 38.5 14.0371 38.5 20.5C38.5 26.9629 35.0225 32.9259 29.3975 36.1085L29.11 36.2712C23.4577 39.4692 16.5423 39.4692 10.89 36.2712L10.6437 36.7063L10.89 36.2711L10.6025 36.1085C4.97747 32.9259 1.5 26.9629 1.5 20.5C1.5 14.0371 4.97747 8.07407 10.6025 4.8915L10.89 4.72885Z" fill="white" stroke="#44B902"></path><path className="group-hover:fill-[white] duration-200" d="M24.7774 10.2354C24.9201 10.3892 25 10.5958 25 10.8109C25 11.0259 24.9201 11.2325 24.7774 11.3864L16.8046 20L24.7774 28.6119C24.9201 28.7658 25 28.9723 25 29.1874C25 29.4025 24.9201 29.6091 24.7774 29.7629C24.708 29.838 24.6251 29.8976 24.5335 29.9383C24.4419 29.979 24.3435 30 24.244 30C24.1446 30 24.0462 29.979 23.9546 29.9383C23.8629 29.8976 23.78 29.838 23.7106 29.7629L15.2323 20.6014C15.0833 20.4405 15 20.2247 15 20C15 19.7753 15.0833 19.5595 15.2323 19.3986L23.7106 10.2371C23.78 10.162 23.8629 10.1024 23.9546 10.0617C24.0462 10.021 24.1446 10 24.244 10C24.3435 10 24.4419 10.021 24.5335 10.0617C24.6251 10.1024 24.708 10.162 24.7774 10.2371V10.2354Z" fill="#44B902"></path></svg>
   );
 };
 

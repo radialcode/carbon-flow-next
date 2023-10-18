@@ -13,7 +13,7 @@ const Footer = () => {
   const year = today.getFullYear();
   return (
     <>
-      <section className="bg-[#235C02] bg-no-repeat bg-cover bg-fixed bg-center relative mt-[-2px]">
+      <section className="bg-[#235C02] bg-center relative mt-[-2px]">
         {/* <Image
           className=" absolute right-0 bottom-0 z-0 w-[297px] md:w-[303px] lg:w-[403px]"
           width={503}
@@ -22,7 +22,7 @@ const Footer = () => {
           alt="leaf image"
         /> */}
         <div className="flex flex-wrap justify-center translate-y-[-50%]">
-          <div className="w-full max-w-[882px] bg-[url('/images/png/netural-journey-bg-img.png')] bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
+          <div className="w-full max-w-[882px] bg-startjourneyFooter bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
             </h2>
@@ -92,6 +92,7 @@ const Footer = () => {
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.facebook.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FooterFacebookIcon />
               </Link>
@@ -99,6 +100,7 @@ const Footer = () => {
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FooterInstaIcon />
               </Link>
@@ -106,6 +108,7 @@ const Footer = () => {
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.tiktok.com/en/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FooterTikTokIcon />
               </Link>

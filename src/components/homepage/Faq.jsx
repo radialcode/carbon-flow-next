@@ -16,7 +16,7 @@ const Faq = () => {
 
   return (
     <>
-      <section className=" pt-[93px] pb-[257px] bg-[url('/images/png/faq-bg-img.png')] bg-fixed bg-no-repeat bg-cover bg-center relative">
+      <section className=" pt-[93px] pb-[257px] bg-[url('/images/webp/faq-bg-img.webp')] bg-fixed bg-no-repeat bg-cover bg-center relative">
         <Image
           className=" absolute bottom-0 left-0 w-full h-[100px] object-cover object-top"
           width={1453}
@@ -88,8 +88,8 @@ const Faq = () => {
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
-                  aria-controls="panel2a-content"
-                  id="panel2a-header"
+                  aria-controls="panel3a-content"
+                  id="panel3a-header"
                   className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[547px]">
@@ -115,8 +115,8 @@ const Faq = () => {
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
-                  aria-controls="panel2a-content"
-                  id="panel2a-header"
+                  aria-controls="panel4a-content"
+                  id="panel4a-header"
                   className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
@@ -140,8 +140,8 @@ const Faq = () => {
               >
                 <AccordionSummary
                   expandIcon={<FaqIcon />}
-                  aria-controls="panel2a-content"
-                  id="panel2a-header"
+                  aria-controls="panel5a-content"
+                  id="panel5a-header"
                   className="my-1 items-baseline "
                 >
                   <Typography className=" ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[506px]">
