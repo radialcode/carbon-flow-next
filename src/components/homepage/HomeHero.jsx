@@ -53,7 +53,7 @@ const HomeHero = () => {
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
-              <div className="hero_clipPath  lg:absolute right-1/2 mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px]  sm:mt-24 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
+              <div className="animate_loader hero_clipPath z-[999] lg:absolute mt-[88px] 2xsm:mt-[80px] xsm:mt-[90px]  sm:mt-24 md:mt-[80px]  bottom-[-60px] xl:bottom-[-120px] lg:right-[-60px] xl:right-[-80px] 2xl:right-[-88px]">
                 <Image
                   ref={ref}
                   priority={true}

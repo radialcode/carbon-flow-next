@@ -12,7 +12,7 @@
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Regular.otf");
 }
-.ff_AktivGrotesk{
+.ff_AktivGrotesk {
   font-family: AktivGrotesk;
   font-weight: 400;
 }
@@ -211,9 +211,34 @@
   transform: translateY(0);
   transition: transform 0.4s ease-out;
 }
-.css-15v22id-MuiAccordionDetails-root{
+.css-15v22id-MuiAccordionDetails-root {
   padding-top: 0;
 }
 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
   margin-bottom: 10px;
+}
+
+/* Animate Loader  */
+.animate_loader {
+  animation: loader 3s ease-in-out 1;
+}
+@keyframes loader {
+  0% {
+    top: 0%;
+    right: 20%;
+    transform: translateX(-20%) scale(0.1);
+  }
+  63% {
+    top: 0%;
+    right: 20%;
+    transform: translateX(-20%) scale(0.1);
+  }
+  100% {
+    /* right: -10%; */
+    top: 16%;
+    transform: scale(1);
+  }
+}
+.loader_img {
+  transform: scale(0.3);
 }

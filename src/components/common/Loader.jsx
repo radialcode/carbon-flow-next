@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Loader(props) {
   const [loader, setLoader] = useState(true); // Start with the loader initially visible
@@ -16,20 +18,25 @@ function Loader(props) {
       document.documentElement.scrollTop = 0;
     }
   }, [loader]);
-
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   return (
     <>
       {loader && (
-        <section className="fixed left-0 top-0 w-full h-screen bg-black z-[999] flex justify-center items-center">
-          <div className="relative z-50 flex justify-center">
-            <div className="relative h-20 w-6/12 rounded-full border-transparent">
-              <div className="loader bg-black p-5 rounded-full flex space-x-4">
-                <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
-              </div>
-            </div>
-          </div>
+        <section className="fixed left-0 top-0 w-full h-screen bg-black z-[5] flex justify-center items-center">
+          {/* <div className="hero_clipPath absolute top-[40%] right-[45%]">
+            <Image
+              ref={ref}
+              priority={true}
+              className="
+              hero_clipPath w-full max-w-[200px] h-[200px]"
+              src="/images/webp/forrest_hero_img.webp"
+              width={808}
+              height={846}
+              alt="blockchain"
+            />
+          </div> */}
         </section>
       )}
     </>
