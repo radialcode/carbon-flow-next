@@ -50,7 +50,7 @@ const Navbar = () => {
           />
         </Link>
         <ul
-          className={`flex xl:gap-[33px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
+          className={`flex xl:gap-[33px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto lg:bg-transparent bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
             showNav ? "left-0" : " -left-full"
           }`}
         >
