@@ -17,7 +17,7 @@ const HomeHero = () => {
         href="#pitchingdeck"
       >
         <span className="scrolldown_animation rotate-90 w-5 h-5 flex flex-col overflow-hidden duration-200 relative">
-          <span className="group-hover:-top-5 absolute top-0 left-0 duration-200">
+          <span className="group-hover:top-0 absolute -top-5 left-0 duration-200">
             <ScrollDownIcon /> <ScrollDownIcon />
           </span>
         </span>
