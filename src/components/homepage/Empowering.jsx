@@ -6,12 +6,12 @@ const Empowering = () => {
     <>
       <section className=" bg-empoweringBg">
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <div className="flex xl:justify-between flex-col lg:flex-row px-3 xl:px-0 items-end">
+          <div className="flex xl:justify-between flex-col-reverse lg:flex-row px-3 xl:px-0 xl:items-center items-end">
             <div
               data-aos="fade-right"
               data-aos-delay="100"
               data-aos-duration="900"
-              className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] pt-[40px]"
+              className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] py-[40px]"
             >
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
@@ -66,7 +66,7 @@ const Empowering = () => {
                 slowing us down, they're accelerating global warming.
               </p>
               <p className=" ff_poppins font-normal xl:text-base md:text-[15px] text-[14px] text-[#CFD4D0] mb-0 mt-[10px] max-w-[650px]">
-                But what if there was a solution? That's where "CarbonFluxx"
+                But what if there was a solution? That's where "CarbonFlow"
                 comes in. We didn't just create a tool, we built a beacon of
                 hope to make measuring Farm and Forest Carbon Credits more
                 accessible for everyone.

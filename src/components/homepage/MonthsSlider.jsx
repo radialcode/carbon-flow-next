@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { monthSliderdata } from "../common/Helper";
 import Slider from "react-slick";
 import Image from "next/image";
+import CountUp, { useCountUp } from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const MonthsSlider = () => {
   var settings = {
@@ -44,7 +46,13 @@ const MonthsSlider = () => {
       },
     ],
   };
-
+  const countUpRef = React.useRef(null);
+  const [viewCount, setViewCount] = useState(false);
+  function onVisibilityChange(visible) {
+    if (visible) {
+      setViewCount(true);
+    }
+  }
   return (
     <>
       <section
@@ -60,7 +68,11 @@ const MonthsSlider = () => {
           alt="leaf image"
         />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <Slider {...settings} className="flex flex-wrap mx-[-20px]">
+          <Slider
+            {...settings}
+            className="flex flex-wrap mx-[-20px]"
+            ref={countUpRef}
+          >
             {monthSliderdata.map((data, index) => {
               return (
                 <div
@@ -70,6 +82,21 @@ const MonthsSlider = () => {
                   <div className="px-[21px] xs:px-[28px] border_grideant">
                     <span>{data.svgicon}</span>
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
+                      <VisibilitySensor
+                        onChange={onVisibilityChange}
+                        offset={{
+                          top: 10,
+                        }}
+                        delayedCallon
+                      >
+                        <CountUp
+                          start={0}
+                          duration={4}
+                          end={viewCount ? data.endvalue : 0}
+                        >
+                          {({ countUpRef }) => <span ref={countUpRef}></span>}
+                        </CountUp>
+                      </VisibilitySensor>{" "}
                       {data.heading}
                     </h2>
                     <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px] capitalize">

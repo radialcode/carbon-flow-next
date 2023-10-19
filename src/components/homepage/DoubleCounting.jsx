@@ -35,7 +35,7 @@ const DoubleCounting = () => {
             credit on blockchain
           </h2>
           <p className="ff_poppins font-normal text-[16px] text-[#061E10] opacity-70 pt-[15px]">
-            CarbonfluxX revolutionizes carbon credit issuance by utilizing
+            Carbonflow revolutionizes carbon credit issuance by utilizing
             blockchain technology, ensuring transparency and trust. our
             certificates, developed with the industry - leading cretic qualify
             standard, provide a secure foundation. experience seamless trading
