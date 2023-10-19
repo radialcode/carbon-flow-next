@@ -22,7 +22,7 @@ const HomeHero = () => {
           </span>
           Scroll Down
         </a>
-      <div className="h-[865px] xs:h-[870px] lg:h-[540px] 2xl:h-[calc(100vh-80px)] 4xl:min-h-[520px] 4xl:h-[1120px] xl:h-[calc(100vh-80px)] flex flex-col overflow-hidden relative pt-[130px] md:pt-[120px]  3xl:pt-0 max-w-[1920px] mx-auto">
+      <div className="h-[865px] xs:h-[870px] lg:h-[540px] 2xl:h-[calc(100vh-80px)] 4xl:min-h-[520px] 4xl:h-[1120px] xl:h-[calc(100vh-80px)] flex flex-col overflow-hidden relative pt-[47px] md:pt-[51px]  3xl:pt-0 max-w-[1920px] mx-auto">
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center lg:justify-between ">
             <div className="w-full relative">
