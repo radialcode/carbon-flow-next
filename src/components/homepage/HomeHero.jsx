@@ -13,15 +13,17 @@ const HomeHero = () => {
   return (
     <div className=" bg-[#061E10] relative">
       <Navbar />
-        <a
-          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex gap-[17px] z-10"
-          href="#pitchingdeck"
-        >
-          <span className="rotate-90 scrolldown_animation">
-            <ScrollDownIcon />
+      <a
+        className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex items-center gap-[17px] z-10"
+        href="#pitchingdeck"
+      >
+        <span className="scrolldown_animation rotate-90 w-5 h-5 flex flex-col overflow-hidden duration-200 relative">
+          <span className="group-hover:-top-5 absolute top-0 left-0  duration-200">
+            <ScrollDownIcon /> <ScrollDownIcon />
           </span>
-          Scroll Down
-        </a>
+        </span>
+        Scroll Down
+      </a>
       <div className="h-[865px] xs:h-[870px] lg:h-[540px] 2xl:h-[calc(100vh-80px)] 4xl:min-h-[520px] 4xl:h-[1120px] xl:h-[calc(100vh-80px)] flex flex-col overflow-hidden relative pt-[47px] md:pt-[51px]  3xl:pt-0 max-w-[1920px] mx-auto">
         <div className=" container xl:max-w-[1140px] 3xl:max-w-[1320px] px-3 xl:px-0 flex flex-grow mx-auto">
           <div className=" flex flex-col lg:flex-row items-center lg:justify-between ">

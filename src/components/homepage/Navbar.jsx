@@ -52,11 +52,11 @@ const Navbar = () => {
           scrollPosition > 80 ? "top-0" : "top-[-80px]"
         }`}
       >
-        <div className="w-full flex justify-between items-center md:py-[14px] py-[23px] px-10 xl:px-20">
+        <div className="w-full flex justify-between items-center md:py-[14px] py-[23px] md:px-10 px-5 xl:px-20">
           <Link className="relative z-50" href="/">
             <Image
               className="max-w-[202px] hover_bounce"
-              src="/images/png/Logo.png"
+              src="/images/svg/Logo.svg"
               width={202}
               height={34}
               alt="logo image"
@@ -138,12 +138,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 px-10">
+      <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
         <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:-left-6 3xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
-              src="/images/png/Logo.png"
+              src="/images/svg/Logo.svg"
               width={202}
               height={34}
               alt="logo image"
