@@ -195,7 +195,7 @@
 }
 @keyframes downarrow {
   100% {
-    transform: rotate(90deg) translatey(5px);
+    transform: rotate(90deg) translateY(5px);
   }
 }
 

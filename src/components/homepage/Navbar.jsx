@@ -49,21 +49,26 @@ const Navbar = () => {
     <div className="relative">
       <div
         className={`bg-[#0D2517]  z-[100] w-full  black fixed top-0  flex justify-between right-0 duration-200 ${
-          scrollPosition > 80 ? "top-0" : "top-[-80px]"
+          scrollPosition > 80 ? "top-0" : "top-[-100px]"
         }`}
       >
         <div className="w-full flex justify-between items-center md:py-[14px] py-[23px] md:px-10 px-5 xl:px-20">
+          <div className="flex items-center hover_bounce">
           <Link className="relative z-50" href="/">
             <Image
-              className="max-w-[202px] hover_bounce"
+              className="max-w-[130px] xs:max-w-[160px] 2xl:max-w-[202px]"
               src="/images/svg/Logo.svg"
               width={202}
               height={34}
               alt="logo image"
             />
           </Link>
+          <Link className="ms-4" href="/">
+          <Image className="2xl:max-w-[140px] max-w-[80px] xs:max-w-[100px]" height={100} width={250} src="/images/JGR_logo.png" alt="JGR_logo"/>
+          </Link>
+          </div>
           <ul
-            className={`flex xl:gap-[33px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto lg:bg-transparent bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
+            className={`flex xl:gap-[20px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto lg:bg-transparent bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
               showNav ? "left-0" : " -left-full"
             }`}
           >
@@ -72,7 +77,7 @@ const Navbar = () => {
                 onClick={() => {
                   setShowNav(false);
                 }}
-                className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+                className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
                 href="#globalwarming"
               >
                 Global Warming is Real?
@@ -83,7 +88,7 @@ const Navbar = () => {
                 onClick={() => {
                   setShowNav(false);
                 }}
-                className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+                className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
                 href="#pitchingdeck"
               >
                 Pitching Deck
@@ -94,7 +99,7 @@ const Navbar = () => {
                 onClick={() => {
                   setShowNav(false);
                 }}
-                className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+                className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
                 href="#investor"
               >
                 Investor
@@ -105,7 +110,7 @@ const Navbar = () => {
                 onClick={() => {
                   setShowNav(false);
                 }}
-                className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+                className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
                 href="#team"
               >
                 Team
@@ -116,13 +121,13 @@ const Navbar = () => {
                 onClick={() => {
                   setShowNav(false);
                 }}
-                className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+                className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
                 href="#workwithus"
               >
                 Work with us
               </a>
             </li>
-            <li className="lg:ps-5">
+            <li className="xl:ps-5">
               <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
                 Contact Us
               </button>
@@ -139,7 +144,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
-        <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:-left-6 3xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer">
+        <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:-left-6 3xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer hidden 2xl:inline-block">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
@@ -156,7 +161,7 @@ const Navbar = () => {
               onClick={() => {
                 setShowNav(false);
               }}
-              className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+              className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#globalwarming"
             >
               Global Warming is Real?
@@ -167,7 +172,7 @@ const Navbar = () => {
               onClick={() => {
                 setShowNav(false);
               }}
-              className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+              className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#pitchingdeck"
             >
               Pitching Deck
@@ -178,7 +183,7 @@ const Navbar = () => {
               onClick={() => {
                 setShowNav(false);
               }}
-              className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+              className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#investor"
             >
               Investor
@@ -189,7 +194,7 @@ const Navbar = () => {
               onClick={() => {
                 setShowNav(false);
               }}
-              className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+              className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#team"
             >
               Team
@@ -200,7 +205,7 @@ const Navbar = () => {
               onClick={() => {
                 setShowNav(false);
               }}
-              className="ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
+              className=" text-[13px] xl:text-base ff_poppins font-normal text-[15px] xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
               href="#workwithus"
             >
               Work with us

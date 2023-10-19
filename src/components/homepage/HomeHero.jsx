@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
-
 import { ScrollDownIcon } from "../common/Icon";
 import Navbar from "./Navbar";
 const HomeHero = () => {
@@ -18,7 +17,7 @@ const HomeHero = () => {
         href="#pitchingdeck"
       >
         <span className="scrolldown_animation rotate-90 w-5 h-5 flex flex-col overflow-hidden duration-200 relative">
-          <span className="group-hover:-top-5 absolute top-0 left-0  duration-200">
+          <span className="group-hover:-top-5 absolute top-0 left-0 duration-200">
             <ScrollDownIcon /> <ScrollDownIcon />
           </span>
         </span>
@@ -53,7 +52,9 @@ const HomeHero = () => {
                   Based on 5 years research published in Journal of Geophysical
                   Research: Biogeosciences
                 </p>
+
               </div>
+              <Image className="mt-4 sm:mt-[30px] xl:mt-[40px]" height={100} width={200} src="/images/JGR_logo.png" alt="JGR_logo"/>
             </div>
 
             <div className="w-full xs:w-[75%] lg:w-1/2">
