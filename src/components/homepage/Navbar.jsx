@@ -139,7 +139,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 px-10">
-        <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer">
+        <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:-left-6 3xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
@@ -150,7 +150,6 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        {/* <hr className="w-full h-1 pe-10"/> */}
         <ul className="lg:flex xl:gap-[33px] gap-[20px] items-center hidden min-w-[840px]">
           <li>
             <a

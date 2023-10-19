@@ -14,7 +14,7 @@ const HomeHero = () => {
     <div className=" bg-[#061E10] relative">
       <Navbar />
         <a
-          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex gap-[17px]"
+          className="absolute ff_poppins font-light text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-50px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex gap-[17px] z-10"
           href="#pitchingdeck"
         >
           <span className="rotate-90 scrolldown_animation">
