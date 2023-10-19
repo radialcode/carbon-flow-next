@@ -24,7 +24,7 @@ function Loader(props) {
   return (
     <>
       {loader && (
-        <section className="fixed left-0 top-0 w-full h-screen bg-black z-[5] flex justify-center items-center">
+        <section className="fixed left-0 top-0 w-full h-screen bg-black z-[101] flex justify-center items-center">
           {/* <div className="hero_clipPath absolute top-[40%] right-[45%]">
             <Image
               ref={ref}
