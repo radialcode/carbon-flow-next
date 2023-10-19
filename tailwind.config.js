@@ -27,6 +27,7 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
       "3xl": "1599px",
       // => @media (min-width: 1280px) { ... }
+      "4xl": "1921px",
     },
     extend: {
       fontSize: {

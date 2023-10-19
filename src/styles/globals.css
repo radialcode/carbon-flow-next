@@ -12,7 +12,7 @@
   font-family: AktivGrotesk;
   src: url("/fonts/AktivGrotesk-Regular.otf");
 }
-.ff_AktivGrotesk{
+.ff_AktivGrotesk {
   font-family: AktivGrotesk;
   font-weight: 400;
 }
@@ -211,9 +211,18 @@
   transform: translateY(0);
   transition: transform 0.4s ease-out;
 }
-.css-15v22id-MuiAccordionDetails-root{
+.css-15v22id-MuiAccordionDetails-root {
   padding-top: 0;
 }
 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
   margin-bottom: 10px;
+}
+/* logo hover bounce */
+.hover_bounce:hover {
+  animation: bouncelogo .5s 1 alternate ease-in-out;
+}
+@keyframes bouncelogo {
+  50% {
+    transform: scale(1.05);
+  }
 }

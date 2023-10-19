@@ -14,22 +14,15 @@ const Footer = () => {
   return (
     <>
       <section className="bg-[#235C02] bg-center relative mt-[-2px]">
-        {/* <Image
-          className=" absolute right-0 bottom-0 z-0 w-[297px] md:w-[303px] lg:w-[403px]"
-          width={503}
-          height={492}
-          src="/images/png/footer-leaf-position-img.png"
-          alt="leaf image"
-        /> */}
         <div className="flex flex-wrap justify-center translate-y-[-50%]">
           <div className="w-full max-w-[882px] bg-startjourneyFooter bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
             </h2>
             <div className="mt-[30px] flex justify-center">
-              <button className="px-[23px] py-[10.5px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 flex items-center gap-[22px]">
+              <button className="px-[24px] py-[8px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 flex items-center flex-col">
                 Start Measure!
-                <span className="ff_poppins font-semibold text-[10px] text-white block leading-[18px] group-hover:text-[#44B902] opacity-70 after:content-[''] after:absolute relative after:left-[-11px] after:top-1/2 after:w-[1px] after:h-4 after:bg-white group-hover:opacity-90 group-hover:after:opacity-40 group-hover:after:bg-[#44B902] after:duration-200 duration-200  after:opacity-50  after:-translate-y-1/2 ">
+                <span className="ff_poppins font-semibold text-[10px] text-white block leading-[18px] group-hover:text-[#44B902] opacity-70 ">
                   No CC Required
                 </span>
               </button>
