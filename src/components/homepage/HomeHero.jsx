@@ -73,7 +73,7 @@ const HomeHero = ({loader}) => {
         </div> */}
         <div className="container h-full 3xl:max-w-[1320px] 3xl:relative">
           <div className="flex flex-col items-center lg:flex-row justify-between h-full">
-          <div className="w-full relative">
+          <div className="w-full relative" data-aos="fade-right" data-aos-delay="800" data-aos-duration="900">
               <h1 className="ff_AktivGrotesk_bold text-[40px] md:text-[55px] xl:text-[70px] font-normal leading-[115%] capitalize text-white">
                 Direct <span className="text-[#44B902]">Measure,</span>
                 <span className=" block">
@@ -109,7 +109,7 @@ const HomeHero = ({loader}) => {
                   ref={ref}
                   priority={true}
                   className={`object-cover md:w-full md:h-full ${inView ? "hero_img_scale" : ""} ${
-                    loader ? "sm:w-full w-[400px] h-[400px]" : "max-w-[330px] sm:max-w-none h-[390px]"
+                    loader ? "sm:w-full w-[400px] h-[400px]" : "max-w-[330px] md:max-w-none h-[390px]"
                   }  hero_clipPath`}
                   src="/images/webp/forrest_hero_img.webp"
                   width={808}
