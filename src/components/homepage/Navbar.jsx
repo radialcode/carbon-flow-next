@@ -143,7 +143,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
+      <div className="flex bg-[#0D2517] lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
         <div className="xl:absolute z-[2] xl:-left-6 3xl:left-6 xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer lg:hidden 2xl:inline-block">
           <Link href="/">
             <Image

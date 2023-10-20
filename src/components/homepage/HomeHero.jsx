@@ -99,7 +99,7 @@ const HomeHero = ({loader}) => {
               </div>
             </div>
             <div >
-            <div className={`hero_clipPath z-[999] ${loader ? "absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[60%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[66px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[500px] lg-max-w-[500px] xl:max-w-[600px] md:h-[500px] lg-h-[500px] xl:h-[600px]"}`}>
+            <div className={`hero_clipPath ${loader ? "absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[60%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[66px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[500px] lg-max-w-[500px] xl:max-w-[600px] md:h-[500px] lg-h-[500px] xl:h-[600px]"}`}>
                 <Image
                   ref={ref}
                   priority={true}
