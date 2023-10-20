@@ -64,7 +64,7 @@ const Navbar = () => {
             />
           </Link>
           <Link className="ms-4" href="/">
-          <Image className="2xl:max-w-[140px] max-w-[80px] xs:max-w-[100px]" height={100} width={250} src="/images/JGR_logo.png" alt="JGR_logo"/>
+          <Image className="2xl:max-w-[140px] max-w-[80px] xs:max-w-[100px]" height={100} width={250} src="/images/JGR_logo.svg" alt="JGR_logo"/>
           </Link>
           </div>
           <ul
