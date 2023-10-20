@@ -144,7 +144,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
-        <div className="lg:absolute z-[2] lg:-left-20 xl:-left-10 2xl:-left-6 3xl:left-6 xl:top-44 lg:top-28 lg:-rotate-90 lg:translate-y-full cursor-pointer hidden 2xl:inline-block">
+        <div className="xl:absolute z-[2] xl:-left-6 3xl:left-6 xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer lg:hidden 2xl:inline-block">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
