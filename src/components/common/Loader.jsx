@@ -2,12 +2,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-function Loader(props) {
-  const [loader, setLoader] = useState(true); // Start with the loader initially visible
+function Loader({loader , setLoader}) {
+  // Start with the loader initially visible
   useEffect(() => {
     setTimeout(() => {
       setLoader(false); // Hide the loader after a delay (e.g., 9000 milliseconds)
-    }, 2000);
+    }, 100);
   }, []);
   useEffect(() => {
     if (loader) {

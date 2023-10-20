@@ -98,11 +98,11 @@
 .hero_img_scale {
   animation: heroImgScale 2s ease-in-out forwards;
   animation-delay: 2500ms;
-  transform: scale(1.4);
+  /* transform: scale(1.4); */
 }
 @keyframes heroImgScale {
   to {
-    transform: scale(1);
+    /* transform: scale(1); */
   }
 }
 
@@ -129,6 +129,14 @@
     1;
   height: 100%;
 }
+/* @media (max-width: 639.98px) {
+  .scale_04{
+    transform: scale(0.4);
+  }
+  .hero_img{
+    transform: scale(1.5);
+  }
+} */
 @media (min-width: 1200px) {
   .slick-current + .slick-active div .border_grideant {
     border-right: 3px solid;
@@ -216,85 +224,4 @@
 }
 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
   margin-bottom: 10px;
-}
-
-/* Animate Loader  */
-.animate_loader {
-  animation: loader 3s ease-in-out 1;
-}
-@keyframes loader {
-  0% {
-    bottom: 60px;
-    right: 24%;
-    transform:scale(0.1);
-  }
-  63% {
-    bottom: 60px;
-    right: 24%;
-    transform:scale(0.1);
-  }
-  100% {
-    bottom: -120px;
-    transform: scale(1);
-  }
-}
-.loader_img {
-  transform: scale(0.3);
-}
-
-
-@media (min-width:1400px) {
-  @keyframes loader {
-    0% {
-    bottom: 59px;
-      right: 22%;
-      transform:scale(0.1);
-    }
-    63% {
-    bottom: 59px;
-      right: 22%;
-      transform:scale(0.1);
-    }
-    100% {
-      bottom: -120px;
-      transform: scale(1);
-    }
-  }
-}
-
-@media (min-width:1024px) {
-  @keyframes loader {
-    0% {
-      bottom: 20%;
-        right: 28%;
-        transform:scale(0.1);
-      }
-      63% {
-      bottom: 20%;
-        right: 28%;
-        transform:scale(0.1);
-      }
-      100% {
-        bottom: -51px;
-        transform: scale(1);
-      }
-  }
-}
-@media (min-width:768px) {
-  @keyframes loader {
-    0% {
-      bottom: 20%;
-        right: 16%;
-        transform:scale(0.1);
-      }
-      63% {
-      bottom: 20%;
-        right: 16%;
-        transform:scale(0.1);
-      }
-      100% {
-        bottom: 51px;
-        transform: scale(1);
-      }
-  }
 }
