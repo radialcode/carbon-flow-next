@@ -17,7 +17,7 @@ import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +36,8 @@ const pageSEO = {
 // AOS.init();
 
 export default function Home() {
+  const [loader, setLoader] = useState(true);
+
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -49,9 +51,11 @@ export default function Home() {
       <Seo pageSEO={pageSEO} />
 
       <div className=" overflow-x-hidden">
-        <Loader />
-        <Navbar />
-        <HomeHero />
+        <Loader setLoader={setLoader} loader={loader}/>
+        {
+          loader ? "" : <Navbar />
+        }
+        <HomeHero setLoader={setLoader} loader={loader}/>
         <MonthsSlider />
         <DataGildMine />
         <DoubleCounting />

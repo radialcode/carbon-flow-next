@@ -123,8 +123,9 @@ const Footer = () => {
               </p>
              <div className="flex gap-1">
              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
-                Terms & Conditions |
+                Terms & Conditions
               </p>
+              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">|</p>
               <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
               Privacy & Security
               </p>
