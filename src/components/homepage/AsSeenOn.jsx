@@ -36,7 +36,7 @@ const AsSeenOn = () => {
                   <Image
                     src="/images/png/ceos.png"
                     width={133}
-                    height={41}
+                    height={50}
                     alt="ceos"
                   />
                 </div>
