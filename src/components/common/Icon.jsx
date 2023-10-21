@@ -288,7 +288,7 @@ export const FooterTwitterIcon = () => {
     </svg>
   );
 };
-export const FooterTikTokIcon = () => {
+export const FooterLindedInIcon = () => {
   return (
     <svg
       width="42"
@@ -297,7 +297,7 @@ export const FooterTikTokIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.5" filter="url(#filter0_f_241_197)">
+      <g opacity="0.5" filter="url(#filter0_f_685_585)">
         <rect
           x="9.39087"
           y="11.0818"
@@ -307,29 +307,31 @@ export const FooterTikTokIcon = () => {
           fill="#44B902"
         />
       </g>
-      <g clipPath="url(#clip0_241_197)">
+      <g clip-path="url(#clip0_685_585)">
         <rect
           width="34.6909"
           height="34.6909"
           transform="matrix(-1 0 0 1 38.3 -2.89062)"
           fill="#44B902"
         />
-        <path
-          d="M23.2917 10.5045C22.8801 10.0347 22.6533 9.43126 22.6535 8.80664H20.793V16.2725C20.7787 16.6765 20.6081 17.0592 20.3172 17.3399C20.0264 17.6207 19.6379 17.7776 19.2336 17.7777C18.3787 17.7777 17.6682 17.0793 17.6682 16.2123C17.6682 15.1767 18.6677 14.4 19.6972 14.7191V12.8165C17.62 12.5396 15.8018 14.1531 15.8018 16.2123C15.8018 18.2172 17.4635 19.6441 19.2276 19.6441C21.1182 19.6441 22.6535 18.1088 22.6535 16.2123V12.4252C23.4079 12.9669 24.3136 13.2576 25.2424 13.256V11.3956C25.2424 11.3956 24.1105 11.4498 23.2917 10.5045Z"
-          fill="white"
-        />
+        <g clip-path="url(#clip1_685_585)">
+          <path
+            d="M16.4399 9.30008C16.4398 9.64471 16.3111 9.97515 16.0822 10.2187C15.8533 10.4623 15.5429 10.599 15.2194 10.5989C14.8958 10.5987 14.5856 10.4616 14.3569 10.2178C14.1282 9.97399 13.9998 9.64341 14 9.29878C14.0002 8.95415 14.1288 8.6237 14.3578 8.38013C14.5867 8.13657 14.897 7.99983 15.2206 8C15.5441 8.00017 15.8544 8.13724 16.083 8.38105C16.3117 8.62487 16.4401 8.95545 16.4399 9.30008ZM16.4765 11.5611H14.0366V19.6955H16.4765V11.5611ZM20.3316 11.5611H17.9039V19.6955H20.3072V15.4269C20.3072 13.0489 23.2169 12.828 23.2169 15.4269V19.6955H25.6263V14.5433C25.6263 10.5345 21.3198 10.684 20.3072 12.6526L20.3316 11.5611Z"
+            fill="white"
+          />
+        </g>
       </g>
       <defs>
         <filter
-          id="filter0_f_241_197"
+          id="filter0_f_685_585"
           x="0.236323"
           y="1.92724"
           width="40.9546"
           height="39.991"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
+          color-interpolation-filters="sRGB"
         >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -338,16 +340,24 @@ export const FooterTikTokIcon = () => {
           />
           <feGaussianBlur
             stdDeviation="4.57727"
-            result="effect1_foregroundBlur_241_197"
+            result="effect1_foregroundBlur_685_585"
           />
         </filter>
-        <clipPath id="clip0_241_197">
+        <clipPath id="clip0_685_585">
           <rect
             x="6.5"
             width="28.9091"
             height="28.9091"
             rx="14.4545"
             fill="white"
+          />
+        </clipPath>
+        <clipPath id="clip1_685_585">
+          <rect
+            width="12"
+            height="13"
+            fill="white"
+            transform="translate(14 7)"
           />
         </clipPath>
       </defs>

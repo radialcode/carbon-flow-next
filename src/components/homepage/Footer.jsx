@@ -4,6 +4,7 @@ import React from "react";
 import {
   FooterFacebookIcon,
   FooterGmailIcon,
+  FooterLindedInIcon,
   FooterTwitterIcon,
 } from "../common/Icon";
 
@@ -96,14 +97,14 @@ const Footer = () => {
               >
                 <FooterTwitterIcon />
               </Link>
-              {/* <Link
+              <Link
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.tiktok.com/en/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FooterTikTokIcon />
-              </Link> */}
+                <FooterLindedInIcon />
+              </Link>
               <Link
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.gmail.com/"
