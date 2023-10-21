@@ -13,7 +13,7 @@ const HomeHero = ({loader}) => {
     <>
       <div className={`bg-[#061E10]  flex flex-col overflow-hidden relative pt-[10px] sm:pt-[40px] lg:pt-0 ${loader ? "h-screen" : "hero_screen"}`}>
       <a
-        className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-75px] 3xl:left-0 uppercase tracking-[11px] 2xl:flex items-center gap-[17px] z-10"
+        className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
         href="#pitchingdeck"
       >
         <span className="scrolldown_animation rotate-90 w-5 h-5 flex flex-col overflow-hidden duration-200 relative">
@@ -71,7 +71,7 @@ const HomeHero = ({loader}) => {
             </div>
           </div>
         </div> */}
-        <div className="container h-full 3xl:max-w-[1320px] 3xl:relative">
+        <div className="custom_container w-full h-full mx-auto">
           <div className="flex flex-col items-center lg:flex-row justify-between h-full">
           <div className="w-full relative" data-aos="fade-right" data-aos-delay="800" data-aos-duration="900">
               <h1 className="ff_AktivGrotesk_bold text-[40px] md:text-[55px] xl:text-[70px] font-normal leading-[115%] capitalize text-white">
@@ -100,11 +100,11 @@ const HomeHero = ({loader}) => {
               Based on 5 years research published in
                 </p>
               <Link href="/">
-              <Image className="mt-3 max-w-[150px]" height={100} width={200} src="/images/JGR_logo.svg" alt="JGR_logo"/>
+              <Image className="mt-3 max-w-[250px]" height={100} width={200} src="/images/JGR_logo.svg" alt="JGR_logo"/>
               </Link>
             </div>
             <div >
-            <div className={`hero_clipPath ${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px]"}`}>
+            <div className={`hero_clipPath ${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 3xl:w-[50%] 3xl:max-w-none 3xl:h-[100%]"}`}>
                 <Image
                   ref={ref}
                   priority={true}

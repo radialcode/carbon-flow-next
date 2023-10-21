@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`bg-[#0D2517]  z-[100] w-full  black fixed top-0  flex justify-between right-0 duration-200 ${
+        className={`bg-[#0D2517] z-[100] w-full  black fixed top-0  flex justify-between right-0 duration-200 ${
           scrollPosition > 80 ? "top-0" : "top-[-100px]"
         }`}
       >
@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
           </div>
           <ul
-            className={`flex xl:gap-[20px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto lg:bg-transparent bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
+            className={`flex xl:gap-[20px] gap-[20px] items-center xl:static fixed top-0 xl:min-h-fit min-h-screen w-full xl:w-auto xl:bg-transparent bg-[#0D2517] justify-center xl:flex-row flex-col duration-200 ${
               showNav ? "left-0" : " -left-full"
             }`}
           >
@@ -146,14 +146,14 @@ const Navbar = () => {
             onClick={() => {
               setShowNav(!showNav);
             }}
-            className="lg:hidden block relative z-50 cursor-pointer"
+            className="xl:hidden block relative z-50 cursor-pointer"
           >
             {showNav ? <CrossIcon /> : <MenuIcon />}
           </div>
         </div>
       </div>
-      <div className="flex bg-[#061E10] lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
-        <div className="xl:absolute z-[2] xl:-left-12 3xl:left-6 xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer lg:hidden 2xl:inline-block ">
+      <div className="flex bg-[#061E10] xl:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
+        <div className="xl:absolute z-[2] -left-[40px] 3xl:-left-[38px] xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
@@ -164,7 +164,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="lg:flex xl:gap-[33px] gap-[20px] items-center hidden min-w-[840px]">
+        <ul className="xl:flex xl:gap-[33px] gap-[20px] items-center hidden min-w-[840px]">
           <li>
             <a
               onClick={() => {
@@ -233,7 +233,7 @@ const Navbar = () => {
           onClick={() => {
             setShowNav(!showNav);
           }}
-          className="lg:hidden block relative z-[100] cursor-pointer"
+          className="xl:hidden block relative z-[100] cursor-pointer"
         >
           {showNav ? <CrossIcon /> : <MenuIcon />}
         </div>

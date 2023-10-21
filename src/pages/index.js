@@ -56,15 +56,15 @@ export default function Home() {
           loader ? "" : <Navbar />
         }
         <HomeHero setLoader={setLoader} loader={loader}/>
-        <MonthsSlider />
-        <DataGildMine />
+         <MonthsSlider />
+        {/*<DataGildMine />
         <DoubleCounting />
         <AsSeenOn />
         <Empowering />
         <TeamMember />
         <Faq />
         <Footer />
-        <BackToTop />
+        <BackToTop /> */}
       </div>
     </>
   );
