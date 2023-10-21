@@ -80,8 +80,7 @@ const MonthsSlider = () => {
                   key={index}
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
-                    {/* <span>{data.svgicon}</span> */}
-                    <div className="max-w-[90px]">
+                    <div className="max-w-[90px] h-[90px]">
                       <Player
                         src={data.svgicon}
                         className={`player flex flex-col justify-start ${data.lottiewidth}`}
