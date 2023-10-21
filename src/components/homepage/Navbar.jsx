@@ -133,7 +133,7 @@ const Navbar = () => {
                 Work with us
               </a>
             </li>
-            <li className="xl:ps-5">
+            <li className="xl:ps-5 my-[14px]">
               <a
                 href="mailto:contactus@carbonflow.earth"
                 className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
@@ -220,7 +220,7 @@ const Navbar = () => {
               Work with us
             </a>
           </li>
-          <li className="lg:ps-5">
+          <li className="lg:ps-5 my-[8px]">
             <a
               href="mailto:contactus@carbonflow.earth"
               className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
