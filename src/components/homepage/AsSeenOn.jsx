@@ -33,14 +33,24 @@ const AsSeenOn = () => {
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <AsSeenOnFoxIcon />
+                  <Image
+                    src="/images/png/ceos.png"
+                    width={133}
+                    height={41}
+                    alt="ceos"
+                  />
                 </div>
                 <div
                   className=" px-[23px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <AsSeenOnUsaTodayIcon />
+                  <Image
+                    src="/images/png/gistda_logo.png"
+                    width={133}
+                    height={41}
+                    alt="gistda"
+                  />
                 </div>
                 <div
                   className=" px-[23px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
