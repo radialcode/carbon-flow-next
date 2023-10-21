@@ -53,7 +53,7 @@ const AsSeenOn = () => {
             </div>
           </div>
           <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px] capitalize">
-            And Over 200 New Site... to 80 countries
+            And Over 80 countries
           </p>
         </div>
       </section>
