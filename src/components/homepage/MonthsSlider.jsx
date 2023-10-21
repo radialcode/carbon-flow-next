@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import CountUp, { useCountUp } from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-
+import { Player } from "@lottiefiles/react-lottie-player";
 const MonthsSlider = () => {
   var settings = {
     dots: true,
@@ -80,7 +80,15 @@ const MonthsSlider = () => {
                   key={index}
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
-                    <span>{data.svgicon}</span>
+                    {/* <span>{data.svgicon}</span> */}
+                    <div className="max-w-[90px]">
+                      <Player
+                        src={data.svgicon}
+                        className={`player flex flex-col justify-start ${data.lottiewidth}`}
+                        loop
+                        autoplay={true}
+                      />
+                    </div>
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
                       <VisibilitySensor
                         onChange={onVisibilityChange}
