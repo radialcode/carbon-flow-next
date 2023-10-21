@@ -2,21 +2,24 @@ import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {
-    svgicon: <MonthsSliderIcon />,
+    lottiewidth: "w-[90px]",
+    svgicon: "/lottie/lottieone.json",
     endvalue: 2,
     heading: "Months",
     subHeading: "Fast - 2 mins not 2 months",
     para: "No consultants, no months of field Validation. Less room for error. Simply log in, mark your location on the map, and get accurate measurements.",
   },
   {
-    svgicon: <DimensionSliderIcon />,
+    lottiewidth: "w-[60px]",
+    svgicon: "/lottie/lottie2.json",
     endvalue: 2,
     heading: "dimensions",
     subHeading: "complete - 2 dimensions data",
     para: "No need to use a lot of consultant to do field validate for 1 - 2 Months.",
   },
   {
-    svgicon: <TimesSliderIcon />,
+    lottiewidth: "w-[78px]",
+    svgicon: "/lottie/lottie3.json",
     endvalue: 10,
     heading: "Times",
     subHeading: "affordable - 10 times cheaper",

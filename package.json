@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@material-tailwind/react": "^2.1.2",
     "@mui/material": "^5.14.13",
     "aos": "^2.3.4",
