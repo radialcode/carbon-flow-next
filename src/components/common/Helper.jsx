@@ -26,16 +26,16 @@ export const monthSliderdata = [
 
 // TEAM MEMBERS SLIDER DATA
 export const TeamMemberSliderdata = [
-  {
-    img: "/images/png/team1.png",
-    heading: "Lertsak p.",
-    profession: "Business",
-    profileBtn: "View profile",
-  },
+  // {
+  //   img: "/images/png/team1.png",
+  //   heading: "Lertsak p.",
+  //   profession: "Business",
+  //   profileBtn: "View profile",
+  // },
   {
     img: "/images/png/team2.png",
     heading: "Luca Cotta",
-    profession: "Intro IDO",
+    profession: "Business",
     profileBtn: "View profile",
   },
   {
@@ -51,29 +51,105 @@ export const TeamMemberSliderdata = [
     profileBtn: "View profile",
   },
   {
-    img: "/images/png/team1.png",
-    heading: "Lertsak p.",
-    profession: "Business",
+    img: "/images/png/team_umer.png",
+    heading: "Umer Khattak",
+    profession: "INTER PARTNERSHIP",
     profileBtn: "View profile",
   },
   {
-    img: "/images/png/team2.png",
-    heading: "Luca Cotta",
-    profession: "Intro IDO",
+    img: "/images/png/team-trin.png",
+    heading: "Trin C.",
+    profession: "SCALABLE",
     profileBtn: "View profile",
   },
   {
-    img: "/images/png/team3.png",
-    heading: "Rachadee C.",
-    profession: "Blockchain",
-    profileBtn: "View profile",
-  },
-  {
-    img: "/images/png/team4.png",
-    heading: "Teerasak W.",
-    profession: "Innovation",
+    img: "/images/png/team_patniyakan.png",
+    heading: "Patniyakan T.",
+    profession: "FINANCE",
     profileBtn: "View profile",
   },
 ];
 
-export const FaqData = () => {};
+export const FaqData = [
+  {
+    question:
+      "What kind of training or technical skills are required to use CarbonFluxX effectively? ",
+    faqanswer:
+      "No special technical skills are required. CarbonFluxX is designed to be user-friendly, and comprehensive training and user guide are provided.",
+  },
+  {
+    question:
+      "Can CarbonFluxX scale to meet our needs as our company grows and our carbon credit validation needs increase? ",
+    faqanswer:
+      "Yes, CarbonFluxX is built to scale and can easily accommodate the growth of your company and increased carbon credit validation requirements without compromising speed or accuracy.",
+  },
+  {
+    question:
+      "How accurate are the carbon credit measurements provided by CarbonFluxX, and how do they compare to other methods in the market? ",
+    faqanswer:
+      "CarbonFluxX utilizes advanced Satellite and Eddy Covariance Machine Learning AI, ensuring the highest level of accuracy and outperforming other methods in the industry.",
+  },
+  {
+    question: "How quickly can CarbonFluxX validate carbon credits? ",
+    faqanswer:
+      "CarbonFluxX provides 2 Days validation results, significantly reducing the time required compared to other methods which are around months.",
+  },
+  {
+    question:
+      "What is the pricing structure for CarbonFluxX? Is it a subscription service, a one-time fee, or based on usage? ",
+    faqanswer:
+      "CarbonFluxX operates on a subscription model, offering flexibility and scalability based on your specific usage requirements.",
+  },
+  {
+    question:
+      "What kind of customer support does CarbonFluxX offer? Is there a dedicated team to help with any issues or questions we may have? ",
+    faqanswer:
+      "We provide 24/7 customer support with a dedicated team ready to assist you with any issues or questions within 24 hours. Faster Responds could be provided based on special requested by account. ",
+  },
+  {
+    question:
+      "How does CarbonFluxX ensure the security of our data? Is it compliant with relevant data protection and environmental regulations? ",
+    faqanswer:
+      "CarbonFluxX adheres to the highest standards of data security and complies with all relevant data protection and environmental regulations, ensuring the confidentiality and integrity of your data.",
+  },
+  {
+    question:
+      "How often is CarbonFluxX updated? Will we automatically receive updates and improvements? ",
+    faqanswer:
+      "CarbonFluxX is regularly updated to enhance its functionality and user experience. All updates and improvements are automatically available to users at no additional cost.",
+  },
+  {
+    question:
+      "Is there a trial period available for us to test out CarbonFluxX and see if it meets our needs?",
+    faqanswer:
+      "Yes, we offer a trial period for you to test out CarbonFluxX, allowing you to experience its capabilities firsthand before making a commitment.",
+  },
+  {
+    question:
+      "How is CarbonFluxX different from current Satellite and Drone Technology?",
+    faqanswer:
+      "While current Satellite technology measures the size of a property, CarbonFluxX goes a step further by directly measuring carbon emission/absorption from the atmosphere. This provides more accurate and precise carbon measurements.",
+  },
+  {
+    question: "Where can I sell CarbonFluxX Carbon Credit?",
+    faqanswer:
+      "You have two options: utilize the carbon credits for NetZero purposes internally within your organization or sell them on our blockchain-based market. Reassured, our carbon credit guarantees no double counting.",
+  },
+  {
+    question:
+      "Is CarbonFluxX approved by Global Standard body e.g. VERRA, GOLD etc. and Local Standard Body e.g. T-VER?",
+    faqanswer:
+      "We are currently in the process of obtaining approval from those Standard Bodies for our carbon credit methodology. We are committed to meeting the necessary standards and requirements.",
+  },
+  {
+    question: "Is it too early for this new technology?",
+    faqanswer:
+      "CarbonFluxX has undergone 15 years of research and development, resulting in several publication papers. The technology has been thoroughly tested and is ready to deliver accurate and reliable results.",
+  },
+  {
+    question:
+      "How reliable is the Predictive AI used in CarbonFluxX? What kind of dataset is used?",
+    faqanswer:
+      "The Predictive AI in CarbonFluxX is highly reliable. We utilize a dataset consisting of 5 years of daily historical data from Satellite and Eddy Covariance measurements worldwide. This comprehensive dataset ensures accurate predictions and reliable carbon credit measurements.",
+  },
+];

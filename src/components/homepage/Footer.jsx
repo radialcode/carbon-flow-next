@@ -4,8 +4,7 @@ import React from "react";
 import {
   FooterFacebookIcon,
   FooterGmailIcon,
-  FooterInstaIcon,
-  FooterTikTokIcon,
+  FooterTwitterIcon,
 } from "../common/Icon";
 
 const Footer = () => {
@@ -95,16 +94,16 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FooterInstaIcon />
+                <FooterTwitterIcon />
               </Link>
-              <Link
+              {/* <Link
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.tiktok.com/en/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FooterTikTokIcon />
-              </Link>
+              </Link> */}
               <Link
                 className=" hover:translate-y-[-8%] duration-200"
                 href="https://www.gmail.com/"
@@ -121,15 +120,17 @@ const Footer = () => {
               <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0">
                 Copyright©{year} | All Rights Reserved
               </p>
-             <div className="flex gap-1">
-             <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
-                Terms & Conditions
-              </p>
-              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">|</p>
-              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
-              Privacy & Security
-              </p>
-             </div>
+              <div className="flex gap-1">
+                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                  Terms & Conditions
+                </p>
+                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                  |
+                </p>
+                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                  Privacy & Security
+                </p>
+              </div>
             </div>
           </div>
         </div>

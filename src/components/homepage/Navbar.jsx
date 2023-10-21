@@ -54,18 +54,24 @@ const Navbar = () => {
       >
         <div className="w-full flex justify-between items-center md:py-[14px] py-[23px] md:px-10 px-5 xl:px-20">
           <div className="flex items-center hover_bounce">
-          <Link className="relative z-50" href="/">
-            <Image
-              className="max-w-[130px] xs:max-w-[160px] 2xl:max-w-[202px]"
-              src="/images/svg/Logo.svg"
-              width={202}
-              height={34}
-              alt="logo image"
-            />
-          </Link>
-          <Link className="ms-4" href="/">
-          <Image className="2xl:max-w-[140px] max-w-[80px] xs:max-w-[100px]" height={100} width={250} src="/images/JGR_logo.svg" alt="JGR_logo"/>
-          </Link>
+            <Link className="relative z-50" href="/">
+              <Image
+                className="max-w-[130px] xs:max-w-[160px] 2xl:max-w-[202px]"
+                src="/images/svg/Logo.svg"
+                width={202}
+                height={34}
+                alt="logo image"
+              />
+            </Link>
+            <Link className="ms-4" href="/">
+              <Image
+                className="max-w-[80px] xs:max-w-[100px]"
+                height={100}
+                width={250}
+                src="/images/JGR_logo.svg"
+                alt="JGR_logo"
+              />
+            </Link>
           </div>
           <ul
             className={`flex xl:gap-[20px] gap-[20px] items-center lg:static fixed top-0 lg:min-h-fit min-h-screen w-full lg:w-auto lg:bg-transparent bg-[#0D2517] justify-center lg:flex-row flex-col duration-200 ${
@@ -128,9 +134,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="xl:ps-5">
-              <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
+              <a
+                href="mailto:contactus@carbonflow.earth"
+                className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
+              >
                 Contact Us
-              </button>
+              </a>
             </li>
           </ul>
           <div
@@ -144,7 +153,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex bg-[#061E10] lg:justify-end justify-between items-center w-full py-[23px] xl:pe-20 md:px-10 px-5">
-      <div className="xl:absolute z-[2] xl:-left-12 3xl:left-6 xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer lg:hidden 2xl:inline-block ">
+        <div className="xl:absolute z-[2] xl:-left-12 3xl:left-6 xl:top-44 xl:-rotate-90 xl:translate-y-full cursor-pointer lg:hidden 2xl:inline-block ">
           <Link href="/">
             <Image
               className="max-w-[202px] hover_bounce"
@@ -212,9 +221,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="lg:ps-5">
-            <button className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200">
+            <a
+              href="mailto:contactus@carbonflow.earth"
+              className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
+            >
               Contact Us
-            </button>
+            </a>
           </li>
         </ul>
         <div

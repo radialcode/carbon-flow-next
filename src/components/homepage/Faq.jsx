@@ -6,6 +6,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { FaqIcon } from "../common/Icon";
 import Image from "next/image";
+import { FaqData } from "../common/Helper";
 
 const Faq = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -31,31 +32,32 @@ const Faq = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-center flex-wrap mt-[31px]">
             <div className="lg:w-7/12">
-              <Accordion
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
-                className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
-              >
-                <AccordionSummary
-                  expandIcon={<FaqIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                  className="my-1 items-baseline "
-                >
-                  <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[422px]">
-                    {" "}
-                    What kind of training or technical skills are required to
-                    use CarbonFlow effectively?
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    Yes, our mobile app is available to premier and premier plus
-                    subscribers, allowing you to manage your business on the go.
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-              <Accordion
+              {FaqData.map((data, index) => {
+                return (
+                  <Accordion
+                    expanded={expanded === index}
+                    onChange={handleChange(index)}
+                    className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+                  >
+                    <AccordionSummary
+                      expandIcon={<FaqIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                      className="my-1 items-baseline "
+                    >
+                      <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[93%]">
+                        {data.question}
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
+                     {data.faqanswer}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                );
+              })}
+              {/* <Accordion
                 expanded={expanded === "panel2"}
                 onChange={handleChange("panel2")}
                 className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -74,10 +76,10 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    We&apos;re not always in the position that we want to be at.
-                    We&apos;re constantly growing. We&apos;re constantly making
-                    mistakes. We&apos;re constantly trying to express ourselves
-                    and actualize our dreams.
+                    Yes, CarbonFluxX is built to scale and can easily
+                    accommodate the growth of your company and increased carbon
+                    credit validation requirements without compromising speed or
+                    accuracy.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -101,10 +103,9 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    We&apos;re not always in the position that we want to be at.
-                    We&apos;re constantly growing. We&apos;re constantly making
-                    mistakes. We&apos;re constantly trying to express ourselves
-                    and actualize our dreams.
+                    CarbonFluxX utilizes advanced Satellite and Eddy Covariance
+                    Machine Learning AI, ensuring the highest level of accuracy
+                    and outperforming other methods in the industry.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -126,10 +127,9 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    We&apos;re not always in the position that we want to be at.
-                    We&apos;re constantly growing. We&apos;re constantly making
-                    mistakes. We&apos;re constantly trying to express ourselves
-                    and actualize our dreams.
+                    CarbonFluxX provides 2 Days validation results,
+                    significantly reducing the time required compared to other
+                    methods which are around months.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -152,13 +152,12 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    We&apos;re not always in the position that we want to be at.
-                    We&apos;re constantly growing. We&apos;re constantly making
-                    mistakes. We&apos;re constantly trying to express ourselves
-                    and actualize our dreams.
+                    CarbonFluxX operates on a subscription model, offering
+                    flexibility and scalability based on your specific usage
+                    requirements.
                   </Typography>
                 </AccordionDetails>
-              </Accordion>
+              </Accordion> */}
             </div>
           </div>
         </div>

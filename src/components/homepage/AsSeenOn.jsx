@@ -23,7 +23,7 @@ const AsSeenOn = () => {
         />
         <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <h2 className="ff_AktivGrotesk_bold font-bold text-[24px] md:text-[36px] text-[#061E10] mb-0 text-center">
-            As Seen On
+            Partners, Supporters, Customers and Pilots
           </h2>
           <div className="flex flex-wrap justify-center mt-[35px]">
             <div className="w-10/12">
@@ -53,7 +53,7 @@ const AsSeenOn = () => {
             </div>
           </div>
           <p className=" ff_poppins font-bold text-[14px] sm:text-[20px] text-[#44B902] italic text-center mt-[17px] sm:mt-[45px] capitalize">
-            And over 200 news Sites
+            And Over 200 New Site... to 80 countries
           </p>
         </div>
       </section>
