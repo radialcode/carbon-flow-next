@@ -11,7 +11,7 @@ const HomeHero = ({loader}) => {
   });
   return (
     <>
-      <div className={`bg-[#061E10]  flex flex-col overflow-hidden relative pt-[50px] lg:pt-0 ${loader ? "h-screen" : "hero_screen"}`}>
+      <div className={`bg-[#061E10]  flex flex-col overflow-hidden relative pt-[50px] lg:pt-0 -mt-[1px] ${loader ? "h-screen" : "hero_screen"}`}>
       <a
         className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
         href="#pitchingdeck"
