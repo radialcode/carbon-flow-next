@@ -79,7 +79,7 @@ const TeamMember = () => {
           src="/images/png/month-leaf-position-img.png"
           alt="leaf image"
         />
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <h2 className=" ff_AktivGrotesk_bold font-normal text-[32px] sm:text-[36px] text-[#061E10] leading-[38.46px] sm:leading-[43.27px] mb-0 text-center">
             Team Members
           </h2>

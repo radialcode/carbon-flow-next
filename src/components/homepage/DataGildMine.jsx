@@ -10,9 +10,9 @@ const DataGildMine = () => {
     <>
       <div
         id="globalwarming"
-        className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse pt-[55px] overflow-x-hidden"
+        className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse !pt-[55px] overflow-x-hidden"
       >
-        <div className="md:w-1/2 xl:w-[43%] md:px-0 px-[14px] mt-[47px] md:mt-0">
+        <div className="md:w-1/2 xl:w-[43%] md:px-0 mt-[47px] md:mt-0">
           <h2 className="font-normal lg:text-[36px] text-[32px] text-black ff_AktivGrotesk_bold leading-[117%]">
             Data Gildmine:{" "}
             <span className="text-[#45B802]">10 Years Histoeical</span> &

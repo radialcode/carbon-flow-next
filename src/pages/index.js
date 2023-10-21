@@ -57,14 +57,14 @@ export default function Home() {
         }
         <HomeHero setLoader={setLoader} loader={loader}/>
          <MonthsSlider />
-        {/*<DataGildMine />
+        <DataGildMine />
         <DoubleCounting />
         <AsSeenOn />
         <Empowering />
         <TeamMember />
         <Faq />
         <Footer />
-        <BackToTop /> */}
+        <BackToTop />
       </div>
     </>
   );

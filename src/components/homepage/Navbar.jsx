@@ -65,7 +65,7 @@ const Navbar = () => {
             </Link>
             <Link className="ms-4" href="/">
               <Image
-                className="max-w-[80px] xs:max-w-[100px]"
+                className="max-w-[100px] sm:max-w-[140px]"
                 height={100}
                 width={250}
                 src="/images/JGR_logo.svg"

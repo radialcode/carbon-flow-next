@@ -11,7 +11,7 @@ const AsSeenOn = () => {
     <>
       <section
         id="investor"
-        className="pt-[25px] md:pt-[50px] pb-[84px] md:pb-[127px] relative overflow-x-hidden"
+        className="py-[90px] md:pb-[127px] relative overflow-x-hidden"
       >
         <Image
           className=" absolute left-[28px] top-[22px] sm:top-[44px] z-0 w-[96px] sm:w-[144px] hidden md:block"
@@ -21,7 +21,7 @@ const AsSeenOn = () => {
           src="/images/png/month-leaf-position-img.png"
           alt="month leaf image"
         />
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <h2 className="ff_AktivGrotesk_bold font-bold text-[24px] md:text-[36px] text-[#061E10] mb-0 text-center">
             Partners, Supporters, Customers and Pilots
           </h2>

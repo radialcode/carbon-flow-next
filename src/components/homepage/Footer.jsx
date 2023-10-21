@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 pb-[60px] sm:pb-[71px] z-10 relative mt-[-68px]">
+        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 pb-[60px] sm:pb-[71px] z-10 relative mt-[-68px]">
           <div className="flex flex-col items-center justify-center">
             <Image
               className=" w-[259px] lg:w-[454px] md:w-[350px]"
@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" border-t border-[#123200] z-10 relative">
-          <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
+          <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
             <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center py-[21px]">
               <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0">
                 Copyright©{year} | All Rights Reserved

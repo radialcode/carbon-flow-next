@@ -86,16 +86,14 @@ const HomeHero = ({loader}) => {
                 Predictive AI. These give unparalleled way to measure carbon
                 credit.
               </p>
-
-              <div className="flex mt-[30px] xl:mt-[50px] sm:items-center gap-4 sm:flex-row flex-col mb-7 md:mb-0">
-                <button className="p-[12px_24px] border border-[#44B902] ff_poppins font-semibold text-[14px] 2xsm:text-[16px] text-white rounded-full hover:bg-[#44B902] duration-200  leading-normal flex items-center flex-col min-w-[170px] max-w-[170px]">
-                  Start Measure!{" "}
-                  <span className="text-[10px] opacity-50 group:hover:opacity-80 leading-normal">
-                    No CC Required
-                  </span>
-                </button>
-
-              </div>
+              <div className="lg:pt-[35px] pt-[20px]">
+            <button className="px-[24px] py-[12px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#FFFFFF] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 flex gap-[23px] items-center">
+              Start Measure!
+              <span className="ff_poppins font-semibold text-[10px] text-[#FFFFFF] block leading-[18px] group-hover:text-white opacity-50 after:contents-[''] after:absolute relative after:h-[18px] after:w-[1px] after:bg-[#FFFFFF] after:-left-3 after:top-1/2 after:-translate-y-1/2">
+                No CC Required
+              </span>
+            </button>
+          </div>
                 <p className="text-[12px] ff_poppins font-bold italic text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9">
               Based on 5 years research published in
                 </p>
@@ -103,8 +101,7 @@ const HomeHero = ({loader}) => {
               <Image className="mt-3 max-w-[250px]" height={100} width={200} src="/images/JGR_logo.svg" alt="JGR_logo"/>
               </Link>
             </div>
-            <div >
-            <div className={`hero_clipPath ${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 3xl:w-[50%] 3xl:max-w-none 3xl:h-[100%]"}`}>
+            <div className={`hero_clipPath ${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 4xl:w-[50%] 4xl:max-w-none 4xl:h-[100%]"}`}>
                 <Image
                   ref={ref}
                   priority={true}
@@ -119,7 +116,6 @@ const HomeHero = ({loader}) => {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

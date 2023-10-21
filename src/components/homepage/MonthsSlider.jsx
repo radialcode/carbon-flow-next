@@ -67,7 +67,7 @@ const MonthsSlider = () => {
           src="/images/png/month-leaf-position-img.png"
           alt="leaf image"
         />
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <Slider
             {...settings}
             className="flex flex-wrap mx-[-20px]"

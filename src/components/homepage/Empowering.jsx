@@ -5,8 +5,8 @@ const Empowering = () => {
   return (
     <>
       <section className=" bg-empoweringBg">
-        <div className="container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
-          <div className="flex xl:justify-between flex-col-reverse lg:flex-row px-3 xl:px-0 xl:items-center items-end">
+        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+          <div className="flex xl:justify-between flex-col-reverse lg:flex-row  xl:items-center items-end">
             <div
               data-aos="fade-right"
               data-aos-delay="100"
@@ -84,7 +84,7 @@ const Empowering = () => {
               data-aos="zoom-in-up"
               data-aos-delay="100"
               data-aos-duration="1000"
-              className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center after:content-[''] after:absolute relative sm:after:w-[90%] after:w-[110%] after:h-[8px] after:bg-[#ffffff50] after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:z-10"
+              className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center after:content-[''] after:absolute relative sm:after:w-[90%] xsm:after:w-[100%] after:w-[110%] after:h-[8px] after:bg-[#ffffff50] after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:z-10"
             >
               <Image
                 className="w-full lg:max-w-[550px] max-w-[400px] mx-auto"
