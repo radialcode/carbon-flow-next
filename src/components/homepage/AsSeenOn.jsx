@@ -14,7 +14,7 @@ const AsSeenOn = () => {
         className="py-[90px] md:pb-[127px] relative overflow-x-hidden"
       >
         <Image
-          className=" absolute left-[28px] top-[22px] sm:top-[44px] z-0 w-[96px] sm:w-[144px] hidden md:block"
+          className=" absolute left-[28px] top-[22px] sm:top-[44px] z-0 w-[96px] sm:w-[144px] hidden md:block max-w-[100px] sm:max-w-none"
           data-aos="fade-right"
           width={144}
           height={140}
@@ -29,11 +29,11 @@ const AsSeenOn = () => {
             <div className="w-10/12">
               <div className="flex justify-center gap-[13px] md:gap-[36px]">
                 <div
-                  className=" px-[23px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
+                  className=" px-[10px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <Image
+                  <Image className="max-w-[70px] sm:max-w-none"
                     src="/images/png/ceos.png"
                     width={133}
                     height={50}
@@ -41,11 +41,11 @@ const AsSeenOn = () => {
                   />
                 </div>
                 <div
-                  className=" px-[23px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
+                  className=" px-[10px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <Image
+                  <Image className="max-w-[70px] sm:max-w-none"
                     src="/images/png/gistda_logo.png"
                     width={133}
                     height={41}
@@ -53,7 +53,7 @@ const AsSeenOn = () => {
                   />
                 </div>
                 <div
-                  className=" px-[23px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
+                  className=" px-[10px] xs:px-[40px] lg:px-[60px] xs:py-[20px] py-[14px] md:py-[25px] lg:py-[37px] bg-white shadow-as_seen_on_box_shadow hover:shadow-none border-2 border-white hover:border-[#44B902] duration-200 rounded-[10px]"
                   data-aos="fade-up"
                   data-aos-delay="700"
                 >

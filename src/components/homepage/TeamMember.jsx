@@ -17,7 +17,7 @@ const TeamMember = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -27,17 +27,7 @@ const TeamMember = () => {
         },
       },
       {
-        breakpoint: 1008,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          speed: 1000,
-        },
-      },
-      {
-        breakpoint: 800,
+        breakpoint: 990,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -109,7 +99,7 @@ const TeamMember = () => {
             >
               {TeamMemberSliderdata.map((data, index) => {
                 return (
-                  <div className="w-3/12 h-full flex px-[10px]" key={index}>
+                  <div className="w-full h-full flex px-[10px]" key={index}>
                     <div className="border border-[#E7E9E8] hover:outline-[#D2F958] hover:outline-[3px] hover:outline-offset-[-3px] hover:outline rounded-[10px] h-full w-full">
                       <div className="py-[22px]">
                         <div className="clip_path_team_slider flex justify-center overflow-hidden max-w-[94px] mx-auto h-[110px]">
@@ -127,8 +117,29 @@ const TeamMember = () => {
                         <p className=" ff_poppins font-normal text-[14px] text-[#061E10] mb-0 mt-[2px] text-center">
                           {data.profession}
                         </p>
-                        <div className="flex justify-center">
-                          <button
+                        <div className="flex justify-center mt-2">
+                        <ul className="list-disc text-[#061E10] opacity-70 ps-7 pe-2">
+                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                          {data.info1}
+                        </li>
+                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                          {data.info2}
+                        </li>
+                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                          {data.info3}
+                        </li>
+                        <li
+                          className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden4}`}
+                        >
+                          {data.info4}
+                        </li>
+                        <li
+                          className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden5}`}
+                        >
+                          {data.info5}
+                        </li>
+                      </ul>
+                          {/* <button
                             onClick={() => {
                               setPopUp(true);
                               setCardData(index);
@@ -136,7 +147,7 @@ const TeamMember = () => {
                             className="mt-[16px] ff_poppins font-medium text-[14px] text-white py-[12.5px] px-[22px] border-2 border-white rounded-full bg-[#235C02] hover:bg-white hover:text-[#4EB708] hover:border-[#4EB708] duration-200"
                           >
                             {data.profileBtn}
-                          </button>
+                          </button> */}
                         </div>
                       </div>
                     </div>
@@ -164,7 +175,7 @@ const TeamMember = () => {
                   popUp ? "flex" : "hidden"
                 }`}
               >
-                {TeamPopupData.map((teamdata, index) => {
+                {/* {TeamPopupData.map((teamdata, index) => {
                   return (
                     <div
                       key={index}
@@ -219,7 +230,7 @@ const TeamMember = () => {
                       </ul>
                     </div>
                   );
-                })}
+                })} */}
               </div>
             </div>
           </div>
