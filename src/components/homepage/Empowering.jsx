@@ -13,15 +13,15 @@ const Empowering = () => {
               data-aos-duration="900"
               className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] py-[40px]"
             >
-              <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white max-w-[509px] mb-0 leading-[38.46px] md:leading-[43.27px]">
+              <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white  mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
                 CarbonFlow
               </h2>
               <h3 className="ff_AktivGrotesk_bold font-normal text-[18px] md:text-[24px] text-white mb-0 leading-[23.94px] md:leading-[31px] mt-[20px]">
-                Lertsak Pengsangtong
+                Luca Cotta
               </h3>
               <p className=" ff_poppins font-normal text-base text-[#B6BEB7] mb-0 mt-[5px]">
-                CEO & Founder of CarbonFlow
+                CEO of CarbonFlow
               </p>
               <div className="flex items-center gap-[5.18px] mt-[7px]">
                 <Image

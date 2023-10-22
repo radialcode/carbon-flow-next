@@ -11,7 +11,7 @@ const HomeHero = ({loader}) => {
   });
   return (
     <>
-      <div className={`bg-[#061E10]  flex flex-col overflow-hidden relative pt-[50px] lg:pt-0 ${loader ? "h-screen" : "hero_screen"}`}>
+      <div className={`bg-[#061E10]  flex flex-col overflow-hidden relative pt-[50px] lg:pt-0 -mt-[1px] ${loader ? "h-screen" : "hero_screen"}`}>
       <a
         className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
         href="#pitchingdeck"
@@ -87,14 +87,16 @@ const HomeHero = ({loader}) => {
                 credit.
               </p>
               <div className="lg:pt-[35px] pt-[20px]">
-            <button className="px-[24px] py-[12px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#FFFFFF] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 flex gap-[23px] items-center">
+            <span className="inline-block">
+            <a href="mailto:contactus@carbonflow.earth" className="px-[24px] py-[12px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#FFFFFF] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 flex gap-[23px] items-center">
               Start Measure!
               <span className="ff_poppins font-semibold text-[10px] text-[#FFFFFF] block leading-[18px] group-hover:text-white opacity-50 after:contents-[''] after:absolute relative after:h-[18px] after:w-[1px] after:bg-[#FFFFFF] after:-left-3 after:top-1/2 after:-translate-y-1/2">
                 No CC Required
               </span>
-            </button>
+            </a>
+            </span>
           </div>
-                <p className="text-[12px] ff_poppins font-bold italic text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9">
+                <p className="text-[12px] ff_poppins font-extralight text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9">
               Based on 5 years research published in
                 </p>
               <Link href="/">
