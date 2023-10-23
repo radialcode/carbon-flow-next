@@ -117,7 +117,7 @@
 
 .hero_img_scale {
   animation: heroImgScale 2s ease-in-out forwards;
-  animation-delay: 2500ms;
+  animation-delay: 1900ms;
   transform: scale(1.2);
 }
 

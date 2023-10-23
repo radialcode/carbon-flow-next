@@ -164,7 +164,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="xl:flex xl:gap-[33px] gap-[20px] items-center hidden min-w-[840px]">
+        <ul className="xl:flex xl:gap-[33px] gap-[20px] items-center justify-end hidden min-w-[840px]">
           <li>
             <a
               onClick={() => {
