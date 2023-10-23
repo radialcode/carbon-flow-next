@@ -90,7 +90,7 @@ const Empowering = () => {
                 className="w-full lg:max-w-[550px] max-w-[400px] mx-auto"
                 width={512}
                 height={555}
-                src="/images/webp/empowering-img.webp"
+                src="/images/png/empowering_img.png"
                 alt="empowering image"
               />
             </div>

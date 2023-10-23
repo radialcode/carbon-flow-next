@@ -89,7 +89,7 @@ const Navbar = () => {
                 Global Warming is Real?
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 onClick={() => {
                   setShowNav(false);
@@ -110,7 +110,7 @@ const Navbar = () => {
               >
                 Investor
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 onClick={() => {
@@ -176,7 +176,7 @@ const Navbar = () => {
               Global Warming is Real?
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               onClick={() => {
                 setShowNav(false);
@@ -197,7 +197,7 @@ const Navbar = () => {
             >
               Investor
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               onClick={() => {

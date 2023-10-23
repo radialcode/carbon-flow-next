@@ -2,9 +2,9 @@ import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {
-    lottiewidth: "w-[90px]",
-    // svgicon: "/lottie/lottieone.json",/
-    svgicon: <MonthsSliderIcon />,
+    // lottiewidth: "w-[90px]",
+    svgicon: "/lottie/lottieone.json",
+    // svgicon: <MonthsSliderIcon />,
     endvalue: 2,
     heading: "Months",
     subHeading: "Fast - 2 mins not 2 months",
@@ -12,17 +12,17 @@ export const monthSliderdata = [
   },
   {
     lottiewidth: "!w-[50px]",
-    // svgicon: "/lottie/lottie2.json",
-    svgicon: <DimensionSliderIcon />,
+    svgicon: "/lottie/lottie2.json",
+    // svgicon: <DimensionSliderIcon />,
     endvalue: 2,
     heading: "dimensions",
     subHeading: "complete - 2 dimensions data",
     para: "No need to use a lot of consultant to do field validate for 1 - 2 Months.",
   },
   {
-    lottiewidth: "w-[78px]",
-    // svgicon: "/lottie/lottie3.json",
-    svgicon: <TimesSliderIcon />,
+    // lottiewidth: "w-[78px]",
+    svgicon: "/lottie/lottie3.json",
+    // svgicon: <TimesSliderIcon />,
     endvalue: 10,
     heading: "Times",
     subHeading: "affordable - 10 times cheaper",
@@ -49,17 +49,17 @@ export const TeamMemberSliderdata = [
     hidden4: "hidden",
     hidden5: "hidden",
   },
-  {
-    img: "/images/png/team3.png",
-    heading: "Rachadee C.",
-    profession: "Blockchain",
-    profileBtn: "View Profile",
-    info1: "Founder of Aquila Studio",
-    info2: "Blockchain Expert",
-    info3: "1st Thai SEC-Approved AI Tradind",
-    info4: "Dot Connector",
-    hidden5: "hidden",
-  },
+  // {
+  //   img: "/images/png/team3.png",
+  //   heading: "Rachadee C.",
+  //   profession: "Blockchain",
+  //   profileBtn: "View Profile",
+  //   info1: "Founder of Aquila Studio",
+  //   info2: "Blockchain Expert",
+  //   info3: "1st Thai SEC-Approved AI Tradind",
+  //   info4: "Dot Connector",
+  //   hidden5: "hidden",
+  // },
   {
     img: "/images/png/team4.png",
     heading: "Teerasak W.",
@@ -86,7 +86,7 @@ export const TeamMemberSliderdata = [
   {
     img: "/images/png/team-trin.png",
     heading: "Trin C.",
-    profession: "SCALABLE",
+    profession: "TECHNOLOGY",
     profileBtn: "View Profile",
     info1: "VP of innovation (banking)",
     info2:

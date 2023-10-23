@@ -80,15 +80,15 @@ const MonthsSlider = () => {
                   key={index}
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
-                    {/* <div className="max-w-[90px] h-[90px] flex justify-center items-center">
-                      <Player
-                        src={data.svgicon}
-                        className={`player flex flex-col justify-start ${data.lottiewidth}`}
-                        loop
-                        autoplay={true}
-                      />
-                    </div> */}
-                    <div className={data.lottiewidth}>{data.svgicon}</div>
+                    <div className="max-w-[90px] h-[90px] flex justify-center items-center">
+                        <Player
+                          src={data.svgicon}
+                          className={`player flex flex-col justify-start ${data.lottiewidth}`}
+                          keepLastFrame={true}
+                          autoplay={true}
+                        />
+                    </div>
+                    {/* <div className={data.lottiewidth}>{data.svgicon}</div> */}
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
                       <VisibilitySensor
                         onChange={onVisibilityChange}
