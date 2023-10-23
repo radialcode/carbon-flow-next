@@ -122,10 +122,10 @@ const HomeHero = ({loader}) => {
               </Link>
             </div>
             <div
-              className={`${
+              className={`hero_clipPath ${
                 loader
-                  ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[2s] max-w-[100px] p-[1] hero_clipPath"
-                  : "absolute hero_clipPath  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[2s] animate_loader md:w-[600px] lg:w-auto md:max-w-[600px] xl:max-w-[800px] md:h-[600px] xl:h-[800px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[95%] 4xl:w-[1600px] 4xl:max-w-[50%]  4xl:h-[1600px]  3xl:bottom-[-50px] 4xl:bottom-[-20%] lg:bottom-[-180px] sm:max-w-[70%] bottom-[-80px] max-w-[370px] sm:w-[600px] sm:bottom-[-150px]"
+                  ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[2s] max-w-[100px] p-[1] "
+                  : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[2s] animate_loader md:w-[600px] lg:w-auto md:max-w-[600px] xl:max-w-[800px] md:h-[600px] xl:h-[800px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[95%] 4xl:w-[1600px] 4xl:max-w-[50%]  4xl:h-[1600px]  3xl:bottom-[-50px] 4xl:bottom-[-20%] lg:bottom-[-180px] sm:max-w-[70%] bottom-[-80px] max-w-[370px] sm:w-[600px] sm:bottom-[-150px]"
               }`}
             >
               <Image

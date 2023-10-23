@@ -5,7 +5,10 @@ import Image from "next/image";
 import CountUp, { useCountUp } from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 const MonthsSlider = () => {
+  const [playerRef, inView] = useInView({ triggerOnce: true });
   var settings = {
     dots: true,
     infinite: true,
@@ -81,12 +84,14 @@ const MonthsSlider = () => {
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
                     <div className="max-w-[90px] h-[90px] flex justify-center items-center">
+                      <div ref={playerRef}>
                         <Player
-                          src={data.svgicon}
+                          src={inView ? data.svgicon : ""}
                           className={`player flex flex-col justify-start ${data.lottiewidth}`}
                           keepLastFrame={true}
                           autoplay={true}
                         />
+                      </div>
                     </div>
                     {/* <div className={data.lottiewidth}>{data.svgicon}</div> */}
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
