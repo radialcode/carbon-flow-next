@@ -74,7 +74,7 @@ const HomeHero = ({loader}) => {
         <div className="custom_container w-full h-full mx-auto">
           <div className="flex flex-col items-center lg:flex-row justify-between h-full">
           <div className="w-full relative" data-aos="fade-right" data-aos-delay="800" data-aos-duration="900">
-              <h1 className="ff_AktivGrotesk_bold text-[40px] md:text-[55px] xl:text-[70px] font-normal leading-[115%] capitalize text-white">
+              <h1 className="ff_AktivGrotesk_bold text-[36px] sm:text-[40px] md:text-[55px] xl:text-[70px] font-normal leading-[115%] capitalize text-white">
                 Direct <span className="text-[#44B902]">Measure,</span>
                 <span className=" block">
                   Direct <span className="text-[#44B902]">Matter !</span>
@@ -103,7 +103,7 @@ const HomeHero = ({loader}) => {
               <Image className="mt-3 max-w-[250px]" height={100} width={200} src="/images/JGR_logo.svg" alt="JGR_logo"/>
               </Link>
             </div>
-            <div className={`hero_clipPath ${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 4xl:max-w-[1200px]  4xl:h-[1200px]"}`}>
+            <div className={`${loader ? "z-[999] absolute top-[50%] right-[50%] translate-x-[38%] -translate-y-[50%] duration-[2s] max-w-[100px] h-[100px]" : "absolute hero_clipPath md:top-[57%] top-[70.5%] right-[50%] translate-x-[50%] lg:top-[58%] xl:top-[33%] 3xl:top-[43%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 -translate-y-[18%] duration-[2s] animate_loader md:w-[480px] lg:w-auto md:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 4xl:max-w-[1200px]  4xl:h-[1200px]"}`}>
                 <Image
                   ref={ref}
                   priority={true}
