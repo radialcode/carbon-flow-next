@@ -24,7 +24,7 @@ const inter = Inter({ subsets: ["latin"] });
 // PAGE SEO START
 const pageSEO = {
   // SEO TITLE
-  title: "Carbon flow",
+  title: "CarbonFlow",
   // SEO DESCRIPTION
   description:
     "The most effective way to measure Forrest & farm’s carbon credits without breaking the bank.",

@@ -88,7 +88,7 @@ const MonthsSlider = () => {
                         autoplay={true}
                       />
                     </div> */}
-                    <div>{data.svgicon}</div>
+                    <div className={data.lottiewidth}>{data.svgicon}</div>
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
                       <VisibilitySensor
                         onChange={onVisibilityChange}

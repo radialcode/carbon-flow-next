@@ -36,7 +36,7 @@ const Footer = () => {
               className=" w-[259px] lg:w-[454px] md:w-[350px]"
               width={454}
               height={75}
-              src="/images/webp/footer-logo.webp"
+              src="/images/svg/footer-Logo.svg"
               alt="footer logo"
             />
             <ul className="flex gap-[20px] items-center justify-center flex-row flex-wrap duration-200 mt-[20px] px-[15px] min-[376px]:px-[50px] sm:px-0">
@@ -81,9 +81,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <div className="flex mt-[25px]">
+            <div className="flex mt-[25px] gap-[10px] sm:mb-0 mb-10">
               <Link
-                className=" hover:translate-y-[-8%] duration-200"
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Footer = () => {
                 <FooterFacebookIcon />
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] duration-200"
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Footer = () => {
                 <FooterTwitterIcon />
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] duration-200"
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -107,14 +107,14 @@ const Footer = () => {
                 <FooterLindedInIcon />
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] duration-200"
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.gmail.com/"
                 target="_blank"
               >
                 <FooterGmailIcon />
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] duration-200"
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.discord.com/"
                 target="_blank"
               >
@@ -126,17 +126,17 @@ const Footer = () => {
         <div className=" border-t border-[#123200] z-10 relative">
           <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
             <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center py-[21px]">
-              <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0">
+              <p className=" ff_poppins font-normal text-[15px] text-white mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0 opacity-60">
                 Copyright©{year} | All Rights Reserved
               </p>
               <div className="flex gap-1">
-                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
                   Terms & Conditions
                 </p>
-                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
                   |
                 </p>
-                <p className=" ff_poppins font-normal text-[15px] text-[#9A9F9C] mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
                   Privacy & Security
                 </p>
               </div>

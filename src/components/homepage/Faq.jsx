@@ -19,10 +19,10 @@ const Faq = () => {
     <>
       <section className=" pt-[93px] pb-[257px] bg-[url('/images/webp/faq-bg-img.webp')] bg-fixed bg-no-repeat bg-cover bg-center relative">
         <Image
-          className=" absolute bottom-0 left-0 w-full h-[100px] object-cover object-top"
+          className=" absolute bottom-0 left-0 w-full h-[100px] object-cover object-top bg-size-full"
           width={1453}
           height={100}
-          src="/images/png/footer_grassimg.png"
+          src="/images/svg/faq_grass.svg"
           alt="footer-grass"
         />
         <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
@@ -51,7 +51,7 @@ const Faq = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                     {data.faqanswer}
+                        {data.faqanswer}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -76,7 +76,7 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    Yes, CarbonFluxX is built to scale and can easily
+                    Yes, CarbonFlow is built to scale and can easily
                     accommodate the growth of your company and increased carbon
                     credit validation requirements without compromising speed or
                     accuracy.
@@ -103,7 +103,7 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    CarbonFluxX utilizes advanced Satellite and Eddy Covariance
+                    CarbonFlow utilizes advanced Satellite and Eddy Covariance
                     Machine Learning AI, ensuring the highest level of accuracy
                     and outperforming other methods in the industry.
                   </Typography>
@@ -127,7 +127,7 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    CarbonFluxX provides 2 Days validation results,
+                    CarbonFlow provides 2 Days validation results,
                     significantly reducing the time required compared to other
                     methods which are around months.
                   </Typography>
@@ -152,7 +152,7 @@ const Faq = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="ff_AktivGrotesk font-normal text-[14px] text-white ">
-                    CarbonFluxX operates on a subscription model, offering
+                    CarbonFlow operates on a subscription model, offering
                     flexibility and scalability based on your specific usage
                     requirements.
                   </Typography>
