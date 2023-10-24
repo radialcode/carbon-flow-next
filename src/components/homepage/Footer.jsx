@@ -81,7 +81,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <div className="flex mt-[25px] gap-[10px] sm:mb-0 mb-10">
+            <div className="flex justify-center mt-[25px] gap-[10px] sm:mb-0 mb-10">
               <Link
                 className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.facebook.com/"
@@ -129,10 +129,9 @@ const Footer = () => {
               <p className=" ff_poppins font-normal text-[15px] text-white mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0 opacity-60">
                 Copyright©{year} | All Rights Reserved
               </p>
-              <div className="flex gap-1">
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
-                  Terms & Conditions
-                </p>
+              <div className="flex gap-2">
+              <Link className="f_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200" href="/disclaimer" target="_blank" >Disclaimer</Link>
+              <Link className="f_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200" href="/terms-conditions" target="_blank" >Terms & Condition</Link>
                 <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
                   |
                 </p>
