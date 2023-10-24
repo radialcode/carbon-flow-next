@@ -5,7 +5,7 @@ import "intersection-observer";
 
 import { ScrollDownIcon } from "../common/Icon";
 import Link from "next/link";
-const HomeHero = ({loader}) => {
+const HomeHero = ({ loader }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -122,15 +122,15 @@ const HomeHero = ({loader}) => {
               </Link>
             </div>
             <div
-              className={`hero_clipPath ${
+              className={`hero_clipPath duration-[5s] ${
                 loader
-                  ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[3s] max-w-[100px] p-[1] "
-                  : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[3s] animate_loader md:w-[600px] lg:w-auto md:max-w-[600px] xl:max-w-[800px] md:h-[600px] xl:h-[800px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[95%] 4xl:w-[1600px] 4xl:max-w-[50%]  4xl:h-[1600px]  3xl:bottom-[-50px] 4xl:bottom-[-20%] lg:bottom-[-180px] xl:bottom-[-80px] sm:max-w-[70%] bottom-[-80px] max-w-[370px] sm:w-[600px] sm:bottom-[-150px]"
+                  ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[50%] translate-y-[50%]  max-w-[100px] p-[1] "
+                  : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0  animate_loader md:w-[600px] lg:w-auto md:max-w-[600px] xl:max-w-[800px] md:h-[600px] xl:h-[800px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[95%] 4xl:w-[1600px] 4xl:max-w-[50%]  4xl:h-[1600px]  3xl:bottom-[-50px] 4xl:bottom-[-20%] lg:bottom-[-180px] xl:bottom-[-80px] sm:max-w-[70%] bottom-[-80px] max-w-[370px] sm:w-[600px] sm:bottom-[-150px]"
               }`}
             >
               <Image
                 ref={ref}
-                // priority={true}
+                priority={true}
                 className={`object-cover md:w-full md:h-full ${
                   inView ? "hero_img_scale" : ""
                 } ${
@@ -141,7 +141,7 @@ const HomeHero = ({loader}) => {
                 src={`${loader ? "" : "/images/webp/satelite.webp"}`}
                 width={808}
                 height={846}
-                loading="lazy"
+                // loading="lazy"
                 alt="blockchain"
               />
             </div>

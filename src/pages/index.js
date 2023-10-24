@@ -17,7 +17,7 @@ import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,18 +45,26 @@ export default function Home() {
       once: true,
     });
   }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Check if the code is running on the client side
+      const topOfPageElement = topOfPageRef.current;
 
+      if (topOfPageElement) {
+        topOfPageElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+  const topOfPageRef = useRef();
   return (
     <>
       <Seo pageSEO={pageSEO} />
 
-      <div className=" overflow-x-hidden">
-        <Loader setLoader={setLoader} loader={loader}/>
-        {
-          loader ? "" : <Navbar />
-        }
-        <HomeHero setLoader={setLoader} loader={loader}/>
-         <MonthsSlider />
+      <div className=" overflow-x-hidden" ref={topOfPageRef}>
+        <Loader setLoader={setLoader} loader={loader} />
+        {loader ? "" : <Navbar />}
+        <HomeHero setLoader={setLoader} loader={loader} />
+        <MonthsSlider />
         <DataGildMine />
         <DoubleCounting />
         <AsSeenOn />
