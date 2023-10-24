@@ -87,7 +87,7 @@ const Empowering = () => {
               className=" pt-10 md:pt-0 w-full lg:w-5/12 lg:mr-[-50px] flex justify-center after:content-[''] after:absolute relative sm:after:w-[90%] xsm:after:w-[100%] after:w-[110%] after:h-[8px] after:bg-[#ffffff50] after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:z-10"
             >
               <Image
-                className="w-full lg:max-w-[550px] max-w-[400px] mx-auto"
+                className="w-full lg:max-w-[473px] max-w-[400px] mx-auto scale-x-[-1]"
                 width={512}
                 height={555}
                 src="/images/png/empowering_img.png"

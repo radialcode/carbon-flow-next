@@ -31,7 +31,7 @@ const pageSEO = {
   // SEO WEBSITE URL
   websiteURL: "https://carbon-flow.vercel.app/",
   // SEO IMAGE
-  image: "https://carbon-flow.vercel.app/meta-image.png",
+  image: "https://carbon-flow.vercel.app/meta-img.webp",
 };
 // AOS.init();
 
