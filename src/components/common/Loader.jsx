@@ -37,7 +37,7 @@ function Loader({ setLoader, loader }) {
               }}
               delayedCallon
             >
-              <CountUp start={0} duration={2} end={viewCount && 100}>
+              <CountUp start={0} duration={2.2} end={viewCount && 100}>
                 {({ countUpRef }) => <span  ref={countUpRef}></span>}
               </CountUp>
             </VisibilitySensor>

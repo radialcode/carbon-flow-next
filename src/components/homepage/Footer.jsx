@@ -181,9 +181,14 @@ const Footer = () => {
                 <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   |
                 </p>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
+                <Link
+                  href="https://earthbanc.io/privacy-policy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
+                >
                   Privacy & Security
-                </p>
+                </Link>
               </div>
             </div>
           </div>
