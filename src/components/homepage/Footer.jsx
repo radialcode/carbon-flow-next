@@ -10,13 +10,17 @@ import {
   TelephoneIcon,
 } from "../common/Icon";
 
-const Footer = () => {
+const Footer = (props) => {
   const today = new Date();
   const year = today.getFullYear();
   return (
     <>
-      <section className="bg-[#235C02] bg-center relative mt-[-2px]">
-        <div className="flex flex-wrap justify-center translate-y-[-50%]">
+      <section
+        className={`bg-[#235C02] bg-center relative mt-[-2px] ${props.topspace}`}
+      >
+        <div
+          className={`flex flex-wrap justify-center translate-y-[-50%] ${props.hidden}`}
+        >
           <div className="w-full max-w-[882px] bg-startjourneyFooter bg-no-repeat bg-cover bg-center py-[43px] md:py-[52px] rounded-[10px] px-[20px] mx-[21px] xl:px-[90px]">
             <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[40px] mb-0 text-white text-center max-w-[682px] mx-auto leading-[38.46px] md:leading-[48.08px]">
               Start Your Carbon neutral journey, save the world
@@ -122,7 +126,7 @@ const Footer = () => {
                 <FooterDiscordIcon />
               </Link>
             </div> */}
-            <div className="flex pt-10 sm:pb-0 pb-5 gap-x-10 gap-y-5 sm:flex-row flex-wrap justify-center items-center">
+            <div className="flex pt-10 sm:pb-0 pb-5 gap-x-10 gap-y-5 sm:flex-row flex-wrap justify-start items-center">
               <Link
                 className="group  flex justify-center items-center"
                 href="mailto:contactus@carbonflow.earth"
@@ -162,32 +166,32 @@ const Footer = () => {
               <p className=" ff_poppins font-normal text-[15px] text-white mb-0 text-center sm:text-start mt-[27px] md:mt-0 pb-[10px] sm:pb-0 opacity-60">
                 Copyright©{year} | All Rights Reserved
               </p>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 <Link
-                  className="f_poppins font-normal text-[15px] text-white opacity-60 hover:opacity-100 mb-0 text-center sm:text-start cursor-pointer duration-200"
+                  className="f_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 hover:opacity-100 mb-0 text-center sm:text-start cursor-pointer duration-200"
                   href="/disclaimer"
                 >
                   Disclaimer
                 </Link>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
+                <p className=" ff_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   |
                 </p>
                 <Link
-                  className="f_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
+                  className="f_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
                   href="/terms-conditions"
                 >
-                  Terms & Conditions
+                  Terms&nbsp;&&nbsp;Conditions
                 </Link>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
+                <p className=" ff_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   |
                 </p>
                 <Link
                   href="https://earthbanc.io/privacy-policy/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
+                  className=" ff_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
                 >
-                  Privacy & Security
+                  Privacy&nbsp;&&nbsp;Security
                 </Link>
               </div>
             </div>

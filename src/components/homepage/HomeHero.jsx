@@ -123,14 +123,15 @@ const HomeHero = ({ loader }) => {
               className={`hero_clipPath duration-[3s] ${
                 loader
                   ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[2s] max-w-[100px] p-[1] "
-                  : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[2s] animate_loader md:w-[600px] lg:w-auto md:max-w-[550px] lg:max-w-[600px] xl:max-w-[800px] md:h-[600px] xl:h-[700px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[95%] 4xl:w-[1600px] 4xl:max-w-[50%]  4xl:h-[1600px]  3xl:bottom-[-50px] 4xl:bottom-[-20%] lg:bottom-[-60px] sm:max-w-[70%] bottom-[-80px] max-w-[370px] sm:w-[600px] sm:bottom-[-150px] md:bottom-[-40px]"
+                  : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[2s] animate_loader md:w-[600px] lg:w-auto md:max-w-[550px] lg:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[100%] 4xl:w-full 4xl:max-w-[40%]  4xl:h-full 3xl:bottom-[-50px] 4xl:bottom-[-8%] lg:bottom-[-60px] sm:max-w-[70%] 2xsm:bottom-[-80px] bottom-[-128px] 2xsm:max-w-[380px] max-w-[275px] sm:w-[600px] sm:bottom-[-150px] md:bottom-[-40px]"
               }`}
             >
               <Image
                 ref={ref}
                 priority={true}
                 className={`object-cover md:w-full md:h-full ${
-                  inView && "hero_img_scale"} ${
+                  inView && "hero_img_scale"
+                } ${
                   loader
                     ? "sm:w-full w-[400px] h-[400px] loader_animation rounded-full bg-[#44B902]"
                     : "max-w-[330px] md:max-w-none sm:max-w-[150%] h-[390px] sm:h-auto bg-satelite object-cover"

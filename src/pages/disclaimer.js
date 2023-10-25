@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <Disclaimer />
-      <Footer />
+      <Footer hidden="hidden" topspace="pt-32" />
     </>
   );
 }

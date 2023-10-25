@@ -23,7 +23,8 @@
   font-family: AktivGrotesk;
 } */
 .ff_AktivGrotesk_bold {
-  font-family: AktivGrotesk bold;
+  font-family: AktivGrotesk bold !important;
+  font-weight: 700;
 }
 
 .ff_poppins {
@@ -129,7 +130,7 @@
 
 .hero_screen {
   min-height: calc(100vh - 70px);
-  height: 750px;
+  height: 830px;
 }
 
 .slick-track {
@@ -164,6 +165,12 @@
   box-shadow: 1px 3px 6px rgba(68, 185, 2, 1);
 }
 
+@media (min-width: 375px) {
+  .hero_screen {
+    min-height: calc(100vh - 70px);
+    height: 750px;
+  }
+}
 @media (min-width: 575px) {
   .custom_container {
     max-width: auto 50px;

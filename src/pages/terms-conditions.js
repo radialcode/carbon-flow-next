@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <TermsConditions />
-      <Footer />
+      <Footer hidden="hidden" topspace="pt-32"/>
     </>
   );
 }

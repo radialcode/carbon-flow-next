@@ -4,13 +4,13 @@ import React from 'react'
 const TermsConditions = () => {
   return (
     <>
-      <section className="bg-[#061E10] min-h-screen pt-14 pb-48">
+      <section className="bg-[#061E10] min-h-screen pt-14 pb-20">
         <div className="custom_container mx-auto">
           <div className="text-white">
             <h3 className="ff_AktivGrotesk_bold text-3xl sm:text-4xl">
               Terms & Conditions
             </h3>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl my-5">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl mb-5 mt-4">
               OVERVIEW
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base mb-5">
@@ -51,7 +51,7 @@ const TermsConditions = () => {
               website following the posting of any changes constitutes
               acceptance of those changes.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-2">
               SECTION 1 – ONLINE STORE TERMS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -75,7 +75,7 @@ const TermsConditions = () => {
               A breach or violation of any of the Terms will result in an
               immediate termination of your Services.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 2 – GENERAL CONDITIONS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -97,7 +97,7 @@ const TermsConditions = () => {
               The headings used in this agreement are included for convenience
               only and will not limit or otherwise affect these Terms.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 3 – ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -117,7 +117,7 @@ const TermsConditions = () => {
               information on our site. You agree that it is your responsibility
               to monitor changes to our site.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 4 – MODIFICATIONS TO THE SERVICE AND PRICES
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -133,7 +133,7 @@ const TermsConditions = () => {
               modification, price change, suspension or discontinuance of the
               Service.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 5 – PRODUCTS OR SERVICES (if applicable
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -164,7 +164,7 @@ const TermsConditions = () => {
               meet your expectations, or that any errors in the Service will be
               corrected.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 6 – ACCURACY OF BILLING AND ACCOUNT INFORMATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -188,7 +188,7 @@ const TermsConditions = () => {
               so that we can complete your transactions and contact you as
               needed.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 7 – OPTIONAL TOOL
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -214,7 +214,7 @@ const TermsConditions = () => {
               resources). Such new features and/or services shall also be
               subject to these Terms & Conditions.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 8 – THIRD-PARTY LINKS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -236,7 +236,7 @@ const TermsConditions = () => {
               transaction. Complaints, claims, concerns, or questions regarding
               third-party products should be directed to the third-party.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 9 – USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -270,7 +270,7 @@ const TermsConditions = () => {
               accuracy. We take no responsibility and assume no liability for
               any comments posted by you or any third-party.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 10 – PERSONAL INFORMATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -286,8 +286,8 @@ const TermsConditions = () => {
               </Link>
               .
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
-              SECTION 11 – ERRORS, INACCURACIES AND OMISSIONS
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
+              SECTION 11 – ERRORS, INACCURACIES AND MISSIONS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
               Occasionally there may be information on our site or in the
@@ -309,7 +309,7 @@ const TermsConditions = () => {
               in the Service or on any related website has been modified or
               updated.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 12 – PROHIBITED USES
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -336,7 +336,7 @@ const TermsConditions = () => {
               Service or any related website for violating any of the prohibited
               uses.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 13 – DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -382,7 +382,7 @@ const TermsConditions = () => {
               or jurisdictions, our liability shall be limited to the maximum
               extent permitted by law.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 14 – INDEMNIFICATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -395,7 +395,7 @@ const TermsConditions = () => {
               Terms & Conditions or the documents they incorporate by reference,
               or your violation of any law or the rights of a third-party.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 15 – SEVERABILITY
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -407,7 +407,7 @@ const TermsConditions = () => {
               shall not affect the validity and enforceability of any other
               remaining provisions.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 16 – TERMINATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -426,7 +426,7 @@ const TermsConditions = () => {
               to and including the date of termination; and/or accordingly may
               deny you access to our Services (or any part thereof).
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 17 – ENTIRE AGREEMEN
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -447,7 +447,7 @@ const TermsConditions = () => {
               Any ambiguities in the interpretation of these Terms & Conditions
               shall not be construed against the drafting party.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 18 – GOVERNING LAW
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -455,7 +455,7 @@ const TermsConditions = () => {
               provide you Services shall be governed by and construed in
               accordance with the laws of England and Wales, UK.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 19 – CHANGES TO TERMS & CONDITIONS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
@@ -468,14 +468,14 @@ const TermsConditions = () => {
               following the posting of any changes to these Terms & Conditions
               constitutes acceptance of those changes.
             </p>
-            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
               SECTION 20 – CONTACT INFORMATION
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
               Questions about the Terms & Conditions should be sent to us at
               info at CarbonFlow.earth
             </p>
-            <h4 className="ff_AktivGrotesk font-semibold text-xl sm:text-2xl">
+            <h4 className="ff_AktivGrotesk font-semibold text-xl sm:text-2xl pt-4">
               Section 21 – COPYRIGHT
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
