@@ -146,7 +146,7 @@ const Footer = () => {
                 </span>
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] group duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
+                className="group duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
