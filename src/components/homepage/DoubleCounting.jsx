@@ -4,10 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
 const DoubleCounting = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
+  const [ref, inView] = useInView({});
   return (
     <>
       <div
@@ -19,8 +16,7 @@ const DoubleCounting = () => {
             <Image
               ref={ref}
               className={`clipPath w-full lg:max-w-[550px] object-cover h-full ${
-                inView ? "data_gild_img_scale " : ""
-              } `}
+                inView && "data_gild_img_scale"} `}
               src="/images/webp/datacounting-image.webp"
               width={500}
               height={500}

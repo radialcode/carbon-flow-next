@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Empowering = () => {
   return (
@@ -8,9 +8,6 @@ const Empowering = () => {
         <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <div className="flex xl:justify-between flex-col-reverse lg:flex-row  xl:items-center items-end">
             <div
-              data-aos="fade-right"
-              data-aos-delay="100"
-              data-aos-duration="900"
               className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] py-[40px]"
             >
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white  mb-0 leading-[38.46px] md:leading-[43.27px]">

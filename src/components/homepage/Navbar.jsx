@@ -84,7 +84,7 @@ const Navbar = () => {
                   setShowNav(false);
                 }}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="#globalwarming"
+                href="/#globalwarming"
               >
                 Global Warming is Real?
               </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
                   setShowNav(false);
                 }}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="#team"
+                href="/#team"
               >
                 Team
               </a>
@@ -128,7 +128,7 @@ const Navbar = () => {
                   setShowNav(false);
                 }}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="#workwithus"
+                href="/#workwithus"
               >
                 Work with us
               </a>
@@ -171,7 +171,7 @@ const Navbar = () => {
                 setShowNav(false);
               }}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="#globalwarming"
+              href="/#globalwarming"
             >
               Global Warming is Real?
             </a>
@@ -204,7 +204,7 @@ const Navbar = () => {
                 setShowNav(false);
               }}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="#team"
+              href="/#team"
             >
               Team
             </a>
@@ -215,7 +215,7 @@ const Navbar = () => {
                 setShowNav(false);
               }}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="#workwithus"
+              href="/#workwithus"
             >
               Work with us
             </a>

@@ -2,9 +2,9 @@ import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {
-    // lottiewidth: "w-[90px]",
+    lottiewidth: "w-[90px]",
     svgicon: "/lottie/lottieone.json",
-    // svgicon: <MonthsSliderIcon />,
+    // svgicon2: <MonthsSliderIcon />,
     endvalue: 2,
     heading: "Months",
     subHeading: "Fast - 2 mins not 2 months",
@@ -13,16 +13,16 @@ export const monthSliderdata = [
   {
     lottiewidth: "!w-[50px]",
     svgicon: "/lottie/lottie2.json",
-    // svgicon: <DimensionSliderIcon />,
+    // svgicon2: <DimensionSliderIcon />,
     endvalue: 2,
     heading: "dimensions",
     subHeading: "complete - 2 dimensions data",
     para: "No need to use a lot of consultant to do field validate for 1 - 2 Months.",
   },
   {
-    // lottiewidth: "w-[78px]",
+    lottiewidth: "w-[78px]",
     svgicon: "/lottie/lottie3.json",
-    // svgicon: <TimesSliderIcon />,
+    // svgicon2: <TimesSliderIcon />,
     endvalue: 10,
     heading: "Times",
     subHeading: "affordable - 10 times cheaper",

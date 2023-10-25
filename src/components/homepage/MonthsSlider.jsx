@@ -8,7 +8,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 const MonthsSlider = () => {
-  const [playerRef, inView] = useInView({ triggerOnce: true });
+  const [playerRef, inView] = useInView({});
   var settings = {
     dots: true,
     infinite: true,
@@ -22,9 +22,9 @@ const MonthsSlider = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          speed: 1000,
+          // autoplay: true,
+          // autoplaySpeed: 2000,
+          // speed: 1000,
         },
       },
       {
@@ -32,9 +32,9 @@ const MonthsSlider = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          speed: 1000,
+          // autoplay: true,
+          // autoplaySpeed: 2000,
+          // speed: 1000,
         },
       },
       {
@@ -42,18 +42,21 @@ const MonthsSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          speed: 1000,
+          // autoplay: true,
+          // autoplaySpeed: 2000,
+          // speed: 1000,
         },
       },
     ],
   };
   const countUpRef = React.useRef(null);
-  const [viewCount, setViewCount] = useState(false);
+  const [viewCount, setViewCount] = useState();
   function onVisibilityChange(visible) {
     if (visible) {
       setViewCount(true);
+    }
+    else {
+      setViewCount(false);
     }
   }
   return (
@@ -70,13 +73,17 @@ const MonthsSlider = () => {
           src="/images/png/month-leaf-position-img.png"
           alt="leaf image"
         />
-        <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
+        <div
+          ref={playerRef}
+          className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative"
+        >
           <Slider
             {...settings}
             className="flex flex-wrap mx-[-20px]"
             ref={countUpRef}
           >
             {monthSliderdata.map((data, index) => {
+              console.log("inViewinView", inView);
               return (
                 <div
                   className=" py-[33px] md:py-0 md:pt-[20px] md:pb-[25px] h-full px-[10px]"
@@ -84,16 +91,15 @@ const MonthsSlider = () => {
                 >
                   <div className="px-[21px] xs:px-[28px] border_grideant">
                     <div className="max-w-[90px] h-[90px] flex justify-center items-center">
-                      <div ref={playerRef}>
+                      <div>
                         <Player
-                          src={inView ? data.svgicon : ""}
+                          src={inView && data.svgicon}
                           className={`player flex flex-col justify-start ${data.lottiewidth}`}
-                          keepLastFrame={true}
+                          keepLastFrame={inView ? true : false}
                           autoplay={true}
                         />
                       </div>
                     </div>
-                    {/* <div className={data.lottiewidth}>{data.svgicon}</div> */}
                     <h2 className="ff_AktivGrotesk_bold font-normal text-[36px] text-[#44B902] mb-0 pt-[10px] leading-[43.7px] capitalize">
                       <VisibilitySensor
                         onChange={onVisibilityChange}
@@ -105,11 +111,11 @@ const MonthsSlider = () => {
                         <CountUp
                           start={0}
                           duration={4}
-                          end={viewCount ? data.endvalue : 0}
+                          end={viewCount && data.endvalue}
                         >
                           {({ countUpRef }) => <span ref={countUpRef}></span>}
                         </CountUp>
-                      </VisibilitySensor>{" "}
+                      </VisibilitySensor>
                       {data.heading}
                     </h2>
                     <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px] capitalize">

@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
-  FooterDiscordIcon,
-  FooterFacebookIcon,
+  // FooterDiscordIcon,
+  // FooterFacebookIcon,
   FooterGmailIcon,
   FooterLindedInIcon,
-  FooterTwitterIcon,
+  // FooterTwitterIcon,
+  TelephoneIcon,
 } from "../common/Icon";
 
 const Footer = () => {
@@ -43,12 +44,12 @@ const Footer = () => {
               <li>
                 <Link
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="#globalwarming"
+                  href="/#globalwarming"
                 >
                   Global Warming is Real?
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
                   href="#pitchingdeck"
@@ -63,11 +64,11 @@ const Footer = () => {
                 >
                   Investor
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="#team"
+                  href="/#team"
                 >
                   Team
                 </Link>
@@ -75,13 +76,13 @@ const Footer = () => {
               <li>
                 <Link
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="#workwithus"
+                  href="/#workwithus"
                 >
                   Work with us
                 </Link>
               </li>
             </ul>
-            <div className="flex mt-[25px] gap-[10px] sm:mb-0 mb-10">
+            {/* <div className="flex justify-center mt-[25px] gap-[10px] sm:mb-0 mb-10">
               <Link
                 className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.facebook.com/"
@@ -120,23 +121,67 @@ const Footer = () => {
               >
                 <FooterDiscordIcon />
               </Link>
+            </div> */}
+            <div className="flex pt-10 sm:pb-0 pb-5 gap-x-10 gap-y-5 sm:flex-row flex-wrap justify-center items-center">
+              <Link
+                className="group  flex justify-center items-center"
+                href="mailto:contactus@carbonflow.earth"
+              >
+                <span className="social_links_shadow bg-[44B902] rounded-full">
+                  <FooterGmailIcon />
+                </span>
+                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ps-3 inline-block duration-200">
+                  contactus@carbonflow.earth
+                </span>
+              </Link>
+              <Link
+                className="group  flex justify-center items-center"
+                href="tel:+66944142694"
+              >
+                <span className="social_links_shadow bg-[44B902] rounded-full">
+                  <TelephoneIcon />
+                </span>
+                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ps-3 inline-block duration-200">
+                  +66944142694
+                </span>
+              </Link>
+              <Link
+                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FooterLindedInIcon />
+              </Link>
             </div>
           </div>
         </div>
         <div className=" border-t border-[#123200] z-10 relative">
           <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0">
-            <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center py-[21px]">
-              <p className=" ff_poppins font-normal text-[15px] text-white mb-0 text-center sm:text-start mt-[27px] sm:mt-0 pb-[10px] sm:pb-0 opacity-60">
+            <div className="flex flex-col-reverse md:flex-row sm:justify-between items-center py-[21px]">
+              <p className=" ff_poppins font-normal text-[15px] text-white mb-0 text-center sm:text-start mt-[27px] md:mt-0 pb-[10px] sm:pb-0 opacity-60">
                 Copyright©{year} | All Rights Reserved
               </p>
-              <div className="flex gap-1">
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
-                  Terms & Conditions
-                </p>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+              <div className="flex gap-2">
+                <Link
+                  className="f_poppins font-normal text-[15px] text-white opacity-60 hover:opacity-100 mb-0 text-center sm:text-start cursor-pointer duration-200"
+                  href="/disclaimer"
+                >
+                  Disclaimer
+                </Link>
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   |
                 </p>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:text-white duration-200">
+                <Link
+                  className="f_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
+                  href="/terms-conditions"
+                >
+                  Terms & Condition
+                </Link>
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
+                  |
+                </p>
+                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   Privacy & Security
                 </p>
               </div>

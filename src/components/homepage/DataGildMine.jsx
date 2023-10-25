@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
 const DataGildMine = () => {
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({});
 
   return (
     <>
@@ -38,8 +38,7 @@ const DataGildMine = () => {
           <Image
             ref={ref}
             className={` ${
-              inView ? "data_gild_img_scale" : ""
-            } object-cover object-top `}
+              inView && "data_gild_img_scale"} object-cover object-top `}
             src="/images/webp/gildImage.webp"
             alt="gild mine"
             width={602}
