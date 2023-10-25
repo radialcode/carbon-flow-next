@@ -45,7 +45,7 @@ const Faq = () => {
                       id="panel1a-header"
                       className="my-1 items-baseline "
                     >
-                      <Typography className="ff_AktivGrotesk_bold font-normal text-base mb-0 text-white text-start max-w-[93%]">
+                      <Typography className="ff_AktivGrotesk_bold font-normal text-[18px] mb-0 text-white text-start max-w-[93%]">
                         {data.question}
                       </Typography>
                     </AccordionSummary>
