@@ -130,7 +130,7 @@ const Footer = () => {
                 <span className="social_links_shadow bg-[44B902] rounded-full">
                   <FooterGmailIcon />
                 </span>
-                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ps-3 inline-block duration-200">
+                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ms-3 inline-block duration-200 hover:after:content-[''] after:absolute after:w-0 group-hover:after:w-full after:duration-200 after:h-[1px] after:bg-[white] relative after:left-0 after:bottom-[0px] after:rounded-[5px]">
                   contactus@carbonflow.earth
                 </span>
               </Link>
@@ -141,12 +141,12 @@ const Footer = () => {
                 <span className="social_links_shadow bg-[44B902] rounded-full">
                   <TelephoneIcon />
                 </span>
-                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ps-3 inline-block duration-200">
+                <span className="text-[16px] text-white group-hover:opacity-100 opacity-70 ff_poppins font-normal ms-3 inline-block duration-200 hover:after:content-[''] after:absolute after:w-0 group-hover:after:w-full after:duration-200 after:h-[1px] after:bg-[white] relative after:left-0 after:bottom-[0px] after:rounded-[5px]">
                   +66944142694
                 </span>
               </Link>
               <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
+                className="group duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,14 +176,19 @@ const Footer = () => {
                   className="f_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
                   href="/terms-conditions"
                 >
-                  Terms & Condition
+                  Terms & Conditions
                 </Link>
                 <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
                   |
                 </p>
-                <p className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200">
+                <Link
+                  href="https://earthbanc.io/privacy-policy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" ff_poppins font-normal text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
+                >
                   Privacy & Security
-                </p>
+                </Link>
               </div>
             </div>
           </div>
