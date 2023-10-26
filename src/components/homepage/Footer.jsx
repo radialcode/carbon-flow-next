@@ -186,9 +186,7 @@ const Footer = (props) => {
                   |
                 </p>
                 <Link
-                  href="https://earthbanc.io/privacy-policy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/privacy-policy"
                   className=" ff_poppins font-normal text-[14] sm:text-[15px] text-white opacity-60 mb-0 text-center sm:text-start cursor-pointer hover:opacity-100 duration-200"
                 >
                   Privacy&nbsp;&&nbsp;Security

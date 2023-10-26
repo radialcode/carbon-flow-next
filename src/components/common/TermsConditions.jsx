@@ -277,8 +277,8 @@ const TermsConditions = () => {
               Your submission of personal information through the store is
               governed by our
               <Link
-                className="text-pink-700 ms-2 border-b border-pink-700 hover:text-white"
-                href="https://earthbanc.io/privacy-policy/"
+                className="text-[#44B902] ms-2 border-b border-[#44B902] hover:text-white hover:border-white duration-200"
+                href="/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
