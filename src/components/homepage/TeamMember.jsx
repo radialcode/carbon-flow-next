@@ -4,7 +4,7 @@ import { TeamMemberSliderdata, TeamPopupData } from "../common/Helper";
 import Image from "next/image";
 import { PopupCross, TeamSliderArrowIcon } from "../common/Icon";
 
-const TeamMember = () => {
+const TeamMember = ({ teamRef }) => {
   const first = React.useRef();
   const [popUp, setPopUp] = useState(false);
   const [cardData, setCardData] = useState();
@@ -59,6 +59,7 @@ const TeamMember = () => {
     <>
       <section
         id="team"
+        ref={teamRef}
         className="pt-[106px] md:pt-[120px] pb-[101px] relative"
       >
         <Image
@@ -118,27 +119,27 @@ const TeamMember = () => {
                           {data.profession}
                         </p>
                         <div className="flex justify-center mt-2">
-                        <ul className="list-disc text-[#061E10] opacity-70 ps-7 pe-2">
-                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                          {data.info1}
-                        </li>
-                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                          {data.info2}
-                        </li>
-                        <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                          {data.info3}
-                        </li>
-                        <li
-                          className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden4}`}
-                        >
-                          {data.info4}
-                        </li>
-                        <li
-                          className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden5}`}
-                        >
-                          {data.info5}
-                        </li>
-                      </ul>
+                          <ul className="list-disc text-[#061E10] opacity-70 ps-7 pe-2">
+                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                              {data.info1}
+                            </li>
+                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                              {data.info2}
+                            </li>
+                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                              {data.info3}
+                            </li>
+                            <li
+                              className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden4}`}
+                            >
+                              {data.info4}
+                            </li>
+                            <li
+                              className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden5}`}
+                            >
+                              {data.info5}
+                            </li>
+                          </ul>
                           {/* <button
                             onClick={() => {
                               setPopUp(true);

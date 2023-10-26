@@ -1,15 +1,13 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 
-const Empowering = () => {
+const Empowering = ({ workRef }) => {
   return (
     <>
-      <section className=" bg-empoweringBg">
+      <section className=" bg-empoweringBg" ref={workRef}>
         <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 z-10 relative">
           <div className="flex xl:justify-between flex-col-reverse lg:flex-row  xl:items-center items-end">
-            <div
-              className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] py-[40px]"
-            >
+            <div className="w-full lg:w-7/12 lg:py-[62px] sm:pt-[60px] py-[40px]">
               <h2 className="ff_AktivGrotesk_bold font-normal text-[32px] md:text-[36px] text-white  mb-0 leading-[38.46px] md:leading-[43.27px]">
                 <span className=" text-[#44B902]">Empowering</span> Change With
                 CarbonFlow

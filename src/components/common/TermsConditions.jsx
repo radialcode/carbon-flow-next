@@ -287,7 +287,7 @@ const TermsConditions = () => {
               .
             </p>
             <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
-              SECTION 11 – ERRORS, INACCURACIES AND MISSIONS
+              SECTION 11 – ERRORS, INACCURACIES AND OMISSIONS
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
               Occasionally there may be information on our site or in the

@@ -2,29 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { CrossIcon, MenuIcon } from "../common/Icon";
+import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
   const [showNav, setShowNav] = useState(false);
-  // const [scrollPosition, setScrollPosition] = useState(0); // Initialize scrollPosition state
-  // const [isVisible, setIsVisible] = useState(true); // Initialize isVisible state
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   let prevScrollPos = window.scrollY;
-
-  //   const handleScroll = () => {
-  //     const currentScrollPos = window.scrollY;
-  //     setScrollPosition(currentScrollPos);
-  //     const isVisible = prevScrollPos > currentScrollPos;
-  //     setIsVisible(isVisible);
-  //     prevScrollPos = currentScrollPos;
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.scrollY;
@@ -44,6 +27,43 @@ const Navbar = () => {
       document.body.classList.remove("!overflow-hidden");
     }
   }, [showNav]);
+
+  const routeHandler = (value) => {
+    setShowNav(false);
+    if (router.pathname !== "/") {
+      if (value === "team") {
+        router.push("/?value=team");
+        if (teamRef && teamRef.current) {
+          teamRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Global") {
+        router.push("/?value=global");
+        if (globalwarmingRef && globalwarmingRef.current) {
+          globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Work") {
+        router.push("/?value=work");
+        if (workRef && workRef.current) {
+          workRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    } else {
+      // For other routes, scroll to a specific section based on the 'value' passed.
+      if (value === "Global") {
+        if (globalwarmingRef && globalwarmingRef.current) {
+          globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "team") {
+        if (teamRef && teamRef.current) {
+          teamRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Work") {
+        if (workRef && workRef.current) {
+          workRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+  };
 
   return (
     <div className="relative">
@@ -79,67 +99,37 @@ const Navbar = () => {
             }`}
           >
             <li>
-              <a
-                onClick={() => {
-                  setShowNav(false);
-                }}
+              <span
+                onClick={() => routeHandler("Global")}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="/#globalwarming"
               >
                 Global Warming is Real?
-              </a>
+              </span>
             </li>
-            {/* <li>
-              <a
-                onClick={() => {
-                  setShowNav(false);
-                }}
-                className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="#pitchingdeck"
-              >
-                Pitching Deck
-              </a>
-            </li>
+
             <li>
-              <a
-                onClick={() => {
-                  setShowNav(false);
-                }}
+              <span
+                onClick={() => routeHandler("team")}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="#investor"
-              >
-                Investor
-              </a>
-            </li> */}
-            <li>
-              <a
-                onClick={() => {
-                  setShowNav(false);
-                }}
-                className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="/#team"
               >
                 Team
-              </a>
+              </span>
             </li>
             <li>
-              <a
-                onClick={() => {
-                  setShowNav(false);
-                }}
+              <span
+                onClick={() => routeHandler("Work")}
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-                href="/#workwithus"
               >
                 Work with us
-              </a>
+              </span>
             </li>
             <li className="xl:ps-5 my-[14px]">
-              <a
+              <Link
                 href="mailto:contactus@carbonflow.earth"
                 className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
           <div
@@ -166,67 +156,39 @@ const Navbar = () => {
         </div>
         <ul className="xl:flex xl:gap-[33px] gap-[20px] items-center justify-end hidden min-w-[840px]">
           <li>
-            <a
-              onClick={() => {
-                setShowNav(false);
-              }}
+            <span
+              onClick={() => routeHandler("Global")}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="/#globalwarming"
+              // href="/#globalwarming"
             >
               Global Warming is Real?
-            </a>
+            </span>
           </li>
-          {/* <li>
-            <a
-              onClick={() => {
-                setShowNav(false);
-              }}
-              className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="#pitchingdeck"
-            >
-              Pitching Deck
-            </a>
-          </li>
+
           <li>
-            <a
-              onClick={() => {
-                setShowNav(false);
-              }}
+            <span
+              onClick={() => routeHandler("team")}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="#investor"
-            >
-              Investor
-            </a>
-          </li> */}
-          <li>
-            <a
-              onClick={() => {
-                setShowNav(false);
-              }}
-              className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="/#team"
             >
               Team
-            </a>
+            </span>
           </li>
           <li>
-            <a
-              onClick={() => {
-                setShowNav(false);
-              }}
+            <span
+              onClick={() => routeHandler("Work")}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100"
-              href="/#workwithus"
+              // href="/#workwithus"
             >
               Work with us
-            </a>
+            </span>
           </li>
           <li className="lg:ps-5 my-[8px]">
-            <a
+            <Link
               href="mailto:contactus@carbonflow.earth"
               className="ff_poppins font-semibold text-[16px] text-white px-[23px] py-[14px] border border-[#44B902] rounded-full hover:bg-[#44B902] duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
         <div

@@ -17,6 +17,8 @@ import Loader from "@/components/common/Loader";
 import Seo from "@/components/common/Seo";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from "next/router";
+
 import { useEffect, useRef, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +38,13 @@ const pageSEO = {
 // AOS.init();
 
 export default function Home() {
+  const router = useRouter();
+  console.log("router", router.query);
   const [loader, setLoader] = useState(true);
+  const topOfPageRef = useRef();
+  const teamRef = useRef(null);
+  const globalwarmingRef = useRef(null);
+  const workRef = useRef(null);
 
   useEffect(() => {
     AOS.init({
@@ -55,21 +63,46 @@ export default function Home() {
       }
     }
   }, []);
-  const topOfPageRef = useRef();
+  useEffect(() => {
+    if (!loader) {
+      if (router.query.value === "team") {
+        if (teamRef && teamRef.current) {
+          teamRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (router.query.value === "global") {
+        globalwarmingRef.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      } else if (router.query.value === "work") {
+        workRef.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [loader]);
   return (
     <>
       <Seo pageSEO={pageSEO} />
 
       <div className=" overflow-x-hidden" ref={topOfPageRef}>
         <Loader setLoader={setLoader} loader={loader} />
-        {loader ? "" : <Navbar />}
+        {loader ? (
+          ""
+        ) : (
+          <Navbar
+            teamRef={teamRef}
+            loader={loader}
+            globalwarmingRef={globalwarmingRef}
+            workRef={workRef}
+          />
+        )}
         <HomeHero setLoader={setLoader} loader={loader} />
         <MonthsSlider />
-        <DataGildMine />
+        <DataGildMine globalwarmingRef={globalwarmingRef} />
         <DoubleCounting />
         <AsSeenOn />
-        <Empowering />
-        <TeamMember />
+        <Empowering workRef={workRef} />
+        <TeamMember teamRef={teamRef} />
         <Faq />
         <Footer />
         <BackToTop />

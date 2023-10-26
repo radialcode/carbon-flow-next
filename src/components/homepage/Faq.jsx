@@ -19,7 +19,7 @@ const Faq = () => {
     <>
       <section className=" pt-[93px] pb-[257px] bg-[url('/images/webp/faq-bg-img.webp')] bg-fixed bg-no-repeat bg-cover bg-center relative">
         <Image
-          className=" absolute bottom-0 left-0 w-full h-[100px] object-cover object-top bg-size-full"
+          className=" absolute 2xl:-bottom-[40px] -bottom-[80px] left-0 w-full h-[167px] object-cover object-top"
           width={1453}
           height={100}
           src="/images/svg/faq_grass.svg"
