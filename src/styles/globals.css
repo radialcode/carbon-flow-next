@@ -129,6 +129,7 @@
 }
 
 .faq_bg_color {
+  background-color: rgba(255, 255, 255, 0.09) !important;
   -webkit-backdrop-filter: blur(4.5px);
   backdrop-filter: blur(4.5px);
 }
