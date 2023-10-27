@@ -73,7 +73,7 @@ const HomeHero = ({ loader }) => {
                 />
               </Link>
             </div>
-            {/* Right-side image */}
+            {/* RIGHT SIDE IMAGE */}
             <div
               className={`hero_clipPath duration-[3s] ${
                 loader

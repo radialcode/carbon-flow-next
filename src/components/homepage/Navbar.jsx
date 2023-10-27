@@ -9,12 +9,12 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
   const router = useRouter();
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  // Function to handle scrolling and update scroll position
+  // FUNCTION TO HANDLE SCROLLING AND UPDATE SCROLL POSITION
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
   };
-  // Add scroll event listener when the component mounts and remove it when unmounted
+  // ADD SCROLL EVENT LISTENER WHEN THE COMPONENT MOUNTS AND REMOVE IT WHEN UNMOUNTED
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
@@ -22,7 +22,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // Add or remove CSS class to control body overflow when the navigation menu is open
+  //ADD OR REMOVE CSS CLASS TO CONTROL BODY OVERFLOW WHEN THE NAVIGATION MENU IS OPEN
   useEffect(() => {
     if (showNav) {
       document.body.classList.add("!overflow-hidden");
@@ -30,7 +30,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
       document.body.classList.remove("!overflow-hidden");
     }
   }, [showNav]);
-  // Function to handle routing and scrolling to specific sections
+  // FUNCTION TO HANDLE ROUTING AND SCROLLING TO SPECIFIC SECTIONS
   const routeHandler = (value) => {
     setShowNav(false);
     if (router.pathname !== "/") {
@@ -51,7 +51,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
         }
       }
     } else {
-      // For other routes, scroll to a specific section based on the 'value' passed.
+      // FOR OTHER ROUTES , SCROLL TO A SPECIFIC SECTION BASED ON THE "VALUE"  PASSED 
       if (value === "Global") {
         if (globalwarmingRef && globalwarmingRef.current) {
           globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
@@ -135,7 +135,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
               </Link>
             </li>
           </ul>
-          {/* Mobile menu toggle button */}
+          {/* MOBILE MENU TOGGLE BUTTON*/}
           <div className="xl:hidden block relative z-50 cursor-pointer">
             {showNav ? (
               <CrossIcon setShowNav={setShowNav} />
@@ -191,7 +191,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             </Link>
           </li>
         </ul>
-        {/* Mobile menu toggle button */}
+        {/* MOBILE MENU TOGGLE BUTTON*/}
         <div className="xl:hidden block relative z-[100] cursor-pointer">
           {showNav ? (
             <CrossIcon setShowNav={setShowNav} />

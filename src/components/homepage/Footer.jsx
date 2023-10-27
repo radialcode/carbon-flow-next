@@ -9,28 +9,28 @@ import {
 import { useRouter } from "next/router";
 
 const Footer = (props) => {
-  // Get the current year for copyright notice
+  // GET THE CURRENT YEAR FOR COPYRIGHT NOTICE
   const today = new Date();
   const year = today.getFullYear();
-  // Initialize the router for routing
+  // ROUTER FOR ROUTING
   const router = useRouter();
-  // Define a function to handle route changes and scrolling
+  // DEFINE A FUNCTION TO HANDLE ROUTE CHANGE AND SCROLLING
   const routeHandler = (value) => {
     if (router.pathname !== "/") {
       if (value === "team") {
-        // Change the route and scroll to the team section
+        // CHANGE THE ROUTE AND SCROLL TO THE TEAM SECTION
         router.push("/?value=team");
         if (props.teamRef && props.teamRef.current) {
           props.teamRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Global") {
-        // Change the route and scroll to the global warming section
+        // CHANGE THE ROUTE AND SCROLL TO THE GLOBAL WARMING SECTION
         router.push("/?value=global");
         if (props.globalwarmingRef && props.globalwarmingRef.current) {
           props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Work") {
-        // Change the route and scroll to the work section
+        // CHANGE THE ROUTE AND SCROLL TO THE WORK SECTION
         router.push("/?value=work");
         if (props.workRef && props.workRef.current) {
           props.workRef.current.scrollIntoView({ behavior: "smooth" });
@@ -38,17 +38,17 @@ const Footer = (props) => {
       }
     } else {
       if (value === "Global") {
-        // Scroll to the global warming section
+        // SCROLL TO THE GLOBAL WARMING SECTION
         if (props.globalwarmingRef && props.globalwarmingRef.current) {
           props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "team") {
-        // Scroll to the team section
+        // SCROLL TO THE TEAM SECTION
         if (props.teamRef && props.teamRef.current) {
           props.teamRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Work") {
-        // Scroll to the work section
+        // SCROLL TO THE WORK SECTION
         if (props.workRef && props.workRef.current) {
           props.workRef.current.scrollIntoView({ behavior: "smooth" });
         }

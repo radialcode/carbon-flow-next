@@ -4,6 +4,7 @@ import { BacktoTopArrowIcon } from "./Icons";
 const BackToTop = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  // BACK TO TOP SCROLL FUNCTION 
   function scrollToTop() {
     window.scrollTo({
       top: 0,

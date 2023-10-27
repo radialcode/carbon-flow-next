@@ -121,7 +121,7 @@ export const TeamMemberSliderdata = [
     hidden5: "hidden",
   },
 ];
-
+// FAQ SECTION DATA
 export const FaqData = [
   {
     question:

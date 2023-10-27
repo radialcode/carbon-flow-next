@@ -8,7 +8,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 const MonthsSlider = () => {
-  
+
   const [playerRef, inView] = useInView({});
 
   var settings = {
@@ -40,10 +40,10 @@ const MonthsSlider = () => {
       },
     ],
   };
-  // Ref for CountUp animation
+  // REF FOR COUNTUP ANIMATION
   const countUpRef = React.useRef(null);
   const [viewCount, setViewCount] = useState();
-  // Function to handle visibility changes
+  // FUNCTION TO HANDLE VISIBILITY CHANGE
   function onVisibilityChange(visible) {
     if (visible) {
       setViewCount(true);

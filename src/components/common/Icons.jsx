@@ -18,6 +18,7 @@ export const MenuIcon = ({ setShowNav }) => {
     </svg>
   );
 };
+// NAVBAR CROSS ICON
 export const CrossIcon = ({ setShowNav }) => {
   return (
     <svg
@@ -35,7 +36,7 @@ export const CrossIcon = ({ setShowNav }) => {
     </svg>
   );
 };
-
+// LINKEDIN ICON
 export const FooterLindedInIcon = () => {
   return (
     <svg
@@ -73,6 +74,7 @@ export const FooterLindedInIcon = () => {
     </svg>
   );
 };
+// TELEPHONE ICON
 export const TelephoneIcon = () => {
   return (
     <svg
@@ -111,7 +113,7 @@ export const TelephoneIcon = () => {
     </svg>
   );
 };
-
+// GMAIL ICON
 export const FooterGmailIcon = () => {
   return (
     <svg
@@ -144,7 +146,7 @@ export const FooterGmailIcon = () => {
   );
 };
 
-
+// MARKET WATCH ICON 
 export const AsSeenOnMarketWatchIcon = () => {
   return (
     <svg
@@ -186,7 +188,7 @@ export const AsSeenOnMarketWatchIcon = () => {
     </svg>
   );
 };
-
+// TEAM SLIDER ARROW 
 export const TeamSliderArrowIcon = () => {
   return (
     <svg
@@ -210,7 +212,7 @@ export const TeamSliderArrowIcon = () => {
     </svg>
   );
 };
-
+// FAQ ARROW
 export const FaqIcon = ({ id, open }) => {
   return (
     <svg
@@ -227,6 +229,7 @@ export const FaqIcon = ({ id, open }) => {
     </svg>
   );
 };
+// HERO SCROLL DOWN ICON 
 export const ScrollDownIcon = () => {
   return (
     <svg
@@ -246,7 +249,7 @@ export const ScrollDownIcon = () => {
   );
 };
 
-
+// BACK TO TOP ARROW ICON 
 export const BacktoTopArrowIcon = () => {
   return (
     <svg
