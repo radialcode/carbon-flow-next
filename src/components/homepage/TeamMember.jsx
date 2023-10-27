@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { TeamMemberSliderdata, TeamPopupData } from "../common/Helper";
 import Image from "next/image";
-import { PopupCross, TeamSliderArrowIcon } from "../common/Icon";
+import { PopupCross, TeamSliderArrowIcon } from "../common/Icons";
 
 const TeamMember = ({ teamRef }) => {
   const first = React.useRef();
@@ -166,8 +166,7 @@ const TeamMember = ({ teamRef }) => {
                 className={`min-h-screen w-full fixed bg-[#00000095] top-0 left-0 z-1000 justify-center items-center ${
                   popUp ? "flex" : "hidden"
                 }`}
-              >
-              </div>
+              ></div>
             </div>
           </div>
         </div>

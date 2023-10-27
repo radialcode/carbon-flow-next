@@ -2,13 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
-  // FooterDiscordIcon,
-  // FooterFacebookIcon,
   FooterGmailIcon,
   FooterLindedInIcon,
-  // FooterTwitterIcon,
   TelephoneIcon,
-} from "../common/Icon";
+} from "../common/Icons";
 import { useRouter } from "next/router";
 
 const Footer = (props) => {
@@ -17,7 +14,6 @@ const Footer = (props) => {
   const router = useRouter();
 
   const routeHandler = (value) => {
-    console.log(value);
     if (router.pathname !== "/") {
       if (value === "team") {
         router.push("/?value=team");

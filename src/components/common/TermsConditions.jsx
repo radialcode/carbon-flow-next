@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const TermsConditions = () => {
   return (
@@ -134,7 +134,7 @@ const TermsConditions = () => {
               Service.
             </p>
             <h4 className="ff_AktivGrotesk font-normal text-xl sm:text-2xl pt-4">
-              SECTION 5 – PRODUCTS OR SERVICES (if applicable
+              SECTION 5 – PRODUCTS OR SERVICES (if applicable)
             </h4>
             <p className="ff_poppins font-normal text-sm sm:text-base my-5">
               CarbonFlow strives to plant trees as quickly as possible, we will
@@ -495,6 +495,6 @@ const TermsConditions = () => {
       </section>
     </>
   );
-}
+};
 
-export default TermsConditions
+export default TermsConditions;

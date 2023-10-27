@@ -1,8 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import {
-  AsSeenOnMarketWatchIcon,
-} from "../common/Icon";
+import { AsSeenOnMarketWatchIcon } from "../common/Icons";
 
 const AsSeenOn = () => {
   return (

@@ -1,4 +1,3 @@
-import { DimensionSliderIcon, MonthsSliderIcon, TimesSliderIcon } from "./Icon";
 // MONTH SLIDER DATA
 export const monthSliderdata = [
   {

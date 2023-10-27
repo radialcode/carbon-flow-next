@@ -1,15 +1,14 @@
-import React from "react";
-import { Fragment, useState } from "react";
+import {useState } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { FaqIcon } from "../common/Icon";
+import { FaqIcon } from "../common/Icons";
 import Image from "next/image";
 import { FaqData } from "../common/Helper";
 
 const Faq = () => {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);

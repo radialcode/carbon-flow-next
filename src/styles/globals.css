@@ -159,6 +159,7 @@
     max-width: auto 50px;
   }
   .hero_screen {
+    /* min-height: 100vh; */
     height: 800px;
   }
 }
@@ -168,7 +169,6 @@
     max-width: 770px;
   }
   .hero_screen {
-    /* min-height: 100vh; */
     height: 700px;
   }
 }
@@ -276,6 +276,9 @@
   background-color: transparent !important;
 }
 
+.data_gild_scale {
+  transform: scale(1.8);
+}
 .data_gild_img_scale {
   animation: glidImgScale 2.5s ease-in-out forwards;
   animation-delay: 200ms;

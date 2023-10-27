@@ -77,7 +77,6 @@ const MonthsSlider = () => {
             ref={countUpRef}
           >
             {monthSliderdata.map((data, index) => {
-              console.log("inViewinView", inView);
               return (
                 <div
                   className=" py-[33px] md:py-0 md:pt-[20px] md:pb-[25px] h-full px-[10px]"

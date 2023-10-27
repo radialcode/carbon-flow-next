@@ -39,7 +39,6 @@ const pageSEO = {
 
 export default function Home() {
   const router = useRouter();
-  console.log("router", router.query);
   const [loader, setLoader] = useState(true);
   const topOfPageRef = useRef();
   const teamRef = useRef(null);

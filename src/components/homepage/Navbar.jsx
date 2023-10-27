@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { CrossIcon, MenuIcon } from "../common/Icon";
+import { CrossIcon, MenuIcon } from "../common/Icons";
 import { useRouter } from "next/router";
 
 const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
@@ -85,7 +85,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             </Link>
             <Link className="ms-4" href="/">
               <Image
-                className="max-w-[100px] sm:max-w-[140px]"
+                className="max-w-[100px] h-auto sm:max-w-[140px]"
                 height={100}
                 width={250}
                 src="/images/JGR_logo.svg"

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React, { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 

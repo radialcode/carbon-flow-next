@@ -42,7 +42,7 @@ export const CrossIcon = () => {
 //       fill="none"
 //       xmlns="http://www.w3.org/2000/svg"
 //     >
-//       <g clip-path="url(#clip0_685_575)">
+//       <g clipPath="url(#clip0_685_575)">
 //         <rect
 //           width="30"
 //           height="32"
@@ -71,7 +71,7 @@ export const CrossIcon = () => {
 //       fill="none"
 //       xmlns="http://www.w3.org/2000/svg"
 //     >
-//       <g clip-path="url(#clip0_685_587)">
+//       <g clipPath="url(#clip0_685_587)">
 //         <rect
 //           width="34.6909"
 //           height="34.6909"
@@ -100,7 +100,7 @@ export const FooterLindedInIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_685_581)">
+      <g clipPath="url(#clip0_685_581)">
         <rect
           className="group-hover:fill-white duration-200"
           width="34.6909"
@@ -137,7 +137,7 @@ export const TelephoneIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_685_581)">
+      <g clipPath="url(#clip0_685_581)">
         <rect
           className="group-hover:fill-white duration-200"
           width="34.6909"
@@ -175,7 +175,7 @@ export const FooterGmailIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_685_593)">
+      <g clipPath="url(#clip0_685_593)">
         <rect
           className="group-hover:fill-white duration-200"
           width="34.6909"
@@ -379,3 +379,24 @@ export const PopupCross = () => {
     </svg>
   );
 };
+
+export const BacktoTopArrowIcon = () => {
+  return (
+    <svg
+      className=" animate-pulse"
+      width="22"
+      height="22"
+      fill="white"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fillRule="evenodd"
+        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+      ></path>
+      <path
+        fillRule="evenodd"
+        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+      ></path>
+    </svg>
+  );
+}

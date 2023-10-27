@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 
-import { ScrollDownIcon } from "../common/Icon";
+import { ScrollDownIcon } from "../common/Icons";
 import Link from "next/link";
 const HomeHero = ({ loader }) => {
   const [ref, inView] = useInView({});
@@ -91,7 +91,6 @@ const HomeHero = ({ loader }) => {
                 src={`${loader ? "" : "/images/webp/satelite.webp"}`}
                 width={808}
                 height={846}
-                // loading="lazy"
                 alt="blockchain"
               />
             </div>
