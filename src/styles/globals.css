@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom fonts */
 @font-face {
   font-family: AktivGrotesk bold;
   src: url("/fonts/AktivGrotesk-Bold.otf");
@@ -65,14 +66,6 @@
 }
 
 /* ==== HERO-CSS ===== */
-.image {
-  transform: scale(1.1);
-}
-
-.image:hover {
-  transform: scale(1);
-}
-
 .hero_clipPath {
   -webkit-mask-image: url("/images/svg/hero_path.svg");
   mask-image: url("/images/svg/hero_path.svg");
@@ -80,23 +73,6 @@
   mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-}
-.loader_border::after {
-  position: absolute !important;
-  content: " " !important;
-  bottom: 0px !important;
-  left: 0px !important;
-  right: 0px !important;
-  top: 0px !important;
-  width: 100% !important;
-  height: 100% !important;
-  transition-duration: 0.4s !important;
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  transition-property: all !important;
-  transition-delay: 0s !important;
-  background: url("/images/page_border.png") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
 }
 
 .hero_img_scale {
@@ -146,6 +122,110 @@
 }
 .social_links_shadow {
   box-shadow: 1px 3px 6px rgba(68, 185, 2, 1);
+}
+
+.clip_path_team_slider {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.faq_bg_color {
+  -webkit-backdrop-filter: blur(4.5px);
+  backdrop-filter: blur(4.5px);
+}
+
+.clipPath {
+  -webkit-mask-image: url("/images/svg/Unionclip.svg");
+  mask-image: url("/images/svg/Unionclip.svg");
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.loader div {
+  animation-duration: 0.5s;
+}
+
+.loader div:first-child {
+  animation-delay: 0.1s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.data_gild_img_scale {
+  animation: glidImgScale 2.5s ease-in-out forwards;
+  animation-delay: 200ms;
+  transform: scale(1.8);
+}
+
+@keyframes glidImgScale {
+  to {
+    transform: scale(1);
+  }
+}
+
+.scrolldown_animation {
+  animation: downarrow 1s ease-in-out infinite alternate;
+}
+
+@keyframes downarrow {
+  100% {
+    transform: rotate(90deg) translateY(5px);
+  }
+}
+
+/* ===== NAVBAR CSS ===== */
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform 0.4s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  padding-top: 0;
+}
+
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  margin-bottom: 10px;
+}
+
+/* logo hover bounce */
+.hover_bounce:hover {
+  animation: bouncelogo 0.5s 1 alternate ease-in-out;
+}
+
+@keyframes bouncelogo {
+  50% {
+    transform: scale(1.05);
+  }
+}
+.loader_animation {
+  animation: zoomin 2s ease alternate;
+}
+@keyframes zoomin {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.4);
+  }
 }
 
 @media (min-width: 375px) {
@@ -231,118 +311,5 @@
       )
       1;
     height: 100%;
-  }
-}
-
-.clip_path_team_slider {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-.faq_bg_color {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(4.5px);
-  backdrop-filter: blur(4.5px);
-  background: rgba(255, 255, 255, 0.09) !important;
-}
-
-.clipPath {
-  -webkit-mask-image: url("/images/svg/Unionclip.svg");
-  mask-image: url("/images/svg/Unionclip.svg");
-  -webkit-mask-size: 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-.loader div {
-  animation-duration: 0.5s;
-}
-
-.loader div:first-child {
-  animation-delay: 0.1s;
-}
-
-.loader div:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.loader div:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.css-67l5gl {
-  background-color: transparent !important;
-}
-
-.data_gild_scale {
-  transform: scale(1.8);
-}
-.data_gild_img_scale {
-  animation: glidImgScale 2.5s ease-in-out forwards;
-  animation-delay: 200ms;
-  transform: scale(1.8);
-}
-
-@keyframes glidImgScale {
-  to {
-    transform: scale(1);
-  }
-}
-
-.scrolldown_animation {
-  animation: downarrow 1s ease-in-out infinite alternate;
-}
-
-@keyframes downarrow {
-  100% {
-    transform: rotate(90deg) translateY(5px);
-  }
-}
-
-/* ===== NAVBAR CSS ===== */
-.slideUp {
-  -webkit-transform: translateY(-100px);
-  transform: translateY(-100px);
-  transition: transform 0.4s ease-out;
-}
-
-.slideDown {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  transition: transform 0.4s ease-out;
-}
-
-.css-15v22id-MuiAccordionDetails-root {
-  padding-top: 0;
-}
-
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-  margin-bottom: 10px;
-}
-
-/* logo hover bounce */
-.hover_bounce:hover {
-  animation: bouncelogo 0.5s 1 alternate ease-in-out;
-}
-
-@keyframes bouncelogo {
-  50% {
-    transform: scale(1.05);
-  }
-}
-.loader_animation {
-  animation: zoomin 2s ease alternate;
-}
-@keyframes zoomin {
-  0% {
-    transform: scale(0);
-  }
-  30% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1.4);
   }
 }

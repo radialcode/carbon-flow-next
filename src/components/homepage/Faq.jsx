@@ -37,11 +37,11 @@ const Faq = () => {
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
+                    className="mt-[7px] sm:mt-4  border border-[#FFFFFF4D] bg-[#FFFFFF17] faq_bg_color !rounded-[5px] min-h-[80px]"
                   >
                     <AccordionSummary
                       expandIcon={<FaqIcon />}
-                      aria-controls="panel1a-content"
+                      aria-controls={index}
                       id={index}
                       className="my-1 items-baseline "
                     >

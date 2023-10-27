@@ -9,23 +9,28 @@ import {
 import { useRouter } from "next/router";
 
 const Footer = (props) => {
+  // Get the current year for copyright notice
   const today = new Date();
   const year = today.getFullYear();
+  // Initialize the router for routing
   const router = useRouter();
-
+  // Define a function to handle route changes and scrolling
   const routeHandler = (value) => {
     if (router.pathname !== "/") {
       if (value === "team") {
+        // Change the route and scroll to the team section
         router.push("/?value=team");
         if (props.teamRef && props.teamRef.current) {
           props.teamRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Global") {
+        // Change the route and scroll to the global warming section
         router.push("/?value=global");
         if (props.globalwarmingRef && props.globalwarmingRef.current) {
           props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Work") {
+        // Change the route and scroll to the work section
         router.push("/?value=work");
         if (props.workRef && props.workRef.current) {
           props.workRef.current.scrollIntoView({ behavior: "smooth" });
@@ -33,14 +38,17 @@ const Footer = (props) => {
       }
     } else {
       if (value === "Global") {
+        // Scroll to the global warming section
         if (props.globalwarmingRef && props.globalwarmingRef.current) {
           props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "team") {
+        // Scroll to the team section
         if (props.teamRef && props.teamRef.current) {
           props.teamRef.current.scrollIntoView({ behavior: "smooth" });
         }
       } else if (value === "Work") {
+        // Scroll to the work section
         if (props.workRef && props.workRef.current) {
           props.workRef.current.scrollIntoView({ behavior: "smooth" });
         }
@@ -71,13 +79,15 @@ const Footer = (props) => {
         </div>
         <div className="custom_container xl:max-w-[1140px] 3xl:max-w-[1320px] mx-auto px-3 xl:px-0 pb-[60px] sm:pb-[71px] z-10 relative mt-[-68px]">
           <div className="flex flex-col items-center justify-center">
-            <Image
-              className=" w-[259px] lg:w-[454px] md:w-[350px]"
-              width={454}
-              height={75}
-              src="/images/svg/footer-Logo.svg"
-              alt="footer logo"
-            />
+            <Link href="/">
+              <Image
+                className=" w-[259px] lg:w-[454px] md:w-[350px]"
+                width={454}
+                height={75}
+                src="/images/svg/footer-Logo.svg"
+                alt="footer logo"
+              />
+            </Link>
             <ul className="flex gap-[20px] items-center justify-center flex-row flex-wrap duration-200 mt-[20px] px-[15px] min-[376px]:px-[50px] sm:px-0">
               <li>
                 <span
@@ -130,6 +140,7 @@ const Footer = (props) => {
                 </span>
               </Link>
               <Link
+                aria-label="linkedin"
                 className="group duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
                 href="https://www.linkedin.com/"
                 target="_blank"

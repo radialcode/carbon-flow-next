@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { TeamMemberSliderdata, TeamPopupData } from "../common/Helper";
+import { TeamMemberSliderdata } from "../common/Helper";
 import Image from "next/image";
-import { PopupCross, TeamSliderArrowIcon } from "../common/Icons";
+import {TeamSliderArrowIcon } from "../common/Icons";
+import { useRef } from "react";
 
 const TeamMember = ({ teamRef }) => {
-  const first = React.useRef();
-  const [popUp, setPopUp] = useState(false);
-  const [cardData, setCardData] = useState();
+  const first = useRef();
   var settings = {
     dots: false,
     infinite: true,
@@ -20,7 +18,6 @@ const TeamMember = ({ teamRef }) => {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
           speed: 1000,
@@ -30,7 +27,6 @@ const TeamMember = ({ teamRef }) => {
         breakpoint: 990,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
           speed: 1000,
@@ -40,7 +36,6 @@ const TeamMember = ({ teamRef }) => {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
           speed: 1000,
@@ -48,13 +43,6 @@ const TeamMember = ({ teamRef }) => {
       },
     ],
   };
-  useEffect(() => {
-    if (popUp) {
-      document.body.classList.add("!overflow-hidden");
-    } else {
-      document.body.classList.remove("!overflow-hidden");
-    }
-  }, [popUp]);
   return (
     <>
       <section
@@ -160,13 +148,6 @@ const TeamMember = ({ teamRef }) => {
               >
                 <TeamSliderArrowIcon />
               </div>
-            </div>
-            <div>
-              <div
-                className={`min-h-screen w-full fixed bg-[#00000095] top-0 left-0 z-1000 justify-center items-center ${
-                  popUp ? "flex" : "hidden"
-                }`}
-              ></div>
             </div>
           </div>
         </div>

@@ -55,7 +55,8 @@ module.exports = {
       backgroundImage: {
         empoweringBg: "url('/images/webp/empowering-bg-img.webp')",
         startjourneyFooter: "url('/images/webp/netural-journey-bg-img.webp')",
-        satelite:"url('/images/webp/satelite.png')",
+        satelite: "url('/images/webp/satelite.png')",
+        loader_border: "url('/images/png/page_border.png')",
       },
       boxShadow: {
         as_seen_on_box_shadow: " 0px 2px 30px 2px rgba(0, 0, 0, 0.08);",

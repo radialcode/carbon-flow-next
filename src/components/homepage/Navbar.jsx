@@ -9,10 +9,12 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
   const router = useRouter();
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  // Function to handle scrolling and update scroll position
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
   };
+  // Add scroll event listener when the component mounts and remove it when unmounted
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
@@ -20,6 +22,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // Add or remove CSS class to control body overflow when the navigation menu is open
   useEffect(() => {
     if (showNav) {
       document.body.classList.add("!overflow-hidden");
@@ -27,7 +30,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
       document.body.classList.remove("!overflow-hidden");
     }
   }, [showNav]);
-
+  // Function to handle routing and scrolling to specific sections
   const routeHandler = (value) => {
     setShowNav(false);
     if (router.pathname !== "/") {
@@ -88,7 +91,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
                 className="max-w-[100px] h-auto sm:max-w-[140px]"
                 height={100}
                 width={250}
-                src="/images/JGR_logo.svg"
+                src="/images/svg/JGR_logo.svg"
                 alt="JGR_logo"
               />
             </Link>
@@ -132,6 +135,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
               </Link>
             </li>
           </ul>
+          {/* Mobile menu toggle button */}
           <div
             onClick={() => {
               setShowNav(!showNav);
@@ -159,12 +163,10 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             <span
               onClick={() => routeHandler("Global")}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
-              // href="/#globalwarming"
             >
               Global Warming is Real?
             </span>
           </li>
-
           <li>
             <span
               onClick={() => routeHandler("team")}
@@ -177,7 +179,6 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             <span
               onClick={() => routeHandler("Work")}
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
-              // href="/#workwithus"
             >
               Work with us
             </span>
@@ -191,6 +192,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             </Link>
           </li>
         </ul>
+        {/* Mobile menu toggle button */}
         <div
           onClick={() => {
             setShowNav(!showNav);

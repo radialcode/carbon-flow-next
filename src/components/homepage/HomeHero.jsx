@@ -58,7 +58,7 @@ const HomeHero = ({ loader }) => {
                   </a>
                 </span>
               </div>
-              <p className="text-[12px] ff_poppins font-extralight text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9">
+              <p className="text-[12px] ff_poppins font-extralight text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9 whitespace-nowrap">
                 Based on 5 years research published in
               </p>
               <Link href="/">
@@ -66,15 +66,16 @@ const HomeHero = ({ loader }) => {
                   className="mt-3 max-w-[250px]"
                   height={100}
                   width={200}
-                  src="/images/JGR_logo.svg"
+                  src="/images/svg/JGR_logo.svg"
                   alt="JGR_logo"
                 />
               </Link>
             </div>
+            {/* Right-side image */}
             <div
               className={`hero_clipPath duration-[3s] ${
                 loader
-                  ? "loader_border  w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[2s] max-w-[100px] p-[1] "
+                  ? "w-[95px] h-[100px] z-[999] absolute bottom-[50%] right-[50%] translate-x-[38%] translate-y-[50%] duration-[2s] max-w-[100px] p-[1] after:!absolute after:!content-[''] after:!bottom-0 after:!left-0 after:!right-0 after:!top-0 after:!w-full after:!h-full after:!duration-300 after:!bg-contain after:!bg-no-repeat after:!bg-loader_border"
                   : "absolute  right-[50%] translate-x-[50%] md:-right-[55px] lg:-right-[55px] xl:-right-[80px] md:translate-x-0 duration-[2s] animate_loader md:w-[600px] lg:w-auto md:max-w-[550px] lg:max-w-[600px] xl:max-w-[700px] md:h-[600px] xl:h-[700px] 3xl:max-w-[900px] 3xl:h-[900px] max-h-[100%] 4xl:w-full 4xl:max-w-[40%]  4xl:h-full 3xl:bottom-[-50px] 4xl:bottom-[-8%] lg:bottom-[-60px] sm:max-w-[70%] 2xsm:bottom-[-80px] bottom-[-128px] 2xsm:max-w-[380px] max-w-[275px] sm:w-[600px] sm:bottom-[-150px] md:bottom-[-40px]"
               }`}
             >

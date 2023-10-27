@@ -21,7 +21,6 @@ const MonthsSlider = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           // autoplay: true,
           // autoplaySpeed: 2000,
           // speed: 1000,
@@ -31,25 +30,24 @@ const MonthsSlider = () => {
         breakpoint: 1008,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
   };
+  // Ref for CountUp animation
   const countUpRef = React.useRef(null);
   const [viewCount, setViewCount] = useState();
+  // Function to handle visibility changes
   function onVisibilityChange(visible) {
     if (visible) {
       setViewCount(true);
-    }
-    else {
+    } else {
       setViewCount(false);
     }
   }
