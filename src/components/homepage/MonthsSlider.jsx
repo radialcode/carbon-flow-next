@@ -8,7 +8,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
 const MonthsSlider = () => {
+  
   const [playerRef, inView] = useInView({});
+
   var settings = {
     dots: true,
     infinite: true,
@@ -21,9 +23,7 @@ const MonthsSlider = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          // autoplay: true,
-          // autoplaySpeed: 2000,
-          // speed: 1000,
+        
         },
       },
       {

@@ -3,6 +3,7 @@ import { BacktoTopArrowIcon } from "./Icons";
 
 const BackToTop = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+
   function scrollToTop() {
     window.scrollTo({
       top: 0,

@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
-import CountUp, { useCountUp } from "react-countup";
-
+import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
 function Loader({ setLoader, loader }) {
+  const [viewCount, setViewCount] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
     }, 2100);
   }, []);
+
   useEffect(() => {
     if (loader) {
       document.body.style.overflow = "hidden";
@@ -18,13 +20,13 @@ function Loader({ setLoader, loader }) {
       document.documentElement.scrollTop = 0;
     }
   }, [loader]);
-  const countUpRef = React.useRef(null);
-  const [viewCount, setViewCount] = useState(false);
+
   function onVisibilityChange(visible) {
     if (visible) {
       setViewCount(true);
     }
   }
+
   return (
     <>
       {loader && (
@@ -38,15 +40,14 @@ function Loader({ setLoader, loader }) {
               delayedCallon
             >
               <CountUp start={0} duration={2.2} end={viewCount && 100}>
-                {({ countUpRef }) => <span  ref={countUpRef}></span>}
+                {({ countUpRef }) => <span ref={countUpRef}></span>}
               </CountUp>
             </VisibilitySensor>
             <span>%</span>
           </div>
           <div className="relative z-50 flex justify-center">
             <div className="relative h-20 w-6/12 rounded-full border-transparent">
-              <div className="loader bg-[#061E10] p-5 rounded-full flex space-x-4">
-              </div>
+              <div className="loader bg-[#061E10] p-5 rounded-full flex space-x-4"></div>
             </div>
           </div>
         </section>

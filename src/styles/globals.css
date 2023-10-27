@@ -6,7 +6,7 @@
 
 /* Define custom fonts */
 @font-face {
-  font-family: AktivGrotesk bold;
+  font-family: AktivGroteskBold;
   src: url("/fonts/AktivGrotesk-Bold.otf");
 }
 
@@ -20,7 +20,7 @@
   font-weight: 400;
 }
 .ff_AktivGrotesk_bold {
-  font-family: AktivGrotesk bold !important;
+  font-family: AktivGroteskBold !important;
   font-weight: 700;
 }
 
@@ -240,7 +240,6 @@
     max-width: auto 50px;
   }
   .hero_screen {
-    /* min-height: 100vh; */
     height: 800px;
   }
 }

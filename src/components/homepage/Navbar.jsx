@@ -136,13 +136,12 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             </li>
           </ul>
           {/* Mobile menu toggle button */}
-          <div
-            onClick={() => {
-              setShowNav(!showNav);
-            }}
-            className="xl:hidden block relative z-50 cursor-pointer"
-          >
-            {showNav ? <CrossIcon /> : <MenuIcon />}
+          <div className="xl:hidden block relative z-50 cursor-pointer">
+            {showNav ? (
+              <CrossIcon setShowNav={setShowNav} />
+            ) : (
+              <MenuIcon setShowNav={setShowNav} />
+            )}
           </div>
         </div>
       </div>
@@ -193,13 +192,12 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
           </li>
         </ul>
         {/* Mobile menu toggle button */}
-        <div
-          onClick={() => {
-            setShowNav(!showNav);
-          }}
-          className="xl:hidden block relative z-[100] cursor-pointer"
-        >
-          {showNav ? <CrossIcon /> : <MenuIcon />}
+        <div className="xl:hidden block relative z-[100] cursor-pointer">
+          {showNav ? (
+            <CrossIcon setShowNav={setShowNav} />
+          ) : (
+            <MenuIcon setShowNav={setShowNav} />
+          )}
         </div>
       </div>
     </div>

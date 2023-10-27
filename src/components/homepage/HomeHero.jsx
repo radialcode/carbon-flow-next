@@ -2,11 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import "intersection-observer";
-
 import { ScrollDownIcon } from "../common/Icons";
 import Link from "next/link";
+
 const HomeHero = ({ loader }) => {
+
   const [ref, inView] = useInView({});
+  
   return (
     <>
       <div
@@ -14,7 +16,7 @@ const HomeHero = ({ loader }) => {
           loader ? "min-h-screen" : "hero_screen"
         }`}
       >
-        <a
+        <Link
           className="absolute ff_poppins font-light group text-[14px] text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
           href="#pitchingdeck"
         >
@@ -24,7 +26,7 @@ const HomeHero = ({ loader }) => {
             </span>
           </span>
           Scroll Down
-        </a>
+        </Link>
         <div className="custom_container w-full h-full mx-auto">
           <div className="flex flex-col items-center lg:flex-row justify-between h-full">
             <div
@@ -47,7 +49,7 @@ const HomeHero = ({ loader }) => {
               </p>
               <div className="lg:pt-[35px] pt-[20px]">
                 <span className="inline-block">
-                  <a
+                  <Link
                     href="mailto:contactus@carbonflow.earth"
                     className="px-[24px] py-[12px] border group border-[#44B902] ff_poppins font-semibold text-[16px] text-[#FFFFFF] rounded-full hover:bg-[#44B902] duration-200 hover:text-white leading-6 flex gap-[23px] items-center"
                   >
@@ -55,7 +57,7 @@ const HomeHero = ({ loader }) => {
                     <span className="ff_poppins font-semibold text-[10px] text-[#FFFFFF] block leading-[18px] group-hover:text-white opacity-50 after:contents-[''] after:absolute relative after:h-[18px] after:w-[1px] after:bg-[#FFFFFF] after:-left-3 after:top-1/2 after:-translate-y-1/2">
                       No CC Required
                     </span>
-                  </a>
+                  </Link>
                 </span>
               </div>
               <p className="text-[12px] ff_poppins font-extralight text-white sm:max-w-[310px] max-w-[420px] mt-3 sm:mt-9 whitespace-nowrap">
