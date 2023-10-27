@@ -53,8 +53,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        empoweringBg: "url('/images/png/empowering-bg-img.png')",
-        startjourneyFooter: "url('/images/png/netural-journey-bg-img.png')",
+        empoweringBg: "url('/images/webp/empowering-bg-img.webp')",
+        startjourneyFooter: "url('/images/webp/netural-journey-bg-img.webp')",
         satelite:"url('/images/webp/satelite.png')",
       },
       boxShadow: {

@@ -44,6 +44,7 @@ const DataGildMine = ({ globalwarmingRef }) => {
             alt="gild mine"
             width={602}
             height={602}
+            loading="lazy"
           />
         </div>
       </div>

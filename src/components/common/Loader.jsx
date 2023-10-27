@@ -46,9 +46,6 @@ function Loader({ setLoader, loader }) {
           <div className="relative z-50 flex justify-center">
             <div className="relative h-20 w-6/12 rounded-full border-transparent">
               <div className="loader bg-[#061E10] p-5 rounded-full flex space-x-4">
-                {/* <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full animate-bounce bg-[#3FA904]"></div> */}
               </div>
             </div>
           </div>

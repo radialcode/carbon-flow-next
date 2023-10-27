@@ -32,9 +32,6 @@ const MonthsSlider = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          // autoplay: true,
-          // autoplaySpeed: 2000,
-          // speed: 1000,
         },
       },
       {
@@ -42,9 +39,6 @@ const MonthsSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // autoplay: true,
-          // autoplaySpeed: 2000,
-          // speed: 1000,
         },
       },
     ],
@@ -115,7 +109,7 @@ const MonthsSlider = () => {
                         >
                           {({ countUpRef }) => <span ref={countUpRef}></span>}
                         </CountUp>
-                      </VisibilitySensor>
+                      </VisibilitySensor>{" "}
                       {data.heading}
                     </h2>
                     <h3 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] mb-0 mt-[15px] leading-[24.07px] capitalize">

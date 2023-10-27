@@ -9,10 +9,48 @@ import {
   // FooterTwitterIcon,
   TelephoneIcon,
 } from "../common/Icon";
+import { useRouter } from "next/router";
 
 const Footer = (props) => {
   const today = new Date();
   const year = today.getFullYear();
+  const router = useRouter();
+
+  const routeHandler = (value) => {
+    console.log(value);
+    if (router.pathname !== "/") {
+      if (value === "team") {
+        router.push("/?value=team");
+        if (props.teamRef && props.teamRef.current) {
+          props.teamRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Global") {
+        router.push("/?value=global");
+        if (props.globalwarmingRef && props.globalwarmingRef.current) {
+          props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Work") {
+        router.push("/?value=work");
+        if (props.workRef && props.workRef.current) {
+          props.workRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    } else {
+      if (value === "Global") {
+        if (props.globalwarmingRef && props.globalwarmingRef.current) {
+          props.globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "team") {
+        if (props.teamRef && props.teamRef.current) {
+          props.teamRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (value === "Work") {
+        if (props.workRef && props.workRef.current) {
+          props.workRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+  };
   return (
     <>
       <section
@@ -46,86 +84,32 @@ const Footer = (props) => {
             />
             <ul className="flex gap-[20px] items-center justify-center flex-row flex-wrap duration-200 mt-[20px] px-[15px] min-[376px]:px-[50px] sm:px-0">
               <li>
-                <Link
-                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="/#globalwarming"
+                <span
+                  onClick={() => routeHandler("Global")}
+                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] cursor-pointer"
                 >
                   Global Warming is Real?
-                </Link>
+                </span>
               </li>
-              {/* <li>
-                <Link
-                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="#pitchingdeck"
-                >
-                  Pitching Deck
-                </Link>
-              </li>
+
               <li>
-                <Link
-                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="#investor"
-                >
-                  Investor
-                </Link>
-              </li> */}
-              <li>
-                <Link
-                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="/#team"
+                <span
+                  onClick={() => routeHandler("team")}
+                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] cursor-pointer"
                 >
                   Team
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px]"
-                  href="/#workwithus"
+                <span
+                  onClick={() => routeHandler("Work")}
+                  className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] cursor-pointer"
                 >
                   Work with us
-                </Link>
+                </span>
               </li>
             </ul>
-            {/* <div className="flex justify-center mt-[25px] gap-[10px] sm:mb-0 mb-10">
-              <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FooterFacebookIcon />
-              </Link>
-              <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
-                href="https://www.twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FooterTwitterIcon />
-              </Link>
-              <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FooterLindedInIcon />
-              </Link>
-              <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
-                href="https://www.gmail.com/"
-                target="_blank"
-              >
-                <FooterGmailIcon />
-              </Link>
-              <Link
-                className=" hover:translate-y-[-8%] duration-200 social_links_shadow rounded-full w-[28.9px] h-[28.9px] flex justify-center items-center bg-[#44B902]"
-                href="https://www.discord.com/"
-                target="_blank"
-              >
-                <FooterDiscordIcon />
-              </Link>
-            </div> */}
+
             <div className="flex pt-10 sm:pb-0 pb-5 gap-x-10 gap-y-5 sm:flex-row flex-wrap justify-start items-center">
               <Link
                 className="group  flex justify-center items-center"

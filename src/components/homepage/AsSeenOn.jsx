@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import {
-  AsSeenOnFoxIcon,
   AsSeenOnMarketWatchIcon,
-  AsSeenOnUsaTodayIcon,
 } from "../common/Icon";
 
 const AsSeenOn = () => {
@@ -18,6 +16,7 @@ const AsSeenOn = () => {
           data-aos="fade-right"
           width={144}
           height={140}
+          loading="lazy"
           src="/images/png/month-leaf-position-img.png"
           alt="month leaf image"
         />
@@ -33,11 +32,13 @@ const AsSeenOn = () => {
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <Image className="max-w-[70px] sm:max-w-none"
+                  <Image
+                    className="max-w-[70px] sm:max-w-none"
                     src="/images/png/ceos.png"
                     width={133}
                     height={50}
                     alt="ceos"
+                    loading="lazy"
                   />
                 </div>
                 <div
@@ -45,11 +46,13 @@ const AsSeenOn = () => {
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <Image className="max-w-[70px] sm:max-w-none"
+                  <Image
+                    className="max-w-[70px] sm:max-w-none"
                     src="/images/png/gistda_logo.png"
                     width={133}
                     height={41}
                     alt="gistda"
+                    loading="lazy"
                   />
                 </div>
                 <div

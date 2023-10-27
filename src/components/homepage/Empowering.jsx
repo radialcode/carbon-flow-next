@@ -85,7 +85,7 @@ const Empowering = ({ workRef }) => {
                 className="w-full lg:max-w-[473px] max-w-[400px] mx-auto scale-x-[-1]"
                 width={512}
                 height={555}
-                src="/images/png/empowering_img.png"
+                src="/images/webp/empowering_img.webp"
                 alt="empowering image"
               />
             </div>

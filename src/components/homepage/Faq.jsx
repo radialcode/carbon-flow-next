@@ -35,6 +35,7 @@ const Faq = () => {
               {FaqData.map((data, index) => {
                 return (
                   <Accordion
+                    key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
                     className="border-b mt-[7px] sm:mt-4 faq_bg_color !rounded-[5px] min-h-[80px]"
@@ -42,7 +43,7 @@ const Faq = () => {
                     <AccordionSummary
                       expandIcon={<FaqIcon />}
                       aria-controls="panel1a-content"
-                      id="panel1a-header"
+                      id={index}
                       className="my-1 items-baseline "
                     >
                       <Typography className="ff_AktivGrotesk_bold font-bold text-[18px] mb-0 text-white text-start max-w-[93%]">

@@ -91,7 +91,6 @@ export default function Home() {
         ) : (
           <Navbar
             teamRef={teamRef}
-            loader={loader}
             globalwarmingRef={globalwarmingRef}
             workRef={workRef}
           />
@@ -104,7 +103,11 @@ export default function Home() {
         <Empowering workRef={workRef} />
         <TeamMember teamRef={teamRef} />
         <Faq />
-        <Footer />
+        <Footer
+          teamRef={teamRef}
+          globalwarmingRef={globalwarmingRef}
+          workRef={workRef}
+        />
         <BackToTop />
       </div>
     </>
