@@ -68,12 +68,15 @@ const Footer = (props) => {
               Start Your Carbon neutral journey, save the world
             </h2>
             <div className="mt-[30px] flex justify-center">
-              <button className="px-[24px] py-[8px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 flex items-center gap-[23px]">
+              <Link
+                href="mailto:contactus@carbonflow.earth"
+                className="px-[24px] py-[8px] border group border-white ff_poppins font-semibold text-[16px] text-white rounded-full hover:bg-white hover:text-[#44B902] duration-200 hover:text-#44B902 leading-6 flex items-center gap-[23px] max-w-[273px]"
+              >
                 Start Measure!
                 <span className="ff_poppins font-semibold text-[10px] text-white block leading-[18px] group-hover:text-[#44B902] opacity-70 after:contents-[''] after:absolute relative after:h-[18px] after:w-[1px] after-hover:bg-[#44B902] after:bg-[#ffffff] after:-left-3 after:top-1/2 after:-translate-y-1/2">
                   No CC Required
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
