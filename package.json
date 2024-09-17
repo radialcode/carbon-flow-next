@@ -15,6 +15,7 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@material-tailwind/react": "^2.1.2",
     "@mui/material": "^5.14.13",
+    "@netlify/plugin-nextjs": "^5.7.1",
     "aos": "^2.3.4",
     "gsap": "^3.12.2",
     "intersection-observer": "^0.12.2",

@@ -31,9 +31,9 @@ const pageSEO = {
   description:
     "The most effective way to measure Forrest & farm’s carbon credits without breaking the bank.",
   // SEO WEBSITE URL
-  websiteURL: "https://carbon-flow.vercel.app/",
+  websiteURL: "https://carbon-flow-next.netlify.app/",
   // SEO IMAGE
-  image: "https://carbon-flow.vercel.app/meta-img.webp",
+  image: "https://carbon-flow-next.netlify.app/meta-img.webp",
 };
 // AOS.init();
 
