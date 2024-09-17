@@ -93,12 +93,14 @@ const Footer = (props) => {
             </Link>
             <ul className="flex gap-[20px] items-center justify-center flex-row flex-wrap duration-200 mt-[20px] px-[15px] min-[376px]:px-[50px] sm:px-0">
               <li>
-                <span
-                  onClick={() => routeHandler("Global")}
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://docsend.com/view/disswhssdh7ui5s7"
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] cursor-pointer"
                 >
                   Global Warming is Real?
-                </span>
+                </Link>
               </li>
 
               <li>
@@ -110,12 +112,12 @@ const Footer = (props) => {
                 </span>
               </li>
               <li>
-                <span
-                  onClick={() => routeHandler("Work")}
+                <Link
+                  href="mailto:workwithus@carbonflow.earth"
                   className="ff_poppins font-normal text-[16px] text-white opacity-80 hover:after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] cursor-pointer"
                 >
                   Work with us
-                </span>
+                </Link>
               </li>
             </ul>
 
