@@ -51,7 +51,7 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
         }
       }
     } else {
-      // FOR OTHER ROUTES , SCROLL TO A SPECIFIC SECTION BASED ON THE "VALUE"  PASSED 
+      // FOR OTHER ROUTES , SCROLL TO A SPECIFIC SECTION BASED ON THE "VALUE"  PASSED
       if (value === "Global") {
         if (globalwarmingRef && globalwarmingRef.current) {
           globalwarmingRef.current.scrollIntoView({ behavior: "smooth" });
@@ -102,12 +102,14 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             }`}
           >
             <li>
-              <span
-                onClick={() => routeHandler("Global")}
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docsend.com/view/disswhssdh7ui5s7"
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
               >
                 Global Warming is Real?
-              </span>
+              </Link>
             </li>
 
             <li>
@@ -119,12 +121,14 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
               </span>
             </li>
             <li>
-              <span
-                onClick={() => routeHandler("Work")}
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:workwithus@carbonflow.earth"
                 className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
               >
                 Work with us
-              </span>
+              </Link>
             </li>
             <li className="xl:ps-5 my-[14px]">
               <Link
@@ -159,12 +163,14 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
         </div>
         <ul className="xl:flex xl:gap-[33px] gap-[20px] items-center justify-end hidden min-w-[840px]">
           <li>
-            <span
-              onClick={() => routeHandler("Global")}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docsend.com/view/disswhssdh7ui5s7"
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
             >
               Global Warming is Real?
-            </span>
+            </Link>
           </li>
           <li>
             <span
@@ -175,12 +181,14 @@ const Navbar = ({ teamRef, globalwarmingRef, workRef }) => {
             </span>
           </li>
           <li>
-            <span
-              onClick={() => routeHandler("Work")}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:workwithus@carbonflow.earth"
               className=" text-[13px] xl:text-base ff_poppins font-normal xl:text-[15px] 2xl:text-[16px] text-white opacity-80 after:content-[''] after:absolute after:w-0 hover:after:w-full after:duration-200 after:h-[2px] after:bg-[white] relative after:left-0 after:bottom-[-5px] after:rounded-[5px] hover:opacity-100 cursor-pointer"
             >
               Work with us
-            </span>
+            </Link>
           </li>
           <li className="lg:ps-5 my-[8px]">
             <Link
