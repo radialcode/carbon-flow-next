@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { TeamMemberSliderdata } from "../common/Helper";
 import Image from "next/image";
-import {TeamSliderArrowIcon } from "../common/Icons";
+import { TeamSliderArrowIcon } from "../common/Icons";
 import { useRef } from "react";
 
 const TeamMember = ({ teamRef }) => {
@@ -103,30 +103,18 @@ const TeamMember = ({ teamRef }) => {
                         <h2 className="ff_AktivGrotesk_bold font-normal text-[20px] text-[#061E10] text-center mb-0 mt-[12px] leading-[24.04px]">
                           {data.heading}
                         </h2>
-                        <p className=" ff_poppins font-normal text-[14px] text-[#061E10] mb-0 mt-[2px] text-center">
+                        <p className=" ff_poppins font-normal text-[14px] text-[#061E10] mb-0 mt-[2px] text-center uppercase">
                           {data.profession}
                         </p>
                         <div className="flex justify-center mt-2">
                           <ul className="list-disc text-[#061E10] opacity-70 ps-7 pe-2">
-                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                              {data.info1}
-                            </li>
-                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                              {data.info2}
-                            </li>
-                            <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
-                              {data.info3}
-                            </li>
-                            <li
-                              className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden4}`}
-                            >
-                              {data.info4}
-                            </li>
-                            <li
-                              className={`ff_poppins font-normal text-sm sm:text-base text-[#061E10] ${data.hidden5}`}
-                            >
-                              {data.info5}
-                            </li>
+                            {data.info.map((value, index) => {
+                              return (
+                                <li className="ff_poppins font-normal text-sm sm:text-base text-[#061E10]">
+                                  {value}
+                                </li>
+                              );
+                            })}
                           </ul>
                         </div>
                       </div>
