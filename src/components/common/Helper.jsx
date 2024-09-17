@@ -45,7 +45,7 @@ export const TeamMemberSliderdata = [
   {
     img: "/images/png/team2.png",
     heading: "Luca Cotta",
-    profession: "Business",
+    profession: "TECh",
     info: [
       "ICO Benchmark Export",
       "AAVE Core Team Member (25 B USD in Liquidity)",
