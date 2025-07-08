@@ -14,8 +14,8 @@ const DataGildMine = ({ globalwarmingRef }) => {
       >
         <div className="md:w-1/2 xl:w-[43%] md:px-0 mt-[47px] md:mt-0">
           <h2 className="font-normal lg:text-[36px] text-[32px] text-black ff_AktivGrotesk_bold leading-[117%]">
-            Data Gildmine:{" "}
-            <span className="text-[#45B802]">10 Years Histoeical</span> &
+            Data Goldmine:{" "}
+            <span className="text-[#45B802]">10 Years Historical</span> &
             Monthly On Both <span className="text-[#45B802]">Carbon</span> &{" "}
             <span className="text-[#45B802]">Evapotranspiration</span> Data
           </h2>
